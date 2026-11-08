@@ -33,6 +33,8 @@ var dither_button: CheckButton
 var resolution: OptionButton
 var hover_action: String = ""
 var overlay: Control
+var interface_toggle: Button
+var interface_hidden: bool = false
 var captures: String = "res://verification"
 var capture_mode: bool = false
 var reference_style: bool = true
@@ -170,6 +172,11 @@ func _build_interface() -> void:
 		button.pressed.connect(select_view.bind(index, false))
 		view_buttons.append(button)
 		top.add_child(button)
+	# Reserve only the top row; the persistent restore button lives outside Overlay.
+	var toggle_space: Control = Control.new()
+	toggle_space.custom_minimum_size.x = 114
+	toggle_space.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	top.add_child(toggle_space)
 	var middle: Control = Control.new()
 	middle.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	middle.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -220,6 +227,31 @@ func _build_interface() -> void:
 	resolution.selected = 0
 	resolution.item_selected.connect(func(_index: int) -> void: _update_resolution())
 	row.add_child(resolution)
+	interface_toggle = Button.new()
+	interface_toggle.name = "InterfaceToggle"
+	interface_toggle.text = "隐藏按钮"
+	interface_toggle.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	interface_toggle.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+	interface_toggle.offset_left = -126
+	interface_toggle.offset_right = -24
+	interface_toggle.offset_top = 24
+	interface_toggle.offset_bottom = 62
+	interface_toggle.grow_horizontal = Control.GROW_DIRECTION_BEGIN
+	interface_toggle.pressed.connect(toggle_interface)
+	add_child(interface_toggle)
+
+func toggle_interface() -> void:
+	interface_hidden = not interface_hidden
+	_sync_interface_visibility()
+	control_audio.play_sound("button_press",1.15,-5.0,0.04)
+
+func _sync_interface_visibility() -> void:
+	var reading: bool = file_reader != null and file_reader.visible
+	var inspecting: bool = origami_inspector != null and origami_inspector.active
+	var available: bool = not reading and not inspecting
+	overlay.visible = available and not interface_hidden
+	interface_toggle.visible = available
+	interface_toggle.text = "显示按钮" if interface_hidden else "隐藏按钮"
 
 func set_print_preset(index: int) -> void:
 	preferred_print_preset = clampi(index, 0, 2)
@@ -415,7 +447,7 @@ func _set_inspecting(inspecting: bool) -> void:
 		preferred_print_preset = 1
 		print_option.select(1)
 	_apply_print_strength()
-	overlay.visible = not inspecting
+	_sync_interface_visibility()
 	if inspecting:
 		end_screen_editing()
 		prop_input.cancel()
@@ -425,7 +457,7 @@ func open_desk_file(index: int) -> void:
 	file_reader.open_at(index)
 
 func _set_reading(reading: bool) -> void:
-	overlay.visible = not reading
+	_sync_interface_visibility()
 	if prop_input != null:
 		prop_input.cancel()
 	control_audio.play_sound("paper", 1.0 if reading else 0.87)
