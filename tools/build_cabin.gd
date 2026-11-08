@@ -176,6 +176,14 @@ func build() -> void:
 		drawer.position = Vector3(3.25, -0.41, 4.76)
 		cabin.add_child(drawer)
 		drawer.owner = cabin
+	if ResourceLoader.exists("res://models/hi3d/wall_shelf.glb"):
+		for part: String in ["ShelfCastShadow", "SweptShelfFascia", "ShelfWarmLip", "ShelfIntegralBracket_-3_3", "ShelfIntegralBracket_1_9"]:
+			(cabin.get_node(part) as Node3D).visible = false
+	if ResourceLoader.exists("res://scenes/wall_poster.tscn"):
+		var poster_scene: PackedScene = load("res://scenes/wall_poster.tscn") as PackedScene
+		var poster: Node3D = poster_scene.instantiate() as Node3D
+		cabin.add_child(poster)
+		poster.owner = cabin
 	var packed: PackedScene = PackedScene.new()
 	assert(packed.pack(cabin) == OK)
 	assert(ResourceSaver.save(packed, "res://scenes/cabin_environment.tscn") == OK)

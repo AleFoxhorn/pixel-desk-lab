@@ -1,4 +1,10 @@
 {
+  "batch_assets": [
+    "card_holder",
+    "rocket",
+    "wall_shelf",
+    "binder_pink"
+  ],
   "project_validation": {
     "ok": true,
     "counts": {
@@ -31,7 +37,9 @@
       "findings": 0
     }
   },
-  "screen_interaction": "PASS",
+  "texture_import_limit": 2048,
+  "video_memory_bytes": 1757677331.0,
+  "origami_radio_relative_volume": 0.5,
   "deferred": [
     "keyboard"
   ],

@@ -3,6 +3,9 @@ extends Node3D
 
 const ScreenTerminal: Script = preload("res://scripts/screen_terminal.gd")
 const ScreenSurface: Script = preload("res://scripts/screen_surface.gd")
+signal device_action(action: String)
+var screen_brightness: float = 0.95
+var screen_palette: int = 0
 var terminal_view: SubViewport
 var terminal_ui: ScreenTerminal
 
@@ -11,6 +14,8 @@ const ImportedToon: Script = preload("res://scripts/imported_toon.gd")
 var imported_toon: RefCounted
 var material_pairs: Array[Dictionary] = []
 const SCREEN_COLLISION_LAYER: int = 64
+const COMPUTER_COLLISION_LAYER: int = 128
+var has_precise_computer_hit: bool = false
 var screen_size: Vector2 = ScreenSurface.DISPLAY_SIZE
 var fitted_screen: bool = false
 var screen: MeshInstance3D
@@ -47,6 +52,7 @@ func _bind_saved_scene() -> void:
 	view_shape.position = housing.get_aabb().get_center()
 	view_hit.add_child(view_shape)
 	housing.add_child(view_hit)
+	_build_computer_hit_surface()
 	screen = get_node("Computer/Screen") as MeshInstance3D
 	power_button = get_node("Computer/PowerButton") as Node3D
 	tuning_knob = get_node("Computer/TuningKnob") as Node3D
@@ -60,6 +66,31 @@ func _bind_saved_scene() -> void:
 				"toon": mesh.get_meta("toon_material")})
 	imported_toon = ImportedToon.new()
 	imported_toon.bind(self)
+	var props: Node = get_node_or_null("GeneratedProps")
+	if props != null:
+		props.child_entered_tree.connect(func(_child: Node) -> void: _refresh_imported_toon.call_deferred())
+
+func _refresh_imported_toon() -> void:
+	if is_inside_tree() and imported_toon != null:
+		imported_toon.refresh(self)
+
+func _build_computer_hit_surface() -> void:
+	# A coarse box is useful for choosing camera regions, but not for click-away
+	# dismissal: the curved imported case has large empty corners and openings.
+	var imported: MeshInstance3D = get_node_or_null("GeneratedProps/Computer/Model/world/geometry_0") as MeshInstance3D
+	if imported == null or imported.mesh == null or has_precise_computer_hit:
+		return
+	var body: StaticBody3D = StaticBody3D.new()
+	body.name = "ComputerSilhouette"
+	body.collision_layer = COMPUTER_COLLISION_LAYER
+	body.collision_mask = 0
+	var collision: CollisionShape3D = CollisionShape3D.new()
+	var shape: ConcavePolygonShape3D = imported.mesh.create_trimesh_shape()
+	shape.backface_collision = true
+	collision.shape = shape
+	body.add_child(collision)
+	imported.add_child(body)
+	has_precise_computer_hit = true
 
 func _build_lighting() -> void:
 	var world_environment: WorldEnvironment = WorldEnvironment.new()
@@ -209,6 +240,8 @@ func set_toon(enabled: bool) -> void:
 func interact(action: String) -> void:
 	if interaction_busy:
 		return
+	if action not in ["power", "knob", "tray"]:
+		return
 	interaction_busy = true
 	var tween: Tween = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	match action:
@@ -222,9 +255,11 @@ func interact(action: String) -> void:
 			tween.tween_interval(0.25)
 			tween.tween_property(tuning_knob, "rotation:z", 0.0, 0.4)
 		"tray":
+			device_action.emit("tray_open")
 			var rest: Vector3 = tray.position
 			tween.tween_property(tray, "position", rest + Vector3(0, 0, 0.62), 0.45)
 			tween.tween_interval(0.8)
+			tween.tween_callback(func() -> void: device_action.emit("tray_close"))
 			tween.tween_property(tray, "position", rest, 0.45)
 		_:
 			interaction_busy = false
@@ -234,12 +269,20 @@ func interact(action: String) -> void:
 
 func _toggle_power() -> void:
 	powered = not powered
+	if terminal_ui != null:
+		terminal_ui.set_display_powered(powered)
+	device_action.emit("power_on" if powered else "power_off")
 	if not powered and terminal_ui != null:
 		terminal_ui.boot_audio.stop_all()
 	var bounce: OmniLight3D = get_node_or_null("ScreenBounce") as OmniLight3D
 	if bounce != null:
 		bounce.visible = powered
 	screen.material_override = screen_on if powered else screen_off
+
+func update_screen_tint() -> void:
+	var colors: Array[Color] = [Color(1, 1, 1), Color(1.35, 0.85, 0.45), Color(0.65, 1.0, 1.4)]
+	var tint: Color = colors[clampi(screen_palette, 0, colors.size() - 1)]
+	screen_on.albedo_color = Color(tint.r * screen_brightness, tint.g * screen_brightness, tint.b * screen_brightness)
 
 func _hitbox(parent: Node3D, size: Vector3, action: String) -> void:
 	var body: StaticBody3D = StaticBody3D.new()

@@ -42,17 +42,41 @@
       "node_path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/Model/world/geometry_0"
     },
     {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "SceneViewport/DeskWorld/GeneratedProps/BinderPink/Model/world/geometry_0"
+    },
+    {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "SceneViewport/DeskWorld/GeneratedProps/Rocket/Model/world/geometry_0"
+    },
+    {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "SceneViewport/DeskWorld/GeneratedProps/CardHolder/Model/world/geometry_0"
+    },
+    {
+      "type": "assert",
+      "assertion": "node_exists",
+      "node_path": "SceneViewport/DeskWorld/GeneratedProps/WallShelf/Model/world/geometry_0"
+    },
+    {
       "type": "spatial_report",
       "label": "hi3d_environment",
       "node_path": "SceneViewport/DeskWorld",
       "dimension": "3d",
-      "max_nodes": 500,
+      "max_nodes": 1000,
       "expect_on_screen": [
         "SceneViewport/DeskWorld/GeneratedProps/Lamp/Model/world/geometry_0",
         "SceneViewport/DeskWorld/GeneratedProps/Radio/Model/world/geometry_0",
         "SceneViewport/DeskWorld/GeneratedProps/Recorder/Model/world/geometry_0",
         "SceneViewport/DeskWorld/GeneratedProps/Computer/Model/world/geometry_0",
-        "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/Model/world/geometry_0"
+        "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/Model/world/geometry_0",
+        "SceneViewport/DeskWorld/GeneratedProps/WallShelf/Model/world/geometry_0",
+        "SceneViewport/DeskWorld/GeneratedProps/CardHolder/Model/world/geometry_0",
+        "SceneViewport/DeskWorld/GeneratedProps/Rocket/Model/world/geometry_0",
+        "SceneViewport/DeskWorld/GeneratedProps/BinderPink/Model/world/geometry_0"
       ],
       "fail_on": [
         "no_camera_3d",

@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" path="res://scenes/desk_drawer.tscn" id="3_rtk08"]
 [ext_resource type="Script" path="res://scripts/desk_drawer.gd" id="4_cvpar"]
 
+[ext_resource type="PackedScene" path="res://scenes/wall_poster.tscn" id="9_wallposter"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8k5iw"]
 render_priority = 0
 shader = ExtResource("1_7gcw6")
@@ -2099,26 +2101,31 @@ material_override = SubResource("StandardMaterial3D_almwn")
 mesh = SubResource("BoxMesh_qt4n4")
 
 [node name="ShelfCastShadow" type="MeshInstance3D" parent="." unique_id=1888063666]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_p4vun")
 mesh = SubResource("ArrayMesh_s108v")
 
 [node name="SweptShelfFascia" type="MeshInstance3D" parent="." unique_id=869061305]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_bk4mc")
 mesh = SubResource("ArrayMesh_4ya7s")
 
 [node name="ShelfWarmLip" type="MeshInstance3D" parent="." unique_id=793516834]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_37n67")
 mesh = SubResource("ArrayMesh_nnyfa")
 
 [node name="ShelfIntegralBracket_-3_3" type="MeshInstance3D" parent="." unique_id=5970123]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_alvqi")
 mesh = SubResource("ArrayMesh_kjlus")
 
 [node name="ShelfIntegralBracket_1_9" type="MeshInstance3D" parent="." unique_id=941278775]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_ywmwd")
 mesh = SubResource("ArrayMesh_3p2kk")
@@ -2180,3 +2187,5 @@ mesh = SubResource("BoxMesh_jct65")
 [node name="DeskDrawer" type="Node3D" parent="." unique_id=347793288 instance=ExtResource("3_rtk08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, -0.41, 4.76)
 script = ExtResource("4_cvpar")
+
+[node name="AtomicHeartPoster" parent="." instance=ExtResource("9_wallposter")]

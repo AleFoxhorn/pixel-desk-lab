@@ -8,7 +8,11 @@ const ITEMS: Array[Dictionary] = [
 	{"id": "recorder", "node": "Recorder", "axis": 0, "extent": 2.25, "at": Vector3(4.8, 0.34, 0.5)},
 	{"id": "computer", "node": "Computer", "axis": 0, "extent": 6.6, "at": Vector3(0, 0.34, -0.15)},
 	# Its oriented bounds occupy half the placed radio's volume.
-	{"id": "origami_bird", "node": "OrigamiBird", "axis": 0, "extent": 1.5277865, "yaw": -25.0, "at": Vector3(3.2, 0.34, 2.6)}
+	{"id": "origami_bird", "node": "OrigamiBird", "axis": 0, "extent": 1.5277865, "yaw": -25.0, "at": Vector3(3.2, 0.34, 3.05)},
+	{"id": "card_holder", "node": "CardHolder", "axis": 0, "extent": 1.55, "at": Vector3(2.8, 0.34, 1.7), "task_id": "da0460b56dc94c46afc19b4fae130990"},
+	{"id": "rocket", "node": "Rocket", "axis": 1, "extent": 1.5, "yaw": -15.0, "at": Vector3(5.2, 0.34, 2.65), "task_id": "82388e8b16924aa29fde8eed58e2ee52"},
+	{"id": "wall_shelf", "node": "WallShelf", "axis": 0, "extent": 9.0, "at": Vector3(0, 4.197, -2.42), "task_id": "ef640f630b844065945d7a18f2b0bf15"},
+	{"id": "binder_pink", "node": "BinderPink", "axis": 1, "extent": 1.0, "at": Vector3(-2.7, 5.513356, -2.42), "task_id": "a9e0437c24c247e08f4596b4b54abf9b"}
 ]
 
 func _initialize() -> void:
@@ -47,8 +51,8 @@ func _initialize() -> void:
 		if not task_id.is_empty():
 			holder.set_meta("source_task_id", task_id)
 		holder.set_meta("source_asset", path)
-		var normalized: AABB = AABB(bounds.position * factor + offset * factor + holder.position, bounds.size * factor)
-		assert(absf(normalized.position.y - 0.34) < 0.001)
+		var normalized: AABB = holder.transform * AABB(bounds.position * factor + offset * factor, bounds.size * factor)
+		assert(absf(normalized.position.y - (item["at"] as Vector3).y) < 0.001)
 		reports.append({"asset": item["id"], "source_bounds": str(bounds), "placed_bounds": str(normalized), "scale": factor})
 	assert(props.get_child_count() == ITEMS.size(), "All generated props must be present")
 	var scene: PackedScene = PackedScene.new()
@@ -79,4 +83,9 @@ func _task_id(asset: String) -> String:
 		"recorder": "1f84c11e18c84e83b09b161579f0cafa",
 		"computer": "d343c25bdf4547f9a7159c4d9fb76853"
 	}
-	return str(tasks.get(asset, ""))
+	if tasks.has(asset):
+		return str(tasks[asset])
+	for item: Dictionary in ITEMS:
+		if str(item["id"]) == asset:
+			return str(item.get("task_id", ""))
+	return ""

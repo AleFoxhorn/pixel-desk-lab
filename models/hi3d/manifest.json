@@ -12,7 +12,8 @@
       "triangles": 1981624,
       "materials": 1,
       "embedded_textures": 2,
-      "quality_status": "visual_inspection_passed"
+      "quality_status": "visual_inspection_passed",
+      "texture_import_size_limit": 2048
     },
     {
       "asset": "radio",
@@ -25,7 +26,8 @@
       "triangles": 1987420,
       "materials": 1,
       "embedded_textures": 2,
-      "quality_status": "visual_inspection_passed"
+      "quality_status": "visual_inspection_passed",
+      "texture_import_size_limit": 2048
     },
     {
       "asset": "keyboard",
@@ -42,7 +44,8 @@
       "quality_issues": [
         "Generated mesh has two trackballs instead of one.",
         "Generated key rows are incomplete."
-      ]
+      ],
+      "texture_import_size_limit": 2048
     },
     {
       "asset": "recorder",
@@ -55,7 +58,8 @@
       "triangles": 1978144,
       "materials": 1,
       "embedded_textures": 2,
-      "quality_status": "visual_inspection_passed"
+      "quality_status": "visual_inspection_passed",
+      "texture_import_size_limit": 2048
     },
     {
       "asset": "computer",
@@ -68,7 +72,8 @@
       "triangles": 1987650,
       "materials": 1,
       "embedded_textures": 2,
-      "quality_status": "visual_and_screen_interaction_verified"
+      "quality_status": "visual_and_screen_interaction_verified",
+      "texture_import_size_limit": 2048
     },
     {
       "asset": "origami_bird",
@@ -99,7 +104,112 @@
         0.7163111175446027
       ],
       "radio_relative_volume": 0.5,
-      "quality_status": "visual_and_placement_verified"
+      "quality_status": "visual_and_placement_verified",
+      "texture_import_size_limit": 2048
+    },
+    {
+      "asset": "card_holder",
+      "task_id": "da0460b56dc94c46afc19b4fae130990",
+      "model_page_url": "https://www.hi3d.ai/3d-model/da0460b56dc94c46afc19b4fae130990",
+      "file": "card_holder.glb",
+      "bytes": 47323648,
+      "sha256": "6377648f8a04c29de8cf3e4a5911577c417ba98b2a4602c9bcff0ef531c5f347",
+      "mesh_nodes": 1,
+      "triangles": 1976594,
+      "materials": 1,
+      "embedded_textures": 2,
+      "source_bounds": {
+        "min": [
+          -0.5000061988830566,
+          -0.23349787294864655,
+          -0.24046626687049866
+        ],
+        "max": [
+          0.4999965727329254,
+          0.23298269510269165,
+          0.2402678281068802
+        ]
+      },
+      "quality_status": "visual_and_placement_verified",
+      "texture_import_size_limit": 2048
+    },
+    {
+      "asset": "rocket",
+      "task_id": "82388e8b16924aa29fde8eed58e2ee52",
+      "model_page_url": "https://www.hi3d.ai/3d-model/82388e8b16924aa29fde8eed58e2ee52",
+      "file": "rocket.glb",
+      "bytes": 24045760,
+      "sha256": "f4abfbc84d7d2e8666dbe5b99975136cda17e00b9555274930545ada119e90c0",
+      "mesh_nodes": 1,
+      "triangles": 952156,
+      "materials": 1,
+      "embedded_textures": 2,
+      "source_bounds": {
+        "min": [
+          -0.2947206199169159,
+          -0.49458807706832886,
+          -0.21317069232463837
+        ],
+        "max": [
+          0.2530660927295685,
+          0.4991532564163208,
+          0.1929137408733368
+        ]
+      },
+      "quality_status": "visual_and_placement_verified",
+      "texture_import_size_limit": 2048
+    },
+    {
+      "asset": "wall_shelf",
+      "task_id": "ef640f630b844065945d7a18f2b0bf15",
+      "model_page_url": "https://www.hi3d.ai/3d-model/ef640f630b844065945d7a18f2b0bf15",
+      "file": "wall_shelf.glb",
+      "bytes": 47231212,
+      "sha256": "a2af7f6fbcba541353e9ea9dae80290ef8aacd121940c594af7a2369122b080c",
+      "mesh_nodes": 1,
+      "triangles": 1991894,
+      "materials": 1,
+      "embedded_textures": 2,
+      "source_bounds": {
+        "min": [
+          -0.5000279545783997,
+          -0.07505190372467041,
+          -0.04297756031155586
+        ],
+        "max": [
+          0.5000490546226501,
+          0.07528462260961533,
+          0.04278862103819847
+        ]
+      },
+      "quality_status": "visual_and_placement_verified",
+      "texture_import_size_limit": 2048
+    },
+    {
+      "asset": "binder_pink",
+      "task_id": "a9e0437c24c247e08f4596b4b54abf9b",
+      "model_page_url": "https://www.hi3d.ai/3d-model/a9e0437c24c247e08f4596b4b54abf9b",
+      "file": "binder_pink.glb",
+      "bytes": 46590900,
+      "sha256": "ec90efd74820e4087c1c706e4fc0342a5488d150c4d39d4664646ec7061ab5e7",
+      "mesh_nodes": 1,
+      "triangles": 1947976,
+      "materials": 1,
+      "embedded_textures": 2,
+      "source_bounds": {
+        "min": [
+          -0.09924241900444031,
+          -0.5000428557395935,
+          -0.3454933166503906
+        ],
+        "max": [
+          0.09832713752985,
+          0.5000472664833069,
+          0.3440987169742584
+        ]
+      },
+      "quality_status": "visual_and_placement_verified",
+      "texture_import_size_limit": 2048
     }
   ]
 }

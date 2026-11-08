@@ -27,13 +27,13 @@ func run() -> void:
 	check(lab.print_material.get_shader_parameter("source_size") == Vector2(640, 360), "Paper pass must use the same pixel grid")
 	var props: Node = lab.desk.find_child("GeneratedProps", true, false)
 	var targets: Array[MeshInstance3D] = []
-	for item: String in ["Computer", "Lamp", "Radio", "Recorder"]:
+	for item: String in ["Computer", "Lamp", "Radio", "Recorder", "WallShelf", "CardHolder", "Rocket", "BinderPink"]:
 		var holder: Node = props.get_node(item)
 		for child: Node in holder.find_children("*", "MeshInstance3D", true, false):
 			var mesh: MeshInstance3D = child as MeshInstance3D
 			if str(mesh.name) == "geometry_0":
 				targets.append(mesh)
-	check(targets.size() == 4, "All four imported hero props must be found")
+	check(targets.size() == 8, "Original and newly imported props must all be found")
 	for mesh: MeshInstance3D in targets:
 		var mat: ShaderMaterial = mesh.get_active_material(0) as ShaderMaterial
 		check(mat != null and mat.shader.resource_path.ends_with("textured_toon.gdshader"), "Imported prop must actually use textured toon")
@@ -62,6 +62,33 @@ func run() -> void:
 		await capture("toon_after_radio")
 		lab.select_view(3, true)
 		await capture("toon_after_screen")
+	# The same visible knob must stay clickable with the normal and heavy pixel grids.
+	for resolution_index: int in [0, 2]:
+		lab.select_view(4, true)
+		lab.resolution.select(resolution_index)
+		lab._update_resolution()
+		await physics_frame
+		var control: Node = lab.prop_input
+		control.set_value("radio.volume", 0.5)
+		var pivot: Node3D = control.controls["radio.volume"]["pivot"] as Node3D
+		var projected: Vector2 = lab.camera.unproject_position(pivot.global_position)
+		var at: Vector2 = lab.image.global_position + projected / Vector2(lab.scene_view.size) * lab.image.size
+		var click: InputEventMouseButton = InputEventMouseButton.new()
+		click.button_index = MOUSE_BUTTON_LEFT
+		click.position = at
+		click.global_position = at
+		click.pressed = true
+		root.push_input(click, true)
+		check(control.active == "radio.volume", "Filtered knob must capture the mouse")
+		var move: InputEventMouseMotion = InputEventMouseMotion.new()
+		move.position = at + Vector2(36, 0)
+		move.relative = Vector2(36, 0)
+		root.push_input(move, true)
+		check(is_equal_approx(float(control.states["radio.volume"]), 0.7), "Filtered knob must drag without a coordinate offset")
+		click.pressed = false
+		click.position = move.position
+		root.push_input(click, true)
+		check(control.active.is_empty(), "Releasing the knob outside must end the drag")
 	lab.resolution.select(2)
 	lab._update_resolution()
 	check(lab.scene_view.size == Vector2i(320, 180), "Heavy pixel option must remain available")

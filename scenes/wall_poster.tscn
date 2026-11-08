@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://art/posters/atomic_heart_pixel.png" id="1_art"]
+
+[sub_resource type="QuadMesh" id="Quad_art"]
+size = Vector2(1.7, 2.400947867298578)
+
+[sub_resource type="BoxMesh" id="Paper_edge"]
+size = Vector3(1.718, 2.418947867298578, 0.012)
+
+[sub_resource type="StandardMaterial3D" id="Ink"]
+shading_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_art")
+texture_filter = 0
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Paper"]
+shading_mode = 0
+albedo_color = Color(0.91, 0.82, 0.65, 1)
+roughness = 1.0
+
+[node name="AtomicHeartPoster" type="Node3D"]
+position = Vector3(-6.15, 4.85, -2.77)
+
+[node name="PaperEdge" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0, -0.008)
+layers = 2
+cast_shadow = 0
+mesh = SubResource("Paper_edge")
+material_override = SubResource("Paper")
+
+[node name="Artwork" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0, 0.003)
+layers = 2
+cast_shadow = 0
+mesh = SubResource("Quad_art")
+material_override = SubResource("Ink")

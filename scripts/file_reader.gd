@@ -1,6 +1,7 @@
 extends Control
 ## A modal paper reader. Text uses a native 12px CJK pixel font at integer sizes.
 signal reading_changed(reading: bool)
+signal page_turned(index: int)
 
 const FONT_PATH: String = "res://art/fonts/fusion-pixel-12px-monospaced-zh_hans.woff2"
 var story: Dictionary = {}
@@ -189,8 +190,11 @@ func close() -> void:
 	reading_changed.emit(false)
 
 func _turn(direction: int) -> void:
+	var previous_page: int = page_index
 	page_index = clampi(page_index + direction, 0, (story["pages"] as Array).size() - 1)
 	_update_page()
+	if previous_page != page_index:
+		page_turned.emit(page_index)
 
 func _update_page() -> void:
 	var pages: Array = story["pages"]

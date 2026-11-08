@@ -9,7 +9,7 @@ var active_view: int = 0
 var motion: Tween = null
 var focused_item: String = ""
 
-func focus_bounds(bounds: AABB, item: String, pitch: float = 10.0) -> void:
+func focus_bounds(bounds: AABB, item: String, pitch: float = 10.0, yaw: float = 0.0) -> void:
 	if motion != null and motion.is_valid():
 		motion.kill()
 	focused_item = item
@@ -17,10 +17,12 @@ func focus_bounds(bounds: AABB, item: String, pitch: float = 10.0) -> void:
 	cull_mask = 3
 	var aspect: float = get_viewport().get_visible_rect().size.aspect()
 	var half_fov: float = tan(deg_to_rad(fov * 0.5))
-	var height: float = bounds.size.y * cos(deg_to_rad(pitch)) + bounds.size.z * sin(deg_to_rad(pitch))
-	var fit: float = maxf(height / (2.0 * half_fov), bounds.size.x / (2.0 * half_fov * aspect))
-	var distance: float = maxf(2.5, fit * 1.35 + bounds.size.z * 0.5)
-	var yaw_target: float = orbit_yaw + wrapf(-orbit_yaw, -PI, PI)
+	var depth: float = bounds.size.z * absf(cos(deg_to_rad(yaw))) + bounds.size.x * absf(sin(deg_to_rad(yaw)))
+	var width: float = bounds.size.x * absf(cos(deg_to_rad(yaw))) + bounds.size.z * absf(sin(deg_to_rad(yaw)))
+	var height: float = bounds.size.y * cos(deg_to_rad(pitch)) + depth * sin(deg_to_rad(pitch))
+	var fit: float = maxf(height / (2.0 * half_fov), width / (2.0 * half_fov * aspect))
+	var distance: float = maxf(2.5, fit * 1.35 + depth * 0.5)
+	var yaw_target: float = orbit_yaw + wrapf(deg_to_rad(yaw) - orbit_yaw, -PI, PI)
 	motion = create_tween().set_parallel(true).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	motion.tween_property(self, "orbit_yaw", yaw_target, 0.85)
 	motion.tween_property(self, "orbit_pitch", deg_to_rad(pitch), 0.85)

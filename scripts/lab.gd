@@ -4,7 +4,11 @@ extends Control
 const DeskScene: Script = preload("res://scripts/desk_scene.gd")
 const CameraDirector: Script = preload("res://scripts/camera_director.gd")
 const FileReader: Script = preload("res://scripts/file_reader.gd")
+const ControlAudio: Script = preload("res://scripts/control_audio.gd")
+const VirtualWindow: Script = preload("res://scripts/window_controller.gd")
 var file_reader: FileReader
+var control_audio: ControlAudio
+var virtual_window: VirtualWindow
 signal physical_key_changed(keycode: int, pressed: bool)
 var editing_screen: bool = false
 var held_keys: Dictionary = {}
@@ -38,6 +42,11 @@ func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_build_pipeline()
+	control_audio = ControlAudio.new()
+	control_audio.name = "ControlAudio"
+	add_child(control_audio)
+	desk.device_action.connect(_computer_sound)
+	desk.terminal_ui.interface_feedback.connect(func(sound_id: String) -> void: control_audio.play_sound(sound_id))
 	_build_interface()
 	var reader_layer: CanvasLayer = CanvasLayer.new()
 	reader_layer.name = "ReadingLayer"
@@ -47,6 +56,9 @@ func _ready() -> void:
 	file_reader.name = "FileReader"
 	reader_layer.add_child(file_reader)
 	file_reader.reading_changed.connect(_set_reading)
+	file_reader.page_turned.connect(func(_index: int) -> void: control_audio.play_sound("page_turn"))
+	for button: Node in overlay.find_children("*", "BaseButton", true, false):
+		(button as BaseButton).pressed.connect(func() -> void: control_audio.play_sound("button_press", 1.15, -5.0, 0.04))
 	get_viewport().size_changed.connect(_layout_image)
 	_layout_image()
 	apply_playtest_style()
@@ -55,6 +67,10 @@ func _ready() -> void:
 	prop_input.name = "PropInteractions"
 	prop_input.setup(self)
 	add_child(prop_input)
+	virtual_window = VirtualWindow.new()
+	virtual_window.name = "VirtualWindow"
+	add_child(virtual_window)
+	virtual_window.setup(self, desk.get_node("CabinEnvironment") as Node3D)
 	if "--verify" in OS.get_cmdline_user_args():
 		capture_mode = true
 		_verify.call_deferred()
@@ -248,6 +264,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		var button: InputEventMouseButton = event
 		if button.button_index == MOUSE_BUTTON_LEFT and button.pressed:
+			if dismiss_computer_view(button.position):
+				return
 			var screen_pixel: Vector2 = screen_coordinates(button.position)
 			if desk.powered and screen_pixel.x >= 0:
 				if camera.active_view != 0 and camera.active_view != 3:
@@ -276,6 +294,28 @@ func _unhandled_input(event: InputEvent) -> void:
 			elif camera.active_view in [0, 1, 2, 3]:
 				select_view(4)
 				get_viewport().set_input_as_handled()
+
+func computer_contains(at: Vector2) -> bool:
+	if not image.get_global_rect().has_point(at):
+		return false
+	var mask: int = desk.COMPUTER_COLLISION_LAYER if desk.has_precise_computer_hit else 16
+	# Resolve the nearest visible target, so foreground props cannot hit the case behind them.
+	var hit: Dictionary = pick(at, mask | desk.SCREEN_COLLISION_LAYER | 4 | 8)
+	if hit.is_empty():
+		return false
+	var collider: CollisionObject3D = hit["collider"] as CollisionObject3D
+	if collider.has_meta("prop_control"):
+		return str(collider.get_meta("prop_control")).begins_with("computer.")
+	if collider.has_meta("focus_target"):
+		return str((collider.get_meta("focus_target") as Node).name) == "Computer"
+	return (collider.collision_layer & (mask | desk.SCREEN_COLLISION_LAYER)) != 0
+
+func dismiss_computer_view(at: Vector2) -> bool:
+	if camera.active_view not in [0, 1, 2, 3] or computer_contains(at):
+		return false
+	select_view(4)
+	get_viewport().set_input_as_handled()
+	return true
 
 func computer_view_at(at: Vector2) -> Vector2i:
 	var hit: Dictionary = pick(at, 16)
@@ -317,6 +357,8 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 	elif event is InputEventMouse:
 		var pointer: InputEventMouse = event
+		if event is InputEventMouseButton and (event as InputEventMouseButton).pressed and camera.active_view in [0, 1, 2, 3] and not computer_contains(pointer.position):
+			return
 		var pixel: Vector2 = screen_coordinates(pointer.position)
 		if pixel.x >= 0 or (screen_mouse_down and event is InputEventMouseButton and not (event as InputEventMouseButton).pressed):
 			forward_screen_mouse(event, pixel if pixel.x >= 0 else last_screen_pixel)
@@ -348,6 +390,15 @@ func open_desk_file(index: int) -> void:
 
 func _set_reading(reading: bool) -> void:
 	overlay.visible = not reading
+	if prop_input != null:
+		prop_input.cancel()
+	control_audio.play_sound("paper", 1.0 if reading else 0.87)
+
+func _computer_sound(action: String) -> void:
+	control_audio.play_sound(action)
+	if prop_input != null and prop_input.states.has("computer.power"):
+		prop_input.states["computer.power"] = 1.0 if desk.powered else 0.0
+		prop_input._refresh_button("computer.power")
 
 func image_uv(screen_position: Vector2) -> Vector2:
 	var uv: Vector2 = (screen_position - image.global_position) / image.size

@@ -21,9 +21,9 @@
   },
   "counts": {
     "findings": 0,
-    "nodes": 361,
+    "nodes": 536,
     "off_screen": 0,
-    "on_screen": 360,
+    "on_screen": 535,
     "screen_space": 0
   },
   "dimension": "3d",
@@ -67,8 +67,8 @@
         0
       ],
       "screen_pos": [
-        680.05,
-        447.78
+        340.03,
+        223.89
       ]
     },
     {
@@ -93,8 +93,8 @@
         2.4
       ],
       "screen_pos": [
-        456.76,
-        192.54
+        228.38,
+        96.27
       ]
     },
     {
@@ -119,8 +119,8 @@
         -1.8
       ],
       "screen_pos": [
-        831.83,
-        220.92
+        415.92,
+        110.46
       ]
     },
     {
@@ -145,8 +145,8 @@
         1.25
       ],
       "screen_pos": [
-        684.49,
-        353.11
+        342.24,
+        176.56
       ]
     },
     {
@@ -171,8 +171,8 @@
         1.5
       ],
       "screen_pos": [
-        471.67,
-        532.96
+        235.83,
+        266.48
       ]
     },
     {
@@ -197,8 +197,8 @@
         1.5
       ],
       "screen_pos": [
-        896.16,
-        532.96
+        448.08,
+        266.48
       ]
     },
     {
@@ -223,34 +223,86 @@
         0
       ],
       "screen_pos": [
-        679.29,
-        555.75
+        339.65,
+        277.87
       ]
     },
     {
       "aabb": [
-        -1.83,
-        1.84,
-        0.78,
-        4.15,
-        1.75,
-        0
+        -1.85,
+        1.54,
+        0.51,
+        4.16,
+        2.05,
+        0.29
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.07,
+      "distance_to_camera": 14.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Computer/Screen",
       "position": [
-        0.22,
-        2.73,
-        0.78
+        0.23,
+        2.56,
+        0.64
       ],
       "screen_pos": [
-        701.31,
-        270.84
+        349.92,
+        140.54
+      ]
+    },
+    {
+      "aabb": [
+        -1.85,
+        1.54,
+        0.51,
+        4.16,
+        2.05,
+        0.29
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.21,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Screen/DisplaySurface",
+      "position": [
+        0.23,
+        2.56,
+        0.64
+      ],
+      "screen_pos": [
+        349.92,
+        140.54
+      ]
+    },
+    {
+      "aabb": [
+        -1.85,
+        1.54,
+        0.51,
+        4.16,
+        2.05,
+        0.29
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.21,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Screen/DisplaySurface/GlassShape",
+      "position": [
+        0.23,
+        2.56,
+        0.64
+      ],
+      "screen_pos": [
+        349.92,
+        140.54
       ]
     },
     {
@@ -275,8 +327,8 @@
         0.79
       ],
       "screen_pos": [
-        725.53,
-        361.21
+        362.76,
+        180.6
       ]
     },
     {
@@ -301,8 +353,8 @@
         0.79
       ],
       "screen_pos": [
-        725.53,
-        361.21
+        362.76,
+        180.6
       ]
     },
     {
@@ -327,17 +379,17 @@
         0.79
       ],
       "screen_pos": [
-        725.53,
-        361.21
+        362.76,
+        180.6
       ]
     },
     {
       "aabb": [
-        0.9,
-        1.37,
+        0.87,
+        1.33,
         0.74,
-        0.18,
-        0.18,
+        0.25,
+        0.25,
         0.1
       ],
       "behind_camera": false,
@@ -353,43 +405,43 @@
         0.79
       ],
       "screen_pos": [
-        754.17,
-        361.21
+        377.09,
+        180.6
       ]
     },
     {
       "aabb": [
         0.99,
-        1.46,
+        1.45,
         0.84,
-        0.02,
         0.06,
+        0.05,
         0.01
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.22,
+      "distance_to_camera": 14.23,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Computer/TuningKnob/DialMark",
       "position": [
-        0.99,
-        1.49,
+        1.02,
+        1.48,
         0.85
       ],
       "screen_pos": [
-        754.69,
-        359.46
+        378.35,
+        180.24
       ]
     },
     {
       "aabb": [
-        0.86,
-        1.33,
+        0.81,
+        1.28,
         0.68,
-        0.26,
-        0.26,
+        0.36,
+        0.36,
         0.22
       ],
       "behind_camera": false,
@@ -405,17 +457,17 @@
         0.79
       ],
       "screen_pos": [
-        754.17,
-        361.21
+        377.09,
+        180.6
       ]
     },
     {
       "aabb": [
-        0.86,
-        1.33,
+        0.81,
+        1.28,
         0.68,
-        0.26,
-        0.26,
+        0.36,
+        0.36,
         0.22
       ],
       "behind_camera": false,
@@ -431,8 +483,60 @@
         0.79
       ],
       "screen_pos": [
-        754.17,
-        361.21
+        377.09,
+        180.6
+      ]
+    },
+    {
+      "aabb": [
+        0.83,
+        1.29,
+        0.69,
+        0.34,
+        0.34,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.28,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/ControlHit",
+      "position": [
+        0.99,
+        1.46,
+        0.79
+      ],
+      "screen_pos": [
+        377.09,
+        180.6
+      ]
+    },
+    {
+      "aabb": [
+        0.83,
+        1.29,
+        0.69,
+        0.34,
+        0.34,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.28,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/ControlHit/@CollisionShape3D@117",
+      "position": [
+        0.99,
+        1.46,
+        0.79
+      ],
+      "screen_pos": [
+        377.09,
+        180.6
       ]
     },
     {
@@ -457,8 +561,8 @@
         1.79
       ],
       "screen_pos": [
-        685.61,
-        443.91
+        342.8,
+        221.95
       ]
     },
     {
@@ -483,8 +587,8 @@
         1.79
       ],
       "screen_pos": [
-        685.61,
-        443.91
+        342.8,
+        221.95
       ]
     },
     {
@@ -509,8 +613,8 @@
         2.15
       ],
       "screen_pos": [
-        704.25,
-        449.73
+        352.12,
+        224.86
       ]
     },
     {
@@ -535,8 +639,86 @@
         2.67
       ],
       "screen_pos": [
-        688.51,
-        464.58
+        344.25,
+        232.29
+      ]
+    },
+    {
+      "aabb": [
+        -0.79,
+        0.44,
+        2.57,
+        1.57,
+        0.12,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.59,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/SpaceBar/ControlHit",
+      "position": [
+        0,
+        0.5,
+        2.67
+      ],
+      "screen_pos": [
+        344.25,
+        232.29
+      ]
+    },
+    {
+      "aabb": [
+        -0.79,
+        0.44,
+        2.57,
+        1.57,
+        0.12,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.59,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/SpaceBar/ControlHit/@CollisionShape3D@68",
+      "position": [
+        0,
+        0.5,
+        2.67
+      ],
+      "screen_pos": [
+        344.25,
+        232.29
+      ]
+    },
+    {
+      "aabb": [
+        -0.06,
+        0.53,
+        2.66,
+        0.12,
+        0.01,
+        0.04
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.58,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/SpaceBar/KeyLegend",
+      "position": [
+        0,
+        0.53,
+        2.68
+      ],
+      "screen_pos": [
+        344.28,
+        231.12
       ]
     },
     {
@@ -561,8 +743,86 @@
         1.81
       ],
       "screen_pos": [
-        570.82,
-        435.32
+        285.41,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_0/ControlHit",
+      "position": [
+        -1.51,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        285.41,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_0/ControlHit/@CollisionShape3D@69",
+      "position": [
+        -1.51,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        285.41,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.52,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_0/KeyLegend",
+      "position": [
+        -1.51,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        285.38,
+        216.34
       ]
     },
     {
@@ -587,8 +847,86 @@
         1.81
       ],
       "screen_pos": [
-        594.68,
-        435.32
+        297.34,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_1/ControlHit",
+      "position": [
+        -1.19,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        297.34,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_1/ControlHit/@CollisionShape3D@70",
+      "position": [
+        -1.19,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        297.34,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.21,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_1/KeyLegend",
+      "position": [
+        -1.19,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        297.32,
+        216.34
       ]
     },
     {
@@ -613,8 +951,86 @@
         1.81
       ],
       "screen_pos": [
-        618.53,
-        435.32
+        309.27,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_2/ControlHit",
+      "position": [
+        -0.88,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        309.27,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_2/ControlHit/@CollisionShape3D@71",
+      "position": [
+        -0.88,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        309.27,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.9,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.36,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_2/KeyLegend",
+      "position": [
+        -0.88,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        309.26,
+        216.34
       ]
     },
     {
@@ -639,8 +1055,86 @@
         1.81
       ],
       "screen_pos": [
-        642.39,
-        435.32
+        321.2,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_3/ControlHit",
+      "position": [
+        -0.57,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        321.2,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_3/ControlHit/@CollisionShape3D@72",
+      "position": [
+        -0.57,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        321.2,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.59,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.35,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_3/KeyLegend",
+      "position": [
+        -0.57,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        321.2,
+        216.34
       ]
     },
     {
@@ -665,8 +1159,86 @@
         1.81
       ],
       "screen_pos": [
-        666.25,
-        435.32
+        333.12,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_4/ControlHit",
+      "position": [
+        -0.26,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        333.12,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_4/ControlHit/@CollisionShape3D@73",
+      "position": [
+        -0.26,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        333.12,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.27,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.36,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_4/KeyLegend",
+      "position": [
+        -0.26,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        333.14,
+        216.34
       ]
     },
     {
@@ -691,8 +1263,86 @@
         1.81
       ],
       "screen_pos": [
-        690.11,
-        435.32
+        345.05,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_5/ControlHit",
+      "position": [
+        0.06,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        345.05,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_5/ControlHit/@CollisionShape3D@74",
+      "position": [
+        0.06,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        345.05,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.04,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_5/KeyLegend",
+      "position": [
+        0.06,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        345.08,
+        216.34
       ]
     },
     {
@@ -717,8 +1367,86 @@
         1.81
       ],
       "screen_pos": [
-        713.96,
-        435.32
+        356.98,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_6/ControlHit",
+      "position": [
+        0.37,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        356.98,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_6/ControlHit/@CollisionShape3D@75",
+      "position": [
+        0.37,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        356.98,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.35,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.39,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_6/KeyLegend",
+      "position": [
+        0.37,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        357.02,
+        216.34
       ]
     },
     {
@@ -743,8 +1471,86 @@
         1.81
       ],
       "screen_pos": [
-        737.82,
-        435.32
+        368.91,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.43,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_7/ControlHit",
+      "position": [
+        0.68,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        368.91,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.43,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_7/ControlHit/@CollisionShape3D@76",
+      "position": [
+        0.68,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        368.91,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.67,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.41,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_7/KeyLegend",
+      "position": [
+        0.68,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        368.96,
+        216.34
       ]
     },
     {
@@ -769,8 +1575,86 @@
         1.81
       ],
       "screen_pos": [
-        761.68,
-        435.32
+        380.84,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.46,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_8/ControlHit",
+      "position": [
+        1,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        380.84,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.46,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_8/ControlHit/@CollisionShape3D@77",
+      "position": [
+        1,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        380.84,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        0.98,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.45,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_8/KeyLegend",
+      "position": [
+        1,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        380.9,
+        216.34
       ]
     },
     {
@@ -795,8 +1679,86 @@
         1.81
       ],
       "screen_pos": [
-        785.53,
-        435.32
+        392.77,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.5,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_9/ControlHit",
+      "position": [
+        1.31,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        392.77,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.5,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_9/ControlHit/@CollisionShape3D@78",
+      "position": [
+        1.31,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        392.77,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.29,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.49,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_9/KeyLegend",
+      "position": [
+        1.31,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        392.84,
+        216.34
       ]
     },
     {
@@ -821,8 +1783,86 @@
         1.81
       ],
       "screen_pos": [
-        809.39,
-        435.32
+        404.7,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.55,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_10/ControlHit",
+      "position": [
+        1.62,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        404.7,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.55,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_10/ControlHit/@CollisionShape3D@79",
+      "position": [
+        1.62,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        404.7,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.6,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.54,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_10/KeyLegend",
+      "position": [
+        1.62,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        404.78,
+        216.34
       ]
     },
     {
@@ -847,8 +1887,86 @@
         1.81
       ],
       "screen_pos": [
-        833.25,
-        435.32
+        416.62,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.61,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_11/ControlHit",
+      "position": [
+        1.93,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        416.62,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.59,
+        1.71,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.61,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_11/ControlHit/@CollisionShape3D@80",
+      "position": [
+        1.93,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        416.62,
+        217.66
+      ]
+    },
+    {
+      "aabb": [
+        1.92,
+        0.68,
+        1.79,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.59,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_11/KeyLegend",
+      "position": [
+        1.93,
+        0.69,
+        1.82
+      ],
+      "screen_pos": [
+        416.72,
+        216.34
       ]
     },
     {
@@ -873,8 +1991,86 @@
         2.03
       ],
       "screen_pos": [
-        569.72,
-        442.4
+        284.86,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_0/ControlHit",
+      "position": [
+        -1.51,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        284.86,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_0/ControlHit/@CollisionShape3D@81",
+      "position": [
+        -1.51,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        284.86,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.52,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_0/KeyLegend",
+      "position": [
+        -1.51,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        284.83,
+        219.86
       ]
     },
     {
@@ -899,8 +2095,86 @@
         2.03
       ],
       "screen_pos": [
-        593.96,
-        442.4
+        296.98,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_1/ControlHit",
+      "position": [
+        -1.19,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        296.98,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_1/ControlHit/@CollisionShape3D@82",
+      "position": [
+        -1.19,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        296.98,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.21,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.16,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_1/KeyLegend",
+      "position": [
+        -1.19,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        296.96,
+        219.86
       ]
     },
     {
@@ -925,8 +2199,86 @@
         2.03
       ],
       "screen_pos": [
-        618.19,
-        442.4
+        309.1,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_2/ControlHit",
+      "position": [
+        -0.88,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        309.1,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_2/ControlHit/@CollisionShape3D@83",
+      "position": [
+        -0.88,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        309.1,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.9,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_2/KeyLegend",
+      "position": [
+        -0.88,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        309.09,
+        219.86
       ]
     },
     {
@@ -951,8 +2303,86 @@
         2.03
       ],
       "screen_pos": [
-        642.43,
-        442.4
+        321.21,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_3/ControlHit",
+      "position": [
+        -0.57,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        321.21,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_3/ControlHit/@CollisionShape3D@84",
+      "position": [
+        -0.57,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        321.21,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.59,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_3/KeyLegend",
+      "position": [
+        -0.57,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        321.22,
+        219.86
       ]
     },
     {
@@ -977,8 +2407,86 @@
         2.03
       ],
       "screen_pos": [
-        666.67,
-        442.4
+        333.33,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_4/ControlHit",
+      "position": [
+        -0.26,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        333.33,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_4/ControlHit/@CollisionShape3D@85",
+      "position": [
+        -0.26,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        333.33,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.27,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_4/KeyLegend",
+      "position": [
+        -0.26,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        333.35,
+        219.86
       ]
     },
     {
@@ -1003,8 +2511,86 @@
         2.03
       ],
       "screen_pos": [
-        690.9,
-        442.4
+        345.45,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_5/ControlHit",
+      "position": [
+        0.06,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        345.45,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_5/ControlHit/@CollisionShape3D@86",
+      "position": [
+        0.06,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        345.45,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.04,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_5/KeyLegend",
+      "position": [
+        0.06,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        345.48,
+        219.86
       ]
     },
     {
@@ -1029,8 +2615,86 @@
         2.03
       ],
       "screen_pos": [
-        715.14,
-        442.4
+        357.57,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_6/ControlHit",
+      "position": [
+        0.37,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        357.57,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_6/ControlHit/@CollisionShape3D@87",
+      "position": [
+        0.37,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        357.57,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.35,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.19,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_6/KeyLegend",
+      "position": [
+        0.37,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        357.61,
+        219.86
       ]
     },
     {
@@ -1055,8 +2719,86 @@
         2.03
       ],
       "screen_pos": [
-        739.38,
-        442.4
+        369.69,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.23,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_7/ControlHit",
+      "position": [
+        0.68,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        369.69,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.23,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_7/ControlHit/@CollisionShape3D@88",
+      "position": [
+        0.68,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        369.69,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.67,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.21,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_7/KeyLegend",
+      "position": [
+        0.68,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        369.74,
+        219.86
       ]
     },
     {
@@ -1081,8 +2823,86 @@
         2.03
       ],
       "screen_pos": [
-        763.61,
-        442.4
+        381.81,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.26,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_8/ControlHit",
+      "position": [
+        1,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        381.81,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.26,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_8/ControlHit/@CollisionShape3D@89",
+      "position": [
+        1,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        381.81,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        0.98,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.25,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_8/KeyLegend",
+      "position": [
+        1,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        381.87,
+        219.86
       ]
     },
     {
@@ -1107,8 +2927,86 @@
         2.03
       ],
       "screen_pos": [
-        787.85,
-        442.4
+        393.92,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.3,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_9/ControlHit",
+      "position": [
+        1.31,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        393.92,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.3,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_9/ControlHit/@CollisionShape3D@90",
+      "position": [
+        1.31,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        393.92,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.29,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.29,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_9/KeyLegend",
+      "position": [
+        1.31,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        394,
+        219.86
       ]
     },
     {
@@ -1133,8 +3031,86 @@
         2.03
       ],
       "screen_pos": [
-        812.08,
-        442.4
+        406.04,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.35,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_10/ControlHit",
+      "position": [
+        1.62,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        406.04,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.35,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_10/ControlHit/@CollisionShape3D@91",
+      "position": [
+        1.62,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        406.04,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.6,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.34,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_10/KeyLegend",
+      "position": [
+        1.62,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        406.13,
+        219.86
       ]
     },
     {
@@ -1159,8 +3135,86 @@
         2.03
       ],
       "screen_pos": [
-        836.32,
-        442.4
+        418.16,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.41,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_11/ControlHit",
+      "position": [
+        1.93,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        418.16,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.55,
+        1.93,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.41,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_11/ControlHit/@CollisionShape3D@92",
+      "position": [
+        1.93,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        418.16,
+        221.2
+      ]
+    },
+    {
+      "aabb": [
+        1.92,
+        0.65,
+        2.01,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.39,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_11/KeyLegend",
+      "position": [
+        1.93,
+        0.65,
+        2.04
+      ],
+      "screen_pos": [
+        418.26,
+        219.86
       ]
     },
     {
@@ -1185,8 +3239,86 @@
         2.25
       ],
       "screen_pos": [
-        568.59,
-        449.71
+        284.29,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_0/ControlHit",
+      "position": [
+        -1.51,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        284.29,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_0/ControlHit/@CollisionShape3D@93",
+      "position": [
+        -1.51,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        284.29,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.52,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_0/KeyLegend",
+      "position": [
+        -1.51,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        284.26,
+        223.49
       ]
     },
     {
@@ -1211,8 +3343,86 @@
         2.25
       ],
       "screen_pos": [
-        593.21,
-        449.71
+        296.61,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_1/ControlHit",
+      "position": [
+        -1.19,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        296.61,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_1/ControlHit/@CollisionShape3D@94",
+      "position": [
+        -1.19,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        296.61,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.21,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_1/KeyLegend",
+      "position": [
+        -1.19,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        296.58,
+        223.49
       ]
     },
     {
@@ -1237,8 +3447,86 @@
         2.25
       ],
       "screen_pos": [
-        617.84,
-        449.71
+        308.92,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_2/ControlHit",
+      "position": [
+        -0.88,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        308.92,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_2/ControlHit/@CollisionShape3D@95",
+      "position": [
+        -0.88,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        308.92,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.9,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.95,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_2/KeyLegend",
+      "position": [
+        -0.88,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        308.91,
+        223.49
       ]
     },
     {
@@ -1263,8 +3551,86 @@
         2.25
       ],
       "screen_pos": [
-        642.47,
-        449.71
+        321.23,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_3/ControlHit",
+      "position": [
+        -0.57,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        321.23,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_3/ControlHit/@CollisionShape3D@96",
+      "position": [
+        -0.57,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        321.23,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.59,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.95,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_3/KeyLegend",
+      "position": [
+        -0.57,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        321.24,
+        223.49
       ]
     },
     {
@@ -1289,8 +3655,86 @@
         2.25
       ],
       "screen_pos": [
-        667.1,
-        449.71
+        333.55,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_4/ControlHit",
+      "position": [
+        -0.26,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        333.55,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_4/ControlHit/@CollisionShape3D@97",
+      "position": [
+        -0.26,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        333.55,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.27,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.95,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_4/KeyLegend",
+      "position": [
+        -0.26,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        333.56,
+        223.49
       ]
     },
     {
@@ -1315,8 +3759,86 @@
         2.25
       ],
       "screen_pos": [
-        691.72,
-        449.71
+        345.86,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_5/ControlHit",
+      "position": [
+        0.06,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        345.86,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_5/ControlHit/@CollisionShape3D@98",
+      "position": [
+        0.06,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        345.86,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.04,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_5/KeyLegend",
+      "position": [
+        0.06,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        345.89,
+        223.49
       ]
     },
     {
@@ -1341,8 +3863,86 @@
         2.25
       ],
       "screen_pos": [
-        716.35,
-        449.71
+        358.18,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_6/ControlHit",
+      "position": [
+        0.37,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        358.18,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_6/ControlHit/@CollisionShape3D@99",
+      "position": [
+        0.37,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        358.18,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.35,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_6/KeyLegend",
+      "position": [
+        0.37,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        358.21,
+        223.49
       ]
     },
     {
@@ -1367,8 +3967,86 @@
         2.25
       ],
       "screen_pos": [
-        740.98,
-        449.71
+        370.49,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.03,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_7/ControlHit",
+      "position": [
+        0.68,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        370.49,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.03,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_7/ControlHit/@CollisionShape3D@100",
+      "position": [
+        0.68,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        370.49,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.67,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.01,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_7/KeyLegend",
+      "position": [
+        0.68,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        370.54,
+        223.49
       ]
     },
     {
@@ -1393,8 +4071,86 @@
         2.25
       ],
       "screen_pos": [
-        765.61,
-        449.71
+        382.8,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_8/ControlHit",
+      "position": [
+        1,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        382.8,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_8/ControlHit/@CollisionShape3D@101",
+      "position": [
+        1,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        382.8,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        0.98,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.05,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_8/KeyLegend",
+      "position": [
+        1,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        382.87,
+        223.49
       ]
     },
     {
@@ -1419,8 +4175,86 @@
         2.25
       ],
       "screen_pos": [
-        790.24,
-        449.71
+        395.12,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.1,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_9/ControlHit",
+      "position": [
+        1.31,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        395.12,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.1,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_9/ControlHit/@CollisionShape3D@102",
+      "position": [
+        1.31,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        395.12,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.29,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.09,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_9/KeyLegend",
+      "position": [
+        1.31,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        395.19,
+        223.49
       ]
     },
     {
@@ -1445,8 +4279,86 @@
         2.25
       ],
       "screen_pos": [
-        814.86,
-        449.71
+        407.43,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_10/ControlHit",
+      "position": [
+        1.62,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        407.43,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_10/ControlHit/@CollisionShape3D@103",
+      "position": [
+        1.62,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        407.43,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.6,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.14,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_10/KeyLegend",
+      "position": [
+        1.62,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        407.52,
+        223.49
       ]
     },
     {
@@ -1471,8 +4383,86 @@
         2.25
       ],
       "screen_pos": [
-        839.49,
-        449.71
+        419.75,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.21,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_11/ControlHit",
+      "position": [
+        1.93,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        419.75,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.51,
+        2.15,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.21,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_11/ControlHit/@CollisionShape3D@104",
+      "position": [
+        1.93,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        419.75,
+        224.85
+      ]
+    },
+    {
+      "aabb": [
+        1.92,
+        0.61,
+        2.23,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13.19,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_11/KeyLegend",
+      "position": [
+        1.93,
+        0.61,
+        2.26
+      ],
+      "screen_pos": [
+        419.85,
+        223.49
       ]
     },
     {
@@ -1497,8 +4487,86 @@
         2.47
       ],
       "screen_pos": [
-        567.41,
-        457.25
+        283.71,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_0/ControlHit",
+      "position": [
+        -1.51,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        283.71,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.65,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_0/ControlHit/@CollisionShape3D@105",
+      "position": [
+        -1.51,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        283.71,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.52,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_0/KeyLegend",
+      "position": [
+        -1.51,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        283.67,
+        227.25
       ]
     },
     {
@@ -1523,8 +4591,86 @@
         2.47
       ],
       "screen_pos": [
-        592.45,
-        457.25
+        296.22,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_1/ControlHit",
+      "position": [
+        -1.19,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        296.22,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.33,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_1/ControlHit/@CollisionShape3D@106",
+      "position": [
+        -1.19,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        296.22,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.21,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.76,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_1/KeyLegend",
+      "position": [
+        -1.19,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        296.2,
+        227.25
       ]
     },
     {
@@ -1549,8 +4695,86 @@
         2.47
       ],
       "screen_pos": [
-        617.48,
-        457.25
+        308.74,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_2/ControlHit",
+      "position": [
+        -0.88,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        308.74,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -1.02,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_2/ControlHit/@CollisionShape3D@107",
+      "position": [
+        -0.88,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        308.74,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.9,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.75,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_2/KeyLegend",
+      "position": [
+        -0.88,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        308.73,
+        227.25
       ]
     },
     {
@@ -1575,8 +4799,86 @@
         2.47
       ],
       "screen_pos": [
-        642.51,
-        457.25
+        321.25,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.76,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_3/ControlHit",
+      "position": [
+        -0.57,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        321.25,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.71,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.76,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_3/ControlHit/@CollisionShape3D@108",
+      "position": [
+        -0.57,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        321.25,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.59,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.75,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_3/KeyLegend",
+      "position": [
+        -0.57,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        321.26,
+        227.25
       ]
     },
     {
@@ -1601,8 +4903,86 @@
         2.47
       ],
       "screen_pos": [
-        667.54,
-        457.25
+        333.77,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_4/ControlHit",
+      "position": [
+        -0.26,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        333.77,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.39,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_4/ControlHit/@CollisionShape3D@109",
+      "position": [
+        -0.26,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        333.77,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.27,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.75,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_4/KeyLegend",
+      "position": [
+        -0.26,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        333.78,
+        227.25
       ]
     },
     {
@@ -1627,8 +5007,86 @@
         2.47
       ],
       "screen_pos": [
-        692.57,
-        457.25
+        346.29,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_5/ControlHit",
+      "position": [
+        0.06,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        346.29,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        -0.08,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_5/ControlHit/@CollisionShape3D@110",
+      "position": [
+        0.06,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        346.29,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.04,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.76,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_5/KeyLegend",
+      "position": [
+        0.06,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        346.31,
+        227.25
       ]
     },
     {
@@ -1653,8 +5111,86 @@
         2.47
       ],
       "screen_pos": [
-        717.61,
-        457.25
+        358.8,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_6/ControlHit",
+      "position": [
+        0.37,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        358.8,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.23,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_6/ControlHit/@CollisionShape3D@111",
+      "position": [
+        0.37,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        358.8,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.35,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_6/KeyLegend",
+      "position": [
+        0.37,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        358.84,
+        227.25
       ]
     },
     {
@@ -1679,8 +5215,86 @@
         2.47
       ],
       "screen_pos": [
-        742.64,
-        457.25
+        371.32,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.83,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_7/ControlHit",
+      "position": [
+        0.68,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        371.32,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.54,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.83,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_7/ControlHit/@CollisionShape3D@112",
+      "position": [
+        0.68,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        371.32,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.67,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.81,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_7/KeyLegend",
+      "position": [
+        0.68,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        371.37,
+        227.25
       ]
     },
     {
@@ -1705,8 +5319,86 @@
         2.47
       ],
       "screen_pos": [
-        767.67,
-        457.25
+        383.83,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.86,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_8/ControlHit",
+      "position": [
+        1,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        383.83,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.86,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.86,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_8/ControlHit/@CollisionShape3D@113",
+      "position": [
+        1,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        383.83,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        0.98,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.85,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_8/KeyLegend",
+      "position": [
+        1,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        383.9,
+        227.25
       ]
     },
     {
@@ -1731,8 +5423,86 @@
         2.47
       ],
       "screen_pos": [
-        792.7,
-        457.25
+        396.35,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.91,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_9/ControlHit",
+      "position": [
+        1.31,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        396.35,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.17,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.91,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_9/ControlHit/@CollisionShape3D@114",
+      "position": [
+        1.31,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        396.35,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.29,
+        0.57,
+        2.45,
+        0.03,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.89,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_9/KeyLegend",
+      "position": [
+        1.31,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        396.43,
+        227.25
       ]
     },
     {
@@ -1757,8 +5527,86 @@
         2.47
       ],
       "screen_pos": [
-        817.73,
-        457.25
+        408.87,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_10/ControlHit",
+      "position": [
+        1.62,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        408.87,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.48,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_10/ControlHit/@CollisionShape3D@115",
+      "position": [
+        1.62,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        408.87,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.59,
+        0.57,
+        2.45,
+        0.07,
+        0.01,
+        0.06
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 12.94,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_10/KeyLegend",
+      "position": [
+        1.62,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        408.96,
+        227.25
       ]
     },
     {
@@ -1783,8 +5631,86 @@
         2.47
       ],
       "screen_pos": [
-        842.77,
-        457.25
+        421.38,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.01,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_11/ControlHit",
+      "position": [
+        1.93,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        421.38,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.8,
+        0.47,
+        2.37,
+        0.28,
+        0.13,
+        0.2
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.01,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_11/ControlHit/@CollisionShape3D@116",
+      "position": [
+        1.93,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        421.38,
+        228.63
+      ]
+    },
+    {
+      "aabb": [
+        1.9,
+        0.57,
+        2.45,
+        0.07,
+        0.01,
+        0.04
+      ],
+      "behind_camera": false,
+      "class": "Label3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_11/KeyLegend",
+      "position": [
+        1.93,
+        0.57,
+        2.47
+      ],
+      "screen_pos": [
+        421.49,
+        227.25
       ]
     },
     {
@@ -1809,8 +5735,8 @@
         2.22
       ],
       "screen_pos": [
-        704.54,
-        455.34
+        352.27,
+        227.67
       ]
     },
     {
@@ -1835,8 +5761,8 @@
         2.23
       ],
       "screen_pos": [
-        704.6,
-        452.81
+        352.3,
+        226.4
       ]
     },
     {
@@ -1854,15 +5780,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/Keyboard/FocusHitbox/@CollisionShape3D@61",
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/FocusHitbox/@CollisionShape3D@67",
       "position": [
         0.22,
         0.53,
         2.23
       ],
       "screen_pos": [
-        704.6,
-        452.81
+        352.3,
+        226.4
       ]
     },
     {
@@ -1885,54 +5811,54 @@
     },
     {
       "aabb": [
-        0.22,
-        2.73,
-        5.18,
+        0.23,
+        2.56,
+        5.91,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 9.7,
+      "distance_to_camera": 9,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/Front/CameraPosition",
       "position": [
-        0.22,
-        2.73,
-        5.18
+        0.23,
+        2.56,
+        5.91
       ],
       "screen_pos": [
-        726.61,
-        309.68
+        367.32,
+        169.54
       ]
     },
     {
       "aabb": [
-        0.22,
-        2.73,
-        0.78,
+        0.23,
+        2.56,
+        0.64,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 14.07,
+      "distance_to_camera": 14.22,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/Front/LookAt",
       "position": [
-        0.22,
-        2.73,
-        0.78
+        0.23,
+        2.56,
+        0.64
       ],
       "screen_pos": [
-        699.78,
-        269.74
+        349.95,
+        140.48
       ]
     },
     {
@@ -1957,8 +5883,8 @@
         3.34
       ],
       "screen_pos": [
-        90.51,
-        237.67
+        45.25,
+        118.84
       ]
     },
     {
@@ -1983,8 +5909,8 @@
         0.2
       ],
       "screen_pos": [
-        681.21,
-        363.42
+        340.6,
+        181.71
       ]
     },
     {
@@ -2009,8 +5935,8 @@
         -7.06
       ],
       "screen_pos": [
-        775.12,
-        191.29
+        387.56,
+        95.64
       ]
     },
     {
@@ -2035,60 +5961,60 @@
         -0.1
       ],
       "screen_pos": [
-        680.41,
-        358.52
+        340.2,
+        179.26
       ]
     },
     {
       "aabb": [
-        0.22,
-        2.73,
-        3.58,
+        0.23,
+        2.56,
+        4.85,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 11.29,
+      "distance_to_camera": 10.05,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/ScreenClose/CameraPosition",
       "position": [
-        0.22,
-        2.73,
-        3.58
+        0.23,
+        2.56,
+        4.85
       ],
       "screen_pos": [
-        714.45,
-        291.59
+        362.37,
+        161.25
       ]
     },
     {
       "aabb": [
-        0.22,
-        2.73,
-        0.78,
+        0.23,
+        2.56,
+        0.64,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 14.07,
+      "distance_to_camera": 14.22,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/ScreenClose/LookAt",
       "position": [
-        0.22,
-        2.73,
-        0.78
+        0.23,
+        2.56,
+        0.64
       ],
       "screen_pos": [
-        699.78,
-        269.74
+        349.95,
+        140.48
       ]
     },
     {
@@ -2113,8 +6039,8 @@
         -3
       ],
       "screen_pos": [
-        674.74,
-        200.7
+        337.37,
+        100.35
       ]
     },
     {
@@ -2139,8 +6065,8 @@
         0
       ],
       "screen_pos": [
-        283.23,
-        218.1
+        141.61,
+        109.05
       ]
     },
     {
@@ -2165,8 +6091,8 @@
         0
       ],
       "screen_pos": [
-        289.18,
-        217.73
+        144.59,
+        108.87
       ]
     },
     {
@@ -2191,8 +6117,8 @@
         0
       ],
       "screen_pos": [
-        428.78,
-        218.1
+        214.39,
+        109.05
       ]
     },
     {
@@ -2217,8 +6143,8 @@
         0
       ],
       "screen_pos": [
-        434.83,
-        217.73
+        217.41,
+        108.87
       ]
     },
     {
@@ -2243,8 +6169,8 @@
         0
       ],
       "screen_pos": [
-        574.33,
-        218.1
+        287.17,
+        109.05
       ]
     },
     {
@@ -2269,8 +6195,8 @@
         0
       ],
       "screen_pos": [
-        580.47,
-        217.73
+        290.24,
+        108.87
       ]
     },
     {
@@ -2295,8 +6221,8 @@
         0
       ],
       "screen_pos": [
-        719.89,
-        218.1
+        359.94,
+        109.05
       ]
     },
     {
@@ -2321,8 +6247,8 @@
         0
       ],
       "screen_pos": [
-        726.12,
-        217.73
+        363.06,
+        108.87
       ]
     },
     {
@@ -2347,8 +6273,8 @@
         0
       ],
       "screen_pos": [
-        865.44,
-        218.1
+        432.72,
+        109.05
       ]
     },
     {
@@ -2373,8 +6299,8 @@
         0
       ],
       "screen_pos": [
-        871.76,
-        217.73
+        435.88,
+        108.87
       ]
     },
     {
@@ -2399,8 +6325,8 @@
         0
       ],
       "screen_pos": [
-        1011,
-        218.1
+        505.5,
+        109.05
       ]
     },
     {
@@ -2425,8 +6351,8 @@
         0
       ],
       "screen_pos": [
-        1017.41,
-        217.73
+        508.7,
+        108.87
       ]
     },
     {
@@ -2451,8 +6377,8 @@
         0
       ],
       "screen_pos": [
-        1156.55,
-        218.1
+        578.27,
+        109.05
       ]
     },
     {
@@ -2477,8 +6403,8 @@
         0
       ],
       "screen_pos": [
-        1163.05,
-        217.73
+        581.53,
+        108.87
       ]
     },
     {
@@ -2503,8 +6429,8 @@
         0
       ],
       "screen_pos": [
-        1302.1,
-        218.1
+        651.05,
+        109.05
       ]
     },
     {
@@ -2529,8 +6455,8 @@
         0
       ],
       "screen_pos": [
-        1308.7,
-        217.73
+        654.35,
+        108.87
       ]
     },
     {
@@ -2555,8 +6481,8 @@
         0
       ],
       "screen_pos": [
-        1001.58,
-        204
+        500.79,
+        102
       ]
     },
     {
@@ -2581,8 +6507,8 @@
         0
       ],
       "screen_pos": [
-        1002.41,
-        204.05
+        501.2,
+        102.02
       ]
     },
     {
@@ -2607,8 +6533,8 @@
         0
       ],
       "screen_pos": [
-        1003.24,
-        204.1
+        501.62,
+        102.05
       ]
     },
     {
@@ -2633,8 +6559,8 @@
         0
       ],
       "screen_pos": [
-        1004.07,
-        204.16
+        502.04,
+        102.08
       ]
     },
     {
@@ -2659,8 +6585,8 @@
         0
       ],
       "screen_pos": [
-        1004.91,
-        204.21
+        502.45,
+        102.1
       ]
     },
     {
@@ -2685,8 +6611,8 @@
         0
       ],
       "screen_pos": [
-        960.48,
-        271.83
+        480.24,
+        135.92
       ]
     },
     {
@@ -2711,8 +6637,8 @@
         -2.53
       ],
       "screen_pos": [
-        954.88,
-        192.99
+        477.44,
+        96.49
       ]
     },
     {
@@ -2737,8 +6663,8 @@
         -2.53
       ],
       "screen_pos": [
-        960.7,
-        192.8
+        480.35,
+        96.4
       ]
     },
     {
@@ -2763,8 +6689,8 @@
         -2.53
       ],
       "screen_pos": [
-        974.71,
-        107.46
+        487.36,
+        53.73
       ]
     },
     {
@@ -2789,8 +6715,8 @@
         -2.53
       ],
       "screen_pos": [
-        1075.33,
-        317.63
+        537.66,
+        158.82
       ]
     },
     {
@@ -2815,8 +6741,8 @@
         -2.53
       ],
       "screen_pos": [
-        1060.44,
-        171.68
+        530.22,
+        85.84
       ]
     },
     {
@@ -2841,8 +6767,8 @@
         -2.53
       ],
       "screen_pos": [
-        871.31,
-        241.39
+        435.65,
+        120.69
       ]
     },
     {
@@ -2867,8 +6793,8 @@
         -2.53
       ],
       "screen_pos": [
-        999.93,
-        164.16
+        499.97,
+        82.08
       ]
     },
     {
@@ -2893,8 +6819,8 @@
         -2.53
       ],
       "screen_pos": [
-        874.14,
-        198.03
+        437.07,
+        99.01
       ]
     },
     {
@@ -2919,8 +6845,8 @@
         -2.53
       ],
       "screen_pos": [
-        1002.73,
-        177.83
+        501.36,
+        88.91
       ]
     },
     {
@@ -2945,8 +6871,8 @@
         -2.53
       ],
       "screen_pos": [
-        884.32,
-        290.73
+        442.16,
+        145.37
       ]
     },
     {
@@ -2971,8 +6897,8 @@
         -2.53
       ],
       "screen_pos": [
-        1006.28,
-        170.55
+        503.14,
+        85.28
       ]
     },
     {
@@ -2997,8 +6923,8 @@
         -2.53
       ],
       "screen_pos": [
-        1078.53,
-        254.23
+        539.26,
+        127.11
       ]
     },
     {
@@ -3023,8 +6949,8 @@
         -2.53
       ],
       "screen_pos": [
-        1041.86,
-        139.41
+        520.93,
+        69.7
       ]
     },
     {
@@ -3049,8 +6975,8 @@
         -2.53
       ],
       "screen_pos": [
-        892.55,
-        286.48
+        446.28,
+        143.24
       ]
     },
     {
@@ -3075,8 +7001,8 @@
         -2.53
       ],
       "screen_pos": [
-        1017.35,
-        156.54
+        508.68,
+        78.27
       ]
     },
     {
@@ -3101,8 +7027,8 @@
         -2.53
       ],
       "screen_pos": [
-        965,
-        333.2
+        482.5,
+        166.6
       ]
     },
     {
@@ -3127,8 +7053,8 @@
         -2.53
       ],
       "screen_pos": [
-        1090.39,
-        123.14
+        545.2,
+        61.57
       ]
     },
     {
@@ -3153,8 +7079,8 @@
         -2.53
       ],
       "screen_pos": [
-        913.6,
-        167.88
+        456.8,
+        83.94
       ]
     },
     {
@@ -3179,8 +7105,8 @@
         -2.53
       ],
       "screen_pos": [
-        924.04,
-        177.4
+        462.02,
+        88.7
       ]
     },
     {
@@ -3205,8 +7131,8 @@
         -2.53
       ],
       "screen_pos": [
-        1100.14,
-        239.91
+        550.07,
+        119.95
       ]
     },
     {
@@ -3231,8 +7157,8 @@
         -2.53
       ],
       "screen_pos": [
-        1093.66,
-        161.58
+        546.83,
+        80.79
       ]
     },
     {
@@ -3257,8 +7183,8 @@
         -2.53
       ],
       "screen_pos": [
-        1080.71,
-        109.02
+        540.36,
+        54.51
       ]
     },
     {
@@ -3283,8 +7209,8 @@
         -2.53
       ],
       "screen_pos": [
-        979.71,
-        327.62
+        489.85,
+        163.81
       ]
     },
     {
@@ -3309,8 +7235,8 @@
         0
       ],
       "screen_pos": [
-        1118.8,
-        194.11
+        559.4,
+        97.06
       ]
     },
     {
@@ -3335,8 +7261,8 @@
         -2.53
       ],
       "screen_pos": [
-        1166.41,
-        155.53
+        583.21,
+        77.77
       ]
     },
     {
@@ -3361,8 +7287,8 @@
         -2.53
       ],
       "screen_pos": [
-        1128.54,
-        258.26
+        564.27,
+        129.13
       ]
     },
     {
@@ -3387,8 +7313,8 @@
         -2.53
       ],
       "screen_pos": [
-        993.05,
-        118.17
+        496.53,
+        59.08
       ]
     },
     {
@@ -3413,8 +7339,8 @@
         -2.53
       ],
       "screen_pos": [
-        972.25,
-        119.89
+        486.13,
+        59.95
       ]
     },
     {
@@ -3439,8 +7365,8 @@
         -2.53
       ],
       "screen_pos": [
-        1007.09,
-        215
+        503.55,
+        107.5
       ]
     },
     {
@@ -3465,8 +7391,8 @@
         -2.53
       ],
       "screen_pos": [
-        1002.4,
-        336.13
+        501.2,
+        168.07
       ]
     },
     {
@@ -3491,8 +7417,8 @@
         -2.53
       ],
       "screen_pos": [
-        1095.24,
-        155.59
+        547.62,
+        77.8
       ]
     },
     {
@@ -3517,8 +7443,8 @@
         -2.53
       ],
       "screen_pos": [
-        980.75,
-        300.72
+        490.38,
+        150.36
       ]
     },
     {
@@ -3543,8 +7469,8 @@
         -2.53
       ],
       "screen_pos": [
-        880.34,
-        280.85
+        440.17,
+        140.43
       ]
     },
     {
@@ -3569,8 +7495,8 @@
         -2.53
       ],
       "screen_pos": [
-        1014.78,
-        150.79
+        507.39,
+        75.39
       ]
     },
     {
@@ -3595,8 +7521,8 @@
         0
       ],
       "screen_pos": [
-        1079,
-        271.48
+        539.49,
+        135.74
       ]
     },
     {
@@ -3621,8 +7547,8 @@
         -2.53
       ],
       "screen_pos": [
-        876.23,
-        309.68
+        438.12,
+        154.84
       ]
     },
     {
@@ -3647,8 +7573,8 @@
         -2.53
       ],
       "screen_pos": [
-        1104.81,
-        163.29
+        552.4,
+        81.64
       ]
     },
     {
@@ -3673,8 +7599,8 @@
         -2.53
       ],
       "screen_pos": [
-        1009.85,
-        320.78
+        504.92,
+        160.39
       ]
     },
     {
@@ -3699,8 +7625,8 @@
         -2.53
       ],
       "screen_pos": [
-        985.3,
-        215.64
+        492.65,
+        107.82
       ]
     },
     {
@@ -3725,8 +7651,8 @@
         -2.53
       ],
       "screen_pos": [
-        868.65,
-        275.19
+        434.32,
+        137.59
       ]
     },
     {
@@ -3751,8 +7677,8 @@
         -2.53
       ],
       "screen_pos": [
-        874.36,
-        245.27
+        437.18,
+        122.63
       ]
     },
     {
@@ -3777,8 +7703,8 @@
         -2.53
       ],
       "screen_pos": [
-        909.18,
-        138.5
+        454.59,
+        69.25
       ]
     },
     {
@@ -3803,8 +7729,8 @@
         -2.53
       ],
       "screen_pos": [
-        1027.91,
-        320.74
+        513.96,
+        160.37
       ]
     },
     {
@@ -3829,8 +7755,8 @@
         -2.53
       ],
       "screen_pos": [
-        965.33,
-        175.22
+        482.67,
+        87.61
       ]
     },
     {
@@ -3855,8 +7781,8 @@
         -2.53
       ],
       "screen_pos": [
-        849.18,
-        242.03
+        424.59,
+        121.01
       ]
     },
     {
@@ -3881,8 +7807,8 @@
         -2.53
       ],
       "screen_pos": [
-        977.68,
-        246.12
+        488.84,
+        123.06
       ]
     },
     {
@@ -3907,8 +7833,8 @@
         -2.53
       ],
       "screen_pos": [
-        865.18,
-        229.34
+        432.59,
+        114.67
       ]
     },
     {
@@ -3933,8 +7859,8 @@
         0
       ],
       "screen_pos": [
-        1062,
-        87.05
+        531,
+        43.53
       ]
     },
     {
@@ -3959,8 +7885,8 @@
         -2.53
       ],
       "screen_pos": [
-        1044.71,
-        80.09
+        522.36,
+        40.04
       ]
     },
     {
@@ -3985,8 +7911,8 @@
         -2.53
       ],
       "screen_pos": [
-        1118.96,
-        76.07
+        559.48,
+        38.03
       ]
     },
     {
@@ -4011,8 +7937,8 @@
         -2.53
       ],
       "screen_pos": [
-        926.71,
-        210.32
+        463.35,
+        105.16
       ]
     },
     {
@@ -4037,8 +7963,8 @@
         -2.53
       ],
       "screen_pos": [
-        1040.91,
-        259.57
+        520.46,
+        129.78
       ]
     },
     {
@@ -4063,8 +7989,8 @@
         -2.53
       ],
       "screen_pos": [
-        938.31,
-        325.53
+        469.15,
+        162.77
       ]
     },
     {
@@ -4089,8 +8015,8 @@
         -2.53
       ],
       "screen_pos": [
-        905.68,
-        155.84
+        452.84,
+        77.92
       ]
     },
     {
@@ -4115,8 +8041,8 @@
         -2.53
       ],
       "screen_pos": [
-        1034.07,
-        271.96
+        517.03,
+        135.98
       ]
     },
     {
@@ -4141,8 +8067,8 @@
         -2.53
       ],
       "screen_pos": [
-        1078.53,
-        189.5
+        539.27,
+        94.75
       ]
     },
     {
@@ -4167,8 +8093,8 @@
         -2.53
       ],
       "screen_pos": [
-        1060.2,
-        146.36
+        530.1,
+        73.18
       ]
     },
     {
@@ -4193,8 +8119,8 @@
         -2.53
       ],
       "screen_pos": [
-        982.44,
-        84.77
+        491.22,
+        42.39
       ]
     },
     {
@@ -4219,8 +8145,8 @@
         0
       ],
       "screen_pos": [
-        1097.87,
-        243.12
+        548.93,
+        121.56
       ]
     },
     {
@@ -4245,8 +8171,8 @@
         -2.53
       ],
       "screen_pos": [
-        878.84,
-        223.59
+        439.42,
+        111.79
       ]
     },
     {
@@ -4271,8 +8197,8 @@
         -2.53
       ],
       "screen_pos": [
-        1015.72,
-        184.04
+        507.86,
+        92.02
       ]
     },
     {
@@ -4297,8 +8223,8 @@
         -2.53
       ],
       "screen_pos": [
-        898.58,
-        158.1
+        449.29,
+        79.05
       ]
     },
     {
@@ -4323,8 +8249,8 @@
         -2.53
       ],
       "screen_pos": [
-        977.05,
-        200.61
+        488.52,
+        100.31
       ]
     },
     {
@@ -4349,8 +8275,8 @@
         -2.53
       ],
       "screen_pos": [
-        918.37,
-        267.09
+        459.18,
+        133.54
       ]
     },
     {
@@ -4375,8 +8301,8 @@
         -2.53
       ],
       "screen_pos": [
-        1058.38,
-        247.43
+        529.19,
+        123.71
       ]
     },
     {
@@ -4401,8 +8327,8 @@
         -2.53
       ],
       "screen_pos": [
-        856.66,
-        280.19
+        428.33,
+        140.09
       ]
     },
     {
@@ -4427,8 +8353,8 @@
         -2.53
       ],
       "screen_pos": [
-        852.78,
-        235.44
+        426.39,
+        117.72
       ]
     },
     {
@@ -4453,8 +8379,8 @@
         -2.53
       ],
       "screen_pos": [
-        963.91,
-        124.41
+        481.96,
+        62.21
       ]
     },
     {
@@ -4479,8 +8405,8 @@
         -2.53
       ],
       "screen_pos": [
-        1075.55,
-        293.3
+        537.77,
+        146.65
       ]
     },
     {
@@ -4505,8 +8431,8 @@
         -2.53
       ],
       "screen_pos": [
-        1107.17,
-        216.64
+        553.58,
+        108.32
       ]
     },
     {
@@ -4531,8 +8457,8 @@
         -2.53
       ],
       "screen_pos": [
-        1080.56,
-        118.64
+        540.28,
+        59.32
       ]
     },
     {
@@ -4557,8 +8483,8 @@
         -2.53
       ],
       "screen_pos": [
-        1085.81,
-        276.04
+        542.9,
+        138.02
       ]
     },
     {
@@ -4583,8 +8509,8 @@
         0
       ],
       "screen_pos": [
-        1006.87,
-        209.34
+        503.44,
+        104.67
       ]
     },
     {
@@ -4609,8 +8535,8 @@
         -2.53
       ],
       "screen_pos": [
-        925.92,
-        316.15
+        462.96,
+        158.08
       ]
     },
     {
@@ -4635,8 +8561,8 @@
         -2.53
       ],
       "screen_pos": [
-        1128.19,
-        137.36
+        564.09,
+        68.68
       ]
     },
     {
@@ -4661,8 +8587,8 @@
         -2.53
       ],
       "screen_pos": [
-        1042.26,
-        144.71
+        521.13,
+        72.36
       ]
     },
     {
@@ -4687,8 +8613,8 @@
         -2.53
       ],
       "screen_pos": [
-        1135.65,
-        113.03
+        567.83,
+        56.52
       ]
     },
     {
@@ -4713,8 +8639,8 @@
         -2.53
       ],
       "screen_pos": [
-        895.78,
-        267.85
+        447.89,
+        133.93
       ]
     },
     {
@@ -4739,8 +8665,8 @@
         -2.53
       ],
       "screen_pos": [
-        973.24,
-        288.36
+        486.62,
+        144.18
       ]
     },
     {
@@ -4765,8 +8691,8 @@
         -2.53
       ],
       "screen_pos": [
-        1023.41,
-        164.58
+        511.7,
+        82.29
       ]
     },
     {
@@ -4791,8 +8717,8 @@
         -2.53
       ],
       "screen_pos": [
-        904.96,
-        145.23
+        452.48,
+        72.62
       ]
     },
     {
@@ -4817,8 +8743,8 @@
         -2.53
       ],
       "screen_pos": [
-        1068.98,
-        296.18
+        534.49,
+        148.09
       ]
     },
     {
@@ -4843,8 +8769,8 @@
         -2.53
       ],
       "screen_pos": [
-        1063.73,
-        301.59
+        531.87,
+        150.8
       ]
     },
     {
@@ -4869,8 +8795,8 @@
         -2.53
       ],
       "screen_pos": [
-        903.5,
-        305.52
+        451.75,
+        152.76
       ]
     },
     {
@@ -4895,8 +8821,8 @@
         0
       ],
       "screen_pos": [
-        1020.35,
-        77.65
+        510.18,
+        38.83
       ]
     },
     {
@@ -4921,8 +8847,8 @@
         -2.53
       ],
       "screen_pos": [
-        875.91,
-        233.65
+        437.95,
+        116.83
       ]
     },
     {
@@ -4947,8 +8873,8 @@
         -2.53
       ],
       "screen_pos": [
-        944.92,
-        166.02
+        472.46,
+        83.01
       ]
     },
     {
@@ -4973,8 +8899,8 @@
         -2.53
       ],
       "screen_pos": [
-        1078.64,
-        252.55
+        539.32,
+        126.27
       ]
     },
     {
@@ -4999,8 +8925,8 @@
         -2.53
       ],
       "screen_pos": [
-        946.59,
-        203.73
+        473.3,
+        101.86
       ]
     },
     {
@@ -5025,8 +8951,8 @@
         -2.53
       ],
       "screen_pos": [
-        1053.25,
-        192.05
+        526.63,
+        96.03
       ]
     },
     {
@@ -5051,8 +8977,8 @@
         -2.53
       ],
       "screen_pos": [
-        1074.26,
-        271.62
+        537.13,
+        135.81
       ]
     },
     {
@@ -5077,8 +9003,8 @@
         -2.53
       ],
       "screen_pos": [
-        1094.37,
-        80.63
+        547.19,
+        40.31
       ]
     },
     {
@@ -5103,8 +9029,8 @@
         -2.53
       ],
       "screen_pos": [
-        1139.02,
-        185.46
+        569.51,
+        92.73
       ]
     },
     {
@@ -5129,8 +9055,8 @@
         -2.53
       ],
       "screen_pos": [
-        1078.27,
-        192.4
+        539.14,
+        96.2
       ]
     },
     {
@@ -5155,8 +9081,8 @@
         -2.53
       ],
       "screen_pos": [
-        1105.35,
-        76.32
+        552.67,
+        38.16
       ]
     },
     {
@@ -5181,8 +9107,8 @@
         -2.53
       ],
       "screen_pos": [
-        964.4,
-        108.6
+        482.2,
+        54.3
       ]
     },
     {
@@ -5207,8 +9133,8 @@
         -2.53
       ],
       "screen_pos": [
-        1054.66,
-        255.2
+        527.33,
+        127.6
       ]
     },
     {
@@ -5233,8 +9159,8 @@
         -2.53
       ],
       "screen_pos": [
-        1006.94,
-        184.87
+        503.47,
+        92.44
       ]
     },
     {
@@ -5259,8 +9185,8 @@
         -2.53
       ],
       "screen_pos": [
-        969.82,
-        293.04
+        484.91,
+        146.52
       ]
     },
     {
@@ -5285,8 +9211,8 @@
         -2.53
       ],
       "screen_pos": [
-        890.82,
-        299.93
+        445.41,
+        149.96
       ]
     },
     {
@@ -5311,8 +9237,8 @@
         -2.53
       ],
       "screen_pos": [
-        1092.72,
-        66.92
+        546.36,
+        33.46
       ]
     },
     {
@@ -5337,8 +9263,8 @@
         -2.53
       ],
       "screen_pos": [
-        1051.04,
-        320.8
+        525.52,
+        160.4
       ]
     },
     {
@@ -5363,8 +9289,8 @@
         -2.53
       ],
       "screen_pos": [
-        928.28,
-        313.97
+        464.14,
+        156.98
       ]
     },
     {
@@ -5389,138 +9315,8 @@
         -2.53
       ],
       "screen_pos": [
-        1020.52,
-        243.07
-      ]
-    },
-    {
-      "aabb": [
-        -4.5,
-        5.38,
-        -2.35,
-        9,
-        0.28,
-        0
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 17.2,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/ShelfCastShadow",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "screen_pos": [
-        676.78,
-        82.36
-      ]
-    },
-    {
-      "aabb": [
-        -4.5,
-        5.38,
-        -2.05,
-        9,
-        0.28,
-        0
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 16.9,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/SweptShelfFascia",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "screen_pos": [
-        677.45,
-        80.58
-      ]
-    },
-    {
-      "aabb": [
-        -4.5,
-        5.47,
-        -2.02,
-        9,
-        0.21,
-        0
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 16.88,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/ShelfWarmLip",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "screen_pos": [
-        677.53,
-        77.17
-      ]
-    },
-    {
-      "aabb": [
-        -3.67,
-        4.85,
-        -2.06,
-        0.74,
-        0.6,
-        0
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 17.09,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/ShelfIntegralBracket_-3_3",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "screen_pos": [
-        472.26,
-        104.38
-      ]
-    },
-    {
-      "aabb": [
-        1.53,
-        4.85,
-        -2.06,
-        0.74,
-        0.6,
-        0
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 17.06,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/ShelfIntegralBracket_1_9",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "screen_pos": [
-        795.32,
-        104.38
+        510.26,
+        121.53
       ]
     },
     {
@@ -5545,8 +9341,8 @@
         1.05
       ],
       "screen_pos": [
-        683.01,
-        461.69
+        341.51,
+        230.85
       ]
     },
     {
@@ -5571,8 +9367,8 @@
         1.05
       ],
       "screen_pos": [
-        683.12,
-        447.09
+        341.56,
+        223.55
       ]
     },
     {
@@ -5597,8 +9393,8 @@
         4.78
       ],
       "screen_pos": [
-        698.29,
-        537.28
+        349.14,
+        268.64
       ]
     },
     {
@@ -5623,8 +9419,8 @@
         1.05
       ],
       "screen_pos": [
-        204.2,
-        443.95
+        102.1,
+        221.98
       ]
     },
     {
@@ -5649,8 +9445,8 @@
         1.05
       ],
       "screen_pos": [
-        1162.09,
-        443.95
+        581.05,
+        221.98
       ]
     },
     {
@@ -5675,8 +9471,8 @@
         4.79
       ],
       "screen_pos": [
-        264.68,
-        595.03
+        132.34,
+        297.51
       ]
     },
     {
@@ -5701,8 +9497,8 @@
         4.79
       ],
       "screen_pos": [
-        505.27,
-        595.03
+        252.63,
+        297.51
       ]
     },
     {
@@ -5727,8 +9523,8 @@
         0.8
       ],
       "screen_pos": [
-        405.71,
-        235.72
+        202.86,
+        117.86
       ]
     },
     {
@@ -5753,8 +9549,8 @@
         -2.08
       ],
       "screen_pos": [
-        220.87,
-        356.99
+        110.44,
+        178.49
       ]
     },
     {
@@ -5779,8 +9575,8 @@
         -1.4
       ],
       "screen_pos": [
-        149.24,
-        362.95
+        74.62,
+        181.48
       ]
     },
     {
@@ -5805,8 +9601,8 @@
         -0.64
       ],
       "screen_pos": [
-        125.87,
-        372.29
+        62.93,
+        186.14
       ]
     },
     {
@@ -5831,8 +9627,8 @@
         -0.55
       ],
       "screen_pos": [
-        121.67,
-        373.31
+        60.84,
+        186.66
       ]
     },
     {
@@ -5857,8 +9653,8 @@
         -1.91
       ],
       "screen_pos": [
-        184.12,
-        510.18
+        92.06,
+        255.09
       ]
     },
     {
@@ -5883,8 +9679,8 @@
         -0.89
       ],
       "screen_pos": [
-        156.17,
-        530.38
+        78.08,
+        265.19
       ]
     },
     {
@@ -5909,8 +9705,8 @@
         -1.4
       ],
       "screen_pos": [
-        258.16,
-        362.95
+        129.08,
+        181.48
       ]
     },
     {
@@ -5935,8 +9731,8 @@
         -0.64
       ],
       "screen_pos": [
-        239.97,
-        372.29
+        119.99,
+        186.14
       ]
     },
     {
@@ -5961,8 +9757,8 @@
         -0.55
       ],
       "screen_pos": [
-        236.39,
-        373.31
+        118.2,
+        186.66
       ]
     },
     {
@@ -5987,8 +9783,8 @@
         -1.91
       ],
       "screen_pos": [
-        271.57,
-        510.18
+        135.79,
+        255.09
       ]
     },
     {
@@ -6013,8 +9809,8 @@
         -0.89
       ],
       "screen_pos": [
-        248.99,
-        530.38
+        124.49,
+        265.19
       ]
     },
     {
@@ -6039,8 +9835,8 @@
         -1.37
       ],
       "screen_pos": [
-        213.79,
-        506.68
+        106.89,
+        253.34
       ]
     },
     {
@@ -6065,8 +9861,8 @@
         -1.37
       ],
       "screen_pos": [
-        213.49,
-        502.67
+        106.74,
+        251.34
       ]
     },
     {
@@ -6091,8 +9887,8 @@
         -0.6
       ],
       "screen_pos": [
-        193.48,
-        519.45
+        96.74,
+        259.72
       ]
     },
     {
@@ -6117,8 +9913,8 @@
         -0.68
       ],
       "screen_pos": [
-        196.17,
-        524.57
+        98.09,
+        262.28
       ]
     },
     {
@@ -6143,8 +9939,8 @@
         -1.37
       ],
       "screen_pos": [
-        208.22,
-        433.2
+        104.11,
+        216.6
       ]
     },
     {
@@ -6169,8 +9965,8 @@
         -1.37
       ],
       "screen_pos": [
-        207.9,
-        429.09
+        103.95,
+        214.55
       ]
     },
     {
@@ -6195,8 +9991,8 @@
         -0.6
       ],
       "screen_pos": [
-        187.36,
-        442.6
+        93.68,
+        221.3
       ]
     },
     {
@@ -6221,8 +10017,8 @@
         -0.68
       ],
       "screen_pos": [
-        190.12,
-        448.25
+        95.06,
+        224.13
       ]
     },
     {
@@ -6247,8 +10043,8 @@
         -1.37
       ],
       "screen_pos": [
-        202.5,
-        357.78
+        101.25,
+        178.89
       ]
     },
     {
@@ -6273,8 +10069,8 @@
         -1.37
       ],
       "screen_pos": [
-        202.18,
-        353.56
+        101.09,
+        176.78
       ]
     },
     {
@@ -6299,8 +10095,8 @@
         -0.6
       ],
       "screen_pos": [
-        181.07,
-        363.61
+        90.54,
+        181.8
       ]
     },
     {
@@ -6325,8 +10121,8 @@
         -0.68
       ],
       "screen_pos": [
-        183.91,
-        369.83
+        91.96,
+        184.92
       ]
     },
     {
@@ -6351,8 +10147,8 @@
         -1.37
       ],
       "screen_pos": [
-        196.62,
-        280.33
+        98.31,
+        140.17
       ]
     },
     {
@@ -6377,8 +10173,8 @@
         -1.37
       ],
       "screen_pos": [
-        196.29,
-        276
+        98.15,
+        138
       ]
     },
     {
@@ -6403,8 +10199,8 @@
         -0.6
       ],
       "screen_pos": [
-        174.6,
-        282.4
+        87.3,
+        141.2
       ]
     },
     {
@@ -6429,8 +10225,8 @@
         -0.68
       ],
       "screen_pos": [
-        177.52,
-        289.22
+        88.76,
+        144.61
       ]
     },
     {
@@ -6455,8 +10251,8 @@
         -1.36
       ],
       "screen_pos": [
-        190.01,
-        196.91
+        95.01,
+        98.46
       ]
     },
     {
@@ -6481,8 +10277,8 @@
         -1.37
       ],
       "screen_pos": [
-        189.8,
-        190.44
+        94.9,
+        95.22
       ]
     },
     {
@@ -6507,8 +10303,8 @@
         -0.48
       ],
       "screen_pos": [
-        163.97,
-        194.76
+        81.98,
+        97.38
       ]
     },
     {
@@ -6533,8 +10329,8 @@
         -1.37
       ],
       "screen_pos": [
-        213.92,
-        508.42
+        106.96,
+        254.21
       ]
     },
     {
@@ -6559,8 +10355,8 @@
         -0.54
       ],
       "screen_pos": [
-        135.53,
-        515.97
+        67.77,
+        257.98
       ]
     },
     {
@@ -6585,8 +10381,8 @@
         -0.54
       ],
       "screen_pos": [
-        122.6,
-        372.18
+        61.3,
+        186.09
       ]
     },
     {
@@ -6611,8 +10407,8 @@
         -0.54
       ],
       "screen_pos": [
-        108.69,
-        217.45
+        54.34,
+        108.72
       ]
     },
     {
@@ -6637,8 +10433,8 @@
         -0.54
       ],
       "screen_pos": [
-        247.49,
-        515.97
+        123.75,
+        257.98
       ]
     },
     {
@@ -6663,8 +10459,8 @@
         -0.54
       ],
       "screen_pos": [
-        237.43,
-        372.18
+        118.72,
+        186.09
       ]
     },
     {
@@ -6689,8 +10485,8 @@
         -0.54
       ],
       "screen_pos": [
-        226.61,
-        217.45
+        113.3,
+        108.72
       ]
     },
     {
@@ -6715,8 +10511,8 @@
         4.73
       ],
       "screen_pos": [
-        462.47,
-        592.72
+        231.24,
+        296.36
       ]
     },
     {
@@ -6741,8 +10537,8 @@
         4.73
       ],
       "screen_pos": [
-        1243.4,
-        592.72
+        621.7,
+        296.36
       ]
     },
     {
@@ -6767,8 +10563,8 @@
         2.85
       ],
       "screen_pos": [
-        953.24,
-        540.91
+        476.62,
+        270.45
       ]
     },
     {
@@ -6793,8 +10589,8 @@
         3.82
       ],
       "screen_pos": [
-        977.7,
-        594.86
+        488.85,
+        297.43
       ]
     },
     {
@@ -6819,8 +10615,8 @@
         3.82
       ],
       "screen_pos": [
-        980.65,
-        546.54
+        490.32,
+        273.27
       ]
     },
     {
@@ -6845,8 +10641,8 @@
         3.82
       ],
       "screen_pos": [
-        843.5,
-        570.72
+        421.75,
+        285.36
       ]
     },
     {
@@ -6871,8 +10667,8 @@
         3.85
       ],
       "screen_pos": [
-        848.35,
-        583.43
+        424.17,
+        291.71
       ]
     },
     {
@@ -6897,8 +10693,8 @@
         3.82
       ],
       "screen_pos": [
-        1114.84,
-        570.72
+        557.42,
+        285.36
       ]
     },
     {
@@ -6923,8 +10719,8 @@
         3.85
       ],
       "screen_pos": [
-        1110.3,
-        583.43
+        555.15,
+        291.71
       ]
     },
     {
@@ -6949,8 +10745,8 @@
         3.85
       ],
       "screen_pos": [
-        978.94,
-        589.68
+        489.47,
+        294.84
       ]
     },
     {
@@ -6975,8 +10771,8 @@
         3.85
       ],
       "screen_pos": [
-        979.12,
-        586.85
+        489.56,
+        293.42
       ]
     },
     {
@@ -7001,8 +10797,8 @@
         3.84
       ],
       "screen_pos": [
-        853.82,
-        575.99
+        426.91,
+        287.99
       ]
     },
     {
@@ -7027,8 +10823,8 @@
         3.84
       ],
       "screen_pos": [
-        854.33,
-        562.67
+        427.17,
+        281.33
       ]
     },
     {
@@ -7053,8 +10849,8 @@
         3.87
       ],
       "screen_pos": [
-        847.81,
-        584.12
+        423.9,
+        292.06
       ]
     },
     {
@@ -7079,8 +10875,8 @@
         3.84
       ],
       "screen_pos": [
-        1105.12,
-        575.99
+        552.56,
+        287.99
       ]
     },
     {
@@ -7105,8 +10901,8 @@
         3.84
       ],
       "screen_pos": [
-        1106.23,
-        562.67
+        553.12,
+        281.33
       ]
     },
     {
@@ -7131,8 +10927,8 @@
         3.87
       ],
       "screen_pos": [
-        1112,
-        584.12
+        556,
+        292.06
       ]
     },
     {
@@ -7157,8 +10953,8 @@
         2.96
       ],
       "screen_pos": [
-        955.74,
-        548.36
+        477.87,
+        274.18
       ]
     },
     {
@@ -7183,8 +10979,8 @@
         4.82
       ],
       "screen_pos": [
-        1010.63,
-        607.09
+        505.32,
+        303.54
       ]
     },
     {
@@ -7209,8 +11005,8 @@
         4.88
       ],
       "screen_pos": [
-        1012.86,
-        609.65
+        506.43,
+        304.82
       ]
     },
     {
@@ -7235,8 +11031,8 @@
         4.88
       ],
       "screen_pos": [
-        1014.49,
-        586.64
+        507.24,
+        293.32
       ]
     },
     {
@@ -7261,8 +11057,8 @@
         4.87
       ],
       "screen_pos": [
-        1010.74,
-        633.22
+        505.37,
+        316.61
       ]
     },
     {
@@ -7287,8 +11083,8 @@
         4.94
       ],
       "screen_pos": [
-        970.11,
-        611.31
+        485.06,
+        305.66
       ]
     },
     {
@@ -7313,8 +11109,8 @@
         4.94
       ],
       "screen_pos": [
-        1059.7,
-        611.31
+        529.85,
+        305.66
       ]
     },
     {
@@ -7339,8 +11135,8 @@
         5.01
       ],
       "screen_pos": [
-        1017.66,
-        613.68
+        508.83,
+        306.84
       ]
     },
     {
@@ -7365,8 +11161,8 @@
         5.03
       ],
       "screen_pos": [
-        1018.67,
-        611.44
+        509.33,
+        305.72
       ]
     },
     {
@@ -7391,8 +11187,8 @@
         4.96
       ],
       "screen_pos": [
-        1015.79,
-        611.83
+        507.89,
+        305.92
       ]
     },
     {
@@ -7417,8 +11213,8 @@
         4.96
       ],
       "screen_pos": [
-        1015.79,
-        611.83
+        507.89,
+        305.92
       ]
     },
     {
@@ -7443,8 +11239,8 @@
         3.89
       ],
       "screen_pos": [
-        924.66,
-        586.9
+        462.33,
+        293.45
       ]
     },
     {
@@ -7469,8 +11265,8 @@
         3.2
       ],
       "screen_pos": [
-        891.27,
-        563.89
+        445.64,
+        281.94
       ]
     },
     {
@@ -7495,8 +11291,8 @@
         3.89
       ],
       "screen_pos": [
-        924.75,
-        585.14
+        462.38,
+        292.57
       ]
     },
     {
@@ -7521,8 +11317,8 @@
         3.88
       ],
       "screen_pos": [
-        926.01,
-        583.87
+        463,
+        291.94
       ]
     },
     {
@@ -7547,8 +11343,8 @@
         3.87
       ],
       "screen_pos": [
-        924.56,
-        582.51
+        462.28,
+        291.26
       ]
     },
     {
@@ -7573,8 +11369,8 @@
         3.86
       ],
       "screen_pos": [
-        925.81,
-        581.25
+        462.91,
+        290.62
       ]
     },
     {
@@ -7599,8 +11395,8 @@
         3.49
       ],
       "screen_pos": [
-        906.45,
-        568.23
+        453.23,
+        284.12
       ]
     },
     {
@@ -7625,8 +11421,8 @@
         3.61
       ],
       "screen_pos": [
-        920.39,
-        572.18
+        460.2,
+        286.09
       ]
     },
     {
@@ -7651,8 +11447,8 @@
         3.74
       ],
       "screen_pos": [
-        919.36,
-        576.37
+        459.68,
+        288.18
       ]
     },
     {
@@ -7677,8 +11473,8 @@
         3.83
       ],
       "screen_pos": [
-        913.41,
-        579.65
+        456.71,
+        289.83
       ]
     },
     {
@@ -7703,8 +11499,8 @@
         3.95
       ],
       "screen_pos": [
-        922.77,
-        583.5
+        461.38,
+        291.75
       ]
     },
     {
@@ -7729,8 +11525,8 @@
         4.04
       ],
       "screen_pos": [
-        916.74,
-        586.9
+        458.37,
+        293.45
       ]
     },
     {
@@ -7755,8 +11551,8 @@
         4.16
       ],
       "screen_pos": [
-        926.3,
-        590.89
+        463.15,
+        295.45
       ]
     },
     {
@@ -7781,8 +11577,8 @@
         4.3
       ],
       "screen_pos": [
-        955.99,
-        596.1
+        478,
+        298.05
       ]
     },
     {
@@ -7807,8 +11603,8 @@
         3.39
       ],
       "screen_pos": [
-        891.37,
-        564.13
+        445.68,
+        282.06
       ]
     },
     {
@@ -7833,8 +11629,8 @@
         3.39
       ],
       "screen_pos": [
-        898.28,
-        564.35
+        449.14,
+        282.17
       ]
     },
     {
@@ -7859,8 +11655,8 @@
         3.3
       ],
       "screen_pos": [
-        893.62,
-        561.43
+        446.81,
+        280.72
       ]
     },
     {
@@ -7885,8 +11681,8 @@
         3.89
       ],
       "screen_pos": [
-        924.9,
-        582.29
+        462.45,
+        291.15
       ]
     },
     {
@@ -7911,8 +11707,8 @@
         3.89
       ],
       "screen_pos": [
-        924.9,
-        582.29
+        462.45,
+        291.15
       ]
     },
     {
@@ -7937,8 +11733,8 @@
         3.74
       ],
       "screen_pos": [
-        1026.72,
-        580.92
+        513.36,
+        290.46
       ]
     },
     {
@@ -7963,8 +11759,8 @@
         3.05
       ],
       "screen_pos": [
-        1021.86,
-        558.4
+        510.93,
+        279.2
       ]
     },
     {
@@ -7989,8 +11785,8 @@
         3.74
       ],
       "screen_pos": [
-        1026.85,
-        579.18
+        513.42,
+        289.59
       ]
     },
     {
@@ -8015,8 +11811,8 @@
         3.73
       ],
       "screen_pos": [
-        1027.79,
-        577.84
+        513.9,
+        288.92
       ]
     },
     {
@@ -8041,8 +11837,8 @@
         3.72
       ],
       "screen_pos": [
-        1026.23,
-        576.6
+        513.12,
+        288.3
       ]
     },
     {
@@ -8067,8 +11863,8 @@
         3.71
       ],
       "screen_pos": [
-        1027.18,
-        575.26
+        513.59,
+        287.63
       ]
     },
     {
@@ -8093,8 +11889,8 @@
         3.37
       ],
       "screen_pos": [
-        999.99,
-        563.53
+        500,
+        281.77
       ]
     },
     {
@@ -8119,8 +11915,8 @@
         3.46
       ],
       "screen_pos": [
-        1015.68,
-        566.53
+        507.84,
+        283.27
       ]
     },
     {
@@ -8145,8 +11941,8 @@
         3.59
       ],
       "screen_pos": [
-        1018.03,
-        570.82
+        509.01,
+        285.41
       ]
     },
     {
@@ -8171,8 +11967,8 @@
         3.71
       ],
       "screen_pos": [
-        1015.23,
-        574.55
+        507.62,
+        287.28
       ]
     },
     {
@@ -8197,8 +11993,8 @@
         3.8
       ],
       "screen_pos": [
-        1026.67,
-        577.75
+        513.34,
+        288.88
       ]
     },
     {
@@ -8223,8 +12019,8 @@
         3.92
       ],
       "screen_pos": [
-        1023.91,
-        581.62
+        511.96,
+        290.81
       ]
     },
     {
@@ -8249,8 +12045,8 @@
         4.01
       ],
       "screen_pos": [
-        1035.63,
-        584.94
+        517.82,
+        292.47
       ]
     },
     {
@@ -8275,8 +12071,8 @@
         4.1
       ],
       "screen_pos": [
-        1066.27,
-        587.97
+        533.14,
+        293.99
       ]
     },
     {
@@ -8301,8 +12097,8 @@
         3.29
       ],
       "screen_pos": [
-        983.71,
-        560.46
+        491.86,
+        280.23
       ]
     },
     {
@@ -8327,8 +12123,8 @@
         3.29
       ],
       "screen_pos": [
-        990.18,
-        560.2
+        495.09,
+        280.1
       ]
     },
     {
@@ -8353,8 +12149,8 @@
         3.2
       ],
       "screen_pos": [
-        983.65,
-        557.58
+        491.82,
+        278.79
       ]
     },
     {
@@ -8379,8 +12175,8 @@
         3.74
       ],
       "screen_pos": [
-        1027.04,
-        576.37
+        513.52,
+        288.18
       ]
     },
     {
@@ -8405,8 +12201,8 @@
         3.74
       ],
       "screen_pos": [
-        1027.04,
-        576.37
+        513.52,
+        288.18
       ]
     },
     {
@@ -8431,8 +12227,8 @@
         -0.55
       ],
       "screen_pos": [
-        392.57,
-        304.66
+        196.28,
+        152.33
       ]
     },
     {
@@ -8457,8 +12253,8 @@
         -0.55
       ],
       "screen_pos": [
-        392.57,
-        304.66
+        196.28,
+        152.33
       ]
     },
     {
@@ -8476,93 +12272,93 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/FocusHitbox/@CollisionShape3D@62",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/FocusHitbox/@CollisionShape3D@118",
       "position": [
         -4.35,
         2.09,
         -0.55
       ],
       "screen_pos": [
-        392.57,
-        304.66
+        196.28,
+        152.33
       ]
     },
     {
       "aabb": [
-        -4.45,
-        0.52,
-        -0.09,
-        0.2,
-        0.2,
-        0.03
+        -5.07,
+        1.85,
+        -0.2,
+        0.13,
+        0.13,
+        0.02
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.67,
+      "distance_to_camera": 15.72,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@MeshInstance3D@87",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@MeshInstance3D@153",
       "position": [
-        -4.35,
-        0.62,
-        -0.08
+        -5,
+        1.91,
+        -0.19
       ],
       "screen_pos": [
-        389.12,
-        406.25
+        171.53,
+        159.67
       ]
     },
     {
       "aabb": [
-        -4.47,
-        0.5,
-        -0.13,
-        0.25,
-        0.25,
-        0.12
+        -5.09,
+        1.83,
+        -0.22,
+        0.16,
+        0.16,
+        0.08
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 15.67,
+      "distance_to_camera": 15.72,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@89",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@155",
       "position": [
-        -4.35,
-        0.62,
-        -0.08
+        -5,
+        1.91,
+        -0.19
       ],
       "screen_pos": [
-        389.12,
-        406.25
+        171.53,
+        159.67
       ]
     },
     {
       "aabb": [
-        -4.47,
-        0.5,
-        -0.13,
-        0.25,
-        0.25,
-        0.12
+        -5.09,
+        1.83,
+        -0.22,
+        0.16,
+        0.16,
+        0.08
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 15.67,
+      "distance_to_camera": 15.72,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@89/@CollisionShape3D@88",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@155/@CollisionShape3D@154",
       "position": [
-        -4.35,
-        0.62,
-        -0.08
+        -5,
+        1.91,
+        -0.19
       ],
       "screen_pos": [
-        389.12,
-        406.25
+        171.53,
+        159.67
       ]
     },
     {
@@ -8587,8 +12383,8 @@
         -0.27
       ],
       "screen_pos": [
-        414.45,
-        259.82
+        207.23,
+        129.91
       ]
     },
     {
@@ -8613,8 +12409,8 @@
         -0.27
       ],
       "screen_pos": [
-        414.45,
-        259.82
+        207.23,
+        129.91
       ]
     },
     {
@@ -8639,8 +12435,8 @@
         1.35
       ],
       "screen_pos": [
-        338.7,
-        376.46
+        169.35,
+        188.23
       ]
     },
     {
@@ -8665,8 +12461,8 @@
         1.35
       ],
       "screen_pos": [
-        338.7,
-        376.46
+        169.35,
+        188.23
       ]
     },
     {
@@ -8684,15 +12480,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/FocusHitbox/@CollisionShape3D@63",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/FocusHitbox/@CollisionShape3D@119",
       "position": [
         -4.65,
         1.35,
         1.35
       ],
       "screen_pos": [
-        338.7,
-        376.46
+        169.35,
+        188.23
       ]
     },
     {
@@ -8710,15 +12506,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@MeshInstance3D@66",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@MeshInstance3D@126",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        333.15,
-        429.35
+        166.57,
+        214.67
       ]
     },
     {
@@ -8736,15 +12532,15 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@68",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@128",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        333.15,
-        429.35
+        166.57,
+        214.67
       ]
     },
     {
@@ -8762,24 +12558,24 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@68/@CollisionShape3D@67",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@128/@CollisionShape3D@127",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        333.15,
-        429.35
+        166.57,
+        214.67
       ]
     },
     {
       "aabb": [
-        -4.44,
-        0.65,
+        -4.46,
+        0.63,
         1.76,
-        0.15,
-        0.15,
+        0.18,
+        0.18,
         0.02
       ],
       "behind_camera": false,
@@ -8788,15 +12584,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@69",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@129",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        353.4,
-        429.35
+        176.7,
+        214.67
       ]
     },
     {
@@ -8804,34 +12600,34 @@
         -4.37,
         0.73,
         1.79,
-        0.01,
+        0.02,
         0.04,
         0.01
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.89,
+      "distance_to_camera": 13.88,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@70",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@130",
       "position": [
-        -4.37,
+        -4.36,
         0.75,
         1.79
       ],
       "screen_pos": [
-        352.98,
-        427.47
+        176.75,
+        213.76
       ]
     },
     {
       "aabb": [
-        -4.46,
-        0.63,
+        -4.48,
+        0.61,
         1.73,
-        0.19,
-        0.19,
+        0.23,
+        0.23,
         0.09
       ],
       "behind_camera": false,
@@ -8840,24 +12636,24 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@72",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@132",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        353.4,
-        429.35
+        176.7,
+        214.67
       ]
     },
     {
       "aabb": [
-        -4.46,
-        0.63,
+        -4.48,
+        0.61,
         1.73,
-        0.19,
-        0.19,
+        0.23,
+        0.23,
         0.09
       ],
       "behind_camera": false,
@@ -8866,15 +12662,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@72/@CollisionShape3D@71",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@132/@CollisionShape3D@131",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        353.4,
-        429.35
+        176.7,
+        214.67
       ]
     },
     {
@@ -8892,15 +12688,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@73",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@133",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        372.2,
-        429.35
+        186.1,
+        214.67
       ]
     },
     {
@@ -8918,15 +12714,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@74",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@134",
       "position": [
         -4.12,
         0.75,
         1.79
       ],
       "screen_pos": [
-        371.81,
-        427.47
+        185.91,
+        213.73
       ]
     },
     {
@@ -8944,15 +12740,15 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@76",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@136",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        372.2,
-        429.35
+        186.1,
+        214.67
       ]
     },
     {
@@ -8970,15 +12766,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@76/@CollisionShape3D@75",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@136/@CollisionShape3D@135",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        372.2,
-        429.35
+        186.1,
+        214.67
       ]
     },
     {
@@ -9003,8 +12799,8 @@
         0.5
       ],
       "screen_pos": [
-        1018.67,
-        363.25
+        509.33,
+        181.63
       ]
     },
     {
@@ -9029,8 +12825,8 @@
         0.5
       ],
       "screen_pos": [
-        1018.67,
-        363.25
+        509.33,
+        181.63
       ]
     },
     {
@@ -9048,15 +12844,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/FocusHitbox/@CollisionShape3D@64",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/FocusHitbox/@CollisionShape3D@120",
       "position": [
         4.8,
         1.38,
         0.5
       ],
       "screen_pos": [
-        1018.67,
-        363.25
+        509.33,
+        181.63
       ]
     },
     {
@@ -9074,15 +12870,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@MeshInstance3D@77",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@MeshInstance3D@137",
       "position": [
         4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        991.35,
-        407.99
+        495.67,
+        204
       ]
     },
     {
@@ -9100,15 +12896,15 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@79",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@139",
       "position": [
         4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        991.35,
-        407.99
+        495.67,
+        204
       ]
     },
     {
@@ -9126,15 +12922,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@79/@CollisionShape3D@78",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@139/@CollisionShape3D@138",
       "position": [
         4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        991.35,
-        407.99
+        495.67,
+        204
       ]
     },
     {
@@ -9152,15 +12948,15 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@MeshInstance3D@80",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@MeshInstance3D@140",
       "position": [
         4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        1009.33,
-        407.99
+        504.66,
+        204
       ]
     },
     {
@@ -9178,15 +12974,15 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@82",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@142",
       "position": [
         4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        1009.33,
-        407.99
+        504.66,
+        204
       ]
     },
     {
@@ -9204,24 +13000,180 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@82/@CollisionShape3D@81",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@142/@CollisionShape3D@141",
       "position": [
         4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        1009.33,
-        407.99
+        504.66,
+        204
       ]
     },
     {
       "aabb": [
-        5.36,
-        0.77,
+        4.81,
+        0.76,
+        1.08,
+        0.2,
+        0.2,
+        0.03
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 15.06,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_rewind/@MeshInstance3D@143",
+      "position": [
+        4.91,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        520.19,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        4.79,
+        0.74,
+        1.04,
+        0.24,
+        0.24,
+        0.11
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 15.06,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_rewind/@StaticBody3D@145",
+      "position": [
+        4.91,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        520.19,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        4.79,
+        0.74,
+        1.04,
+        0.24,
+        0.24,
+        0.11
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 15.06,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_rewind/@StaticBody3D@145/@CollisionShape3D@144",
+      "position": [
+        4.91,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        520.19,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        5.06,
+        0.76,
+        1.08,
+        0.2,
+        0.2,
+        0.03
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 15.15,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_record/@MeshInstance3D@146",
+      "position": [
+        5.16,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        529.18,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        5.04,
+        0.74,
+        1.04,
+        0.24,
+        0.24,
+        0.11
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 15.15,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_record/@StaticBody3D@148",
+      "position": [
+        5.16,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        529.18,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        5.04,
+        0.74,
+        1.04,
+        0.24,
+        0.24,
+        0.11
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 15.15,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_record/@StaticBody3D@148/@CollisionShape3D@147",
+      "position": [
+        5.16,
+        0.86,
+        1.1
+      ],
+      "screen_pos": [
+        529.18,
+        204
+      ]
+    },
+    {
+      "aabb": [
+        5.33,
+        0.74,
         1.14,
-        0.18,
-        0.18,
+        0.24,
+        0.24,
         0.03
       ],
       "behind_camera": false,
@@ -9230,23 +13182,23 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@83",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@149",
       "position": [
         5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1081.21,
-        408.83
+        540.61,
+        204.41
       ]
     },
     {
       "aabb": [
         5.45,
-        0.87,
+        0.86,
         1.17,
-        0.01,
+        0.03,
         0.05,
         0.01
       ],
@@ -9256,24 +13208,24 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@84",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@150",
       "position": [
-        5.45,
+        5.47,
         0.89,
         1.17
       ],
       "screen_pos": [
-        1081.94,
-        406.67
+        541.52,
+        203.47
       ]
     },
     {
       "aabb": [
-        5.34,
-        0.75,
+        5.3,
+        0.71,
         1.1,
-        0.22,
-        0.22,
+        0.3,
+        0.3,
         0.1
       ],
       "behind_camera": false,
@@ -9282,24 +13234,24 @@
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@86",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@152",
       "position": [
         5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1081.21,
-        408.83
+        540.61,
+        204.41
       ]
     },
     {
       "aabb": [
-        5.34,
-        0.75,
+        5.3,
+        0.71,
         1.1,
-        0.22,
-        0.22,
+        0.3,
+        0.3,
         0.1
       ],
       "behind_camera": false,
@@ -9308,15 +13260,15 @@
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@86/@CollisionShape3D@85",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@152/@CollisionShape3D@151",
       "position": [
         5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1081.21,
-        408.83
+        540.61,
+        204.41
       ]
     },
     {
@@ -9341,22 +13293,308 @@
         -0.15
       ],
       "screen_pos": [
-        680.87,
-        272.79
+        340.44,
+        136.39
+      ]
+    },
+    {
+      "aabb": [
+        -3.3,
+        0.34,
+        -1.46,
+        6.6,
+        4.54,
+        2.62
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.99,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/Model/world/geometry_0/ComputerSilhouette",
+      "position": [
+        0,
+        2.61,
+        -0.15
+      ],
+      "screen_pos": [
+        340.44,
+        136.4
+      ]
+    },
+    {
+      "aabb": [
+        -3.3,
+        0.34,
+        -1.46,
+        6.6,
+        4.54,
+        2.62
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.99,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/Model/world/geometry_0/ComputerSilhouette/@CollisionShape3D@3",
+      "position": [
+        0,
+        2.61,
+        -0.15
+      ],
+      "screen_pos": [
+        340.44,
+        136.4
+      ]
+    },
+    {
+      "aabb": [
+        -0.02,
+        0.84,
+        0.98,
+        0.25,
+        0.25,
+        0.04
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 14.1,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_power/@MeshInstance3D@156",
+      "position": [
+        0.11,
+        0.97,
+        1
+      ],
+      "screen_pos": [
+        345.49,
+        199.42
+      ]
+    },
+    {
+      "aabb": [
+        -0.05,
+        0.81,
+        0.93,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.1,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_power/@StaticBody3D@158",
+      "position": [
+        0.11,
+        0.97,
+        1
+      ],
+      "screen_pos": [
+        345.49,
+        199.42
+      ]
+    },
+    {
+      "aabb": [
+        -0.05,
+        0.81,
+        0.93,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.1,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_power/@StaticBody3D@158/@CollisionShape3D@157",
+      "position": [
+        0.11,
+        0.97,
+        1
+      ],
+      "screen_pos": [
+        345.49,
+        199.42
+      ]
+    },
+    {
+      "aabb": [
+        0.28,
+        0.84,
+        0.97,
+        0.25,
+        0.25,
+        0.04
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 14.13,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_palette/@MeshInstance3D@159",
+      "position": [
+        0.41,
+        0.97,
+        0.99
+      ],
+      "screen_pos": [
+        356.41,
+        199.3
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.81,
+        0.92,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.13,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_palette/@StaticBody3D@161",
+      "position": [
+        0.41,
+        0.97,
+        0.99
+      ],
+      "screen_pos": [
+        356.41,
+        199.3
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.81,
+        0.92,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.13,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_palette/@StaticBody3D@161/@CollisionShape3D@160",
+      "position": [
+        0.41,
+        0.97,
+        0.99
+      ],
+      "screen_pos": [
+        356.41,
+        199.3
+      ]
+    },
+    {
+      "aabb": [
+        0.61,
+        0.84,
+        0.95,
+        0.25,
+        0.25,
+        0.04
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 14.18,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_lock/@MeshInstance3D@162",
+      "position": [
+        0.73,
+        0.97,
+        0.97
+      ],
+      "screen_pos": [
+        368.03,
+        199.02
+      ]
+    },
+    {
+      "aabb": [
+        0.58,
+        0.82,
+        0.9,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.18,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_lock/@StaticBody3D@164",
+      "position": [
+        0.73,
+        0.97,
+        0.97
+      ],
+      "screen_pos": [
+        368.03,
+        199.02
+      ]
+    },
+    {
+      "aabb": [
+        0.58,
+        0.82,
+        0.9,
+        0.31,
+        0.31,
+        0.14
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.18,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/computer_lock/@StaticBody3D@164/@CollisionShape3D@163",
+      "position": [
+        0.73,
+        0.97,
+        0.97
+      ],
+      "screen_pos": [
+        368.03,
+        199.02
       ]
     },
     {
       "aabb": [
         2.36,
         0.34,
-        1.95,
+        2.4,
         1.69,
         1.52,
         1.29
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.06,
+      "distance_to_camera": 12.64,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -9364,25 +13602,25 @@
       "position": [
         3.2,
         1.1,
-        2.6
+        3.05
       ],
       "screen_pos": [
-        949.61,
-        415.65
+        480.51,
+        212.15
       ]
     },
     {
       "aabb": [
         2.36,
         0.34,
-        1.95,
+        2.4,
         1.69,
         1.52,
         1.29
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.06,
+      "distance_to_camera": 12.64,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
@@ -9390,46 +13628,358 @@
       "position": [
         3.2,
         1.1,
-        2.6
+        3.05
       ],
       "screen_pos": [
-        949.61,
-        415.65
+        480.51,
+        212.15
       ]
     },
     {
       "aabb": [
         2.36,
         0.34,
-        1.95,
+        2.4,
         1.69,
         1.52,
         1.29
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.06,
+      "distance_to_camera": 12.64,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/FocusHitbox/@CollisionShape3D@65",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/FocusHitbox/@CollisionShape3D@121",
       "position": [
         3.2,
         1.1,
-        2.6
+        3.05
       ],
       "screen_pos": [
-        949.61,
-        415.65
+        480.51,
+        212.15
+      ]
+    },
+    {
+      "aabb": [
+        2.02,
+        0.34,
+        1.33,
+        1.55,
+        0.72,
+        0.75
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.89,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/CardHolder/Model/world/geometry_0",
+      "position": [
+        2.8,
+        0.7,
+        1.7
+      ],
+      "screen_pos": [
+        448.66,
+        214.79
+      ]
+    },
+    {
+      "aabb": [
+        2.02,
+        0.34,
+        1.33,
+        1.55,
+        0.72,
+        0.75
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.89,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/CardHolder/FocusHitbox",
+      "position": [
+        2.8,
+        0.7,
+        1.7
+      ],
+      "screen_pos": [
+        448.66,
+        214.79
+      ]
+    },
+    {
+      "aabb": [
+        2.02,
+        0.34,
+        1.33,
+        1.55,
+        0.72,
+        0.75
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.89,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/CardHolder/FocusHitbox/@CollisionShape3D@122",
+      "position": [
+        2.8,
+        0.7,
+        1.7
+      ],
+      "screen_pos": [
+        448.66,
+        214.79
+      ]
+    },
+    {
+      "aabb": [
+        4.72,
+        0.34,
+        2.25,
+        0.96,
+        1.5,
+        0.81
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.73,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Rocket/Model/world/geometry_0",
+      "position": [
+        5.23,
+        1.09,
+        2.67
+      ],
+      "screen_pos": [
+        557.19,
+        208.7
+      ]
+    },
+    {
+      "aabb": [
+        4.72,
+        0.34,
+        2.25,
+        0.96,
+        1.5,
+        0.81
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.73,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Rocket/FocusHitbox",
+      "position": [
+        5.2,
+        1.09,
+        2.65
+      ],
+      "screen_pos": [
+        557.19,
+        208.7
+      ]
+    },
+    {
+      "aabb": [
+        4.72,
+        0.34,
+        2.25,
+        0.96,
+        1.5,
+        0.81
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.73,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Rocket/FocusHitbox/@CollisionShape3D@123",
+      "position": [
+        5.2,
+        1.09,
+        2.65
+      ],
+      "screen_pos": [
+        557.19,
+        208.7
+      ]
+    },
+    {
+      "aabb": [
+        -4.5,
+        4.2,
+        -2.81,
+        9,
+        1.35,
+        0.77
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 17.22,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/WallShelf/Model/world/geometry_0",
+      "position": [
+        0,
+        4.87,
+        -2.42
+      ],
+      "screen_pos": [
+        338.19,
+        61.62
+      ]
+    },
+    {
+      "aabb": [
+        -4.5,
+        4.2,
+        -2.81,
+        9,
+        1.35,
+        0.77
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 17.22,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/WallShelf/FocusHitbox",
+      "position": [
+        0,
+        4.87,
+        -2.42
+      ],
+      "screen_pos": [
+        338.19,
+        61.62
+      ]
+    },
+    {
+      "aabb": [
+        -4.5,
+        4.2,
+        -2.81,
+        9,
+        1.35,
+        0.77
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 17.22,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/WallShelf/FocusHitbox/@CollisionShape3D@124",
+      "position": [
+        0,
+        4.87,
+        -2.42
+      ],
+      "screen_pos": [
+        338.19,
+        61.62
+      ]
+    },
+    {
+      "aabb": [
+        -2.8,
+        5.51,
+        -2.76,
+        0.2,
+        1,
+        0.69
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 17.44,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/BinderPink/Model/world/geometry_0",
+      "position": [
+        -2.7,
+        6.01,
+        -2.42
+      ],
+      "screen_pos": [
+        255.57,
+        25.76
+      ]
+    },
+    {
+      "aabb": [
+        -2.8,
+        5.51,
+        -2.76,
+        0.2,
+        1,
+        0.69
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 17.44,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/BinderPink/FocusHitbox",
+      "position": [
+        -2.7,
+        6.01,
+        -2.42
+      ],
+      "screen_pos": [
+        255.57,
+        25.76
+      ]
+    },
+    {
+      "aabb": [
+        -2.8,
+        5.51,
+        -2.76,
+        0.2,
+        1,
+        0.69
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 17.44,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/BinderPink/FocusHitbox/@CollisionShape3D@125",
+      "position": [
+        -2.7,
+        6.01,
+        -2.42
+      ],
+      "screen_pos": [
+        255.57,
+        25.76
       ]
     }
   ],
   "passed": true,
   "rect_format": "[x, y, width, height]",
-  "total_nodes": 361,
+  "total_nodes": 536,
   "truncated": false,
   "viewport": {
-    "height": 720,
-    "width": 1280
+    "height": 360,
+    "width": 640
   }
 }

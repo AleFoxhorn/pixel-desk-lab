@@ -30,6 +30,10 @@ func set_open(open: bool, frame_contents: bool = true) -> void:
 	if is_open == open:
 		return
 	is_open = open
+	if interaction_host != null:
+		var audio: Node = interaction_host.get("control_audio") as Node
+		if audio != null:
+			audio.call("play_sound", "drawer_open" if open else "drawer_close")
 	_set_files_pickable(false)
 	if not open and interaction_host != null:
 		var reader: Control = interaction_host.get("file_reader") as Control

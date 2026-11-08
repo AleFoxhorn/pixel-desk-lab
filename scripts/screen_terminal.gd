@@ -1,6 +1,7 @@
 extends Control
 ## Native text editing lives independently of the replaceable 3D display.
 const PASSWORD: String = "HELLO WORLD"
+signal interface_feedback(sound_id: String)
 var unlocked: bool = false
 var booting: bool = false
 var boot_elapsed: float = 0.0
@@ -17,6 +18,8 @@ var lock_area: VBoxContainer
 var unlock_button: Button
 var access_status: Label
 
+var conversation: VBoxContainer
+var display_powered: bool = true
 var editor: TextEdit
 var count_label: Label
 
@@ -31,6 +34,7 @@ func _ready() -> void:
 	ui_theme.default_font = font
 	ui_theme.default_font_size = 12
 	ui_theme.set_color("font_color", "TextEdit", Color("9bcea8"))
+	ui_theme.set_color("font_readonly_color", "TextEdit", Color("9bcea8"))
 	ui_theme.set_color("caret_color", "TextEdit", Color("b3e3a6"))
 	ui_theme.set_color("selection_color", "TextEdit", Color("315447"))
 	for state: String in ["normal", "read_only", "focus"]:
@@ -110,18 +114,13 @@ func _ready() -> void:
 	unlock_button.pressed.connect(_attempt_unlock)
 	password_input.text_submitted.connect(func(_value: String) -> void: _attempt_unlock())
 	password_input.text_changed.connect(_password_changed)
-	editor = TextEdit.new()
-	editor.name = "Editor"
-	editor.placeholder_text = "01 / WAITING FOR INPUT_"
-	editor.add_theme_color_override("font_placeholder_color", Color("679d79"))
-	editor.caret_type = TextEdit.CARET_TYPE_BLOCK
-	editor.caret_blink = true
-	editor.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
-	editor.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	editor.custom_minimum_size = Vector2(0, 66)
-	editor.scroll_fit_content_height = false
-	editor.visible = false
-	column.add_child(editor)
+	conversation = preload("res://scripts/terminal_conversation.gd").new()
+	conversation.name = "Conversation"
+	column.add_child(conversation)
+	editor = conversation.editor
+	editor.hide()
+	conversation.hide()
+	conversation.state_changed.connect(_update_count)
 	boot_label = Label.new()
 	boot_label.name = "BootSequence"
 	boot_label.custom_minimum_size = Vector2(0, 66)
@@ -150,7 +149,7 @@ func _update_count() -> void:
 	if not unlocked:
 		count_label.text = "ENTER / UNLOCK"
 		return
-	count_label.text = "LOCAL NODE: ONLINE / %03d / LINK: --" % editor.text.length()
+	count_label.text = "RECEIVING_" if conversation.replying else "ENTER SEND / SHIFT+ENTER NEWLINE"
 
 func begin_editing() -> void:
 	editing_requested = true
@@ -167,6 +166,23 @@ func end_editing() -> void:
 	password_input.release_focus()
 	unlock_button.release_focus()
 
+func lock_terminal() -> void:
+	end_editing()
+	boot_audio.stop_all()
+	unlocked = false
+	booting = false
+	boot_elapsed = 0.0
+	boot_emblem.hide()
+	boot_label.hide()
+	content_panel.show()
+	editor.hide()
+	conversation.hide()
+	conversation.active = false
+	lock_area.show()
+	password_input.clear()
+	access_status.text = "ACCESS LOCKED"
+	_update_count()
+
 func _password_changed(_value: String) -> void:
 	if _value.is_empty():
 		return
@@ -177,6 +193,7 @@ func _attempt_unlock() -> void:
 	if unlocked or booting:
 		return
 	if password_input.text != PASSWORD:
+		interface_feedback.emit("error")
 		access_status.text = "ACCESS DENIED"
 		password_input.clear()
 		# clear() may emit text_changed, so set failure feedback afterwards.
@@ -220,7 +237,13 @@ func _process(delta: float) -> void:
 		booting = false
 		unlocked = true
 		boot_label.hide()
+		conversation.show()
 		editor.show()
+		conversation.active = display_powered
 		_update_count()
 		if editing_requested:
 			editor.grab_focus()
+
+func set_display_powered(enabled: bool) -> void:
+	display_powered = enabled
+	conversation.active = enabled and unlocked and not booting

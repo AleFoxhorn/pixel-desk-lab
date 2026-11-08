@@ -117,7 +117,7 @@ func run() -> void:
 	await process_frame
 	check(editor.text == "1234", "Typing 1–4 must enter text without changing view: " + editor.text)
 	check(lab.camera.active_view == 0, "Digits must not change view")
-	key(KEY_ENTER)
+	key(KEY_ENTER, 0, true)
 	key(KEY_A, 65, true)
 	key(KEY_B, 98)
 	key(KEY_BACKSPACE)
@@ -151,6 +151,31 @@ func run() -> void:
 	await process_frame
 	check(editor.text == saved_text, "Text survives view changes")
 	check(terminal.unlocked, "View changes preserve unlocked state")
+	# Submit through the real keyboard event route, then verify the exact fixed reply.
+	editor.select_all()
+	key(KEY_H, 72, true)
+	key(KEY_I, 73, true)
+	key(KEY_ENTER)
+	await process_frame
+	check(terminal.conversation.messages.size() == 1 and editor.text.is_empty(), "Enter submits input and clears composer")
+	check(terminal.conversation.replying, "Submitted message starts a terminal reply")
+	key(KEY_ENTER)
+	await process_frame
+	check(terminal.conversation.messages.size() == 1, "Repeated Enter does not duplicate pending message")
+	key(KEY_N, 110)
+	await create_timer(1.2).timeout
+	check(str(terminal.conversation.messages[0]["reply"]) == "HELLO,WHAT CAN I DO FOR YOU", "Reply matches the supplied text exactly")
+	check(editor.text == "n", "Typing the next draft during reply is preserved")
+	key(KEY_ENTER)
+	lab.select_view(1, true)
+	await create_timer(1.2).timeout
+	check(terminal.conversation.messages.size() == 2, "Multiple exchanges are retained")
+	check(str(terminal.conversation.messages[1]["reply"]) == "HELLO,WHAT CAN I DO FOR YOU", "Every submitted message receives the fixed response")
+	check(not editor.has_focus(), "Finishing a reply does not steal focus from another view")
+	lab.select_view(0, true)
+	mouse(click, true)
+	mouse(click, false)
+	saved_text = editor.text
 	lab.desk._toggle_power()
 	await process_frame
 	key(KEY_A, 97)
@@ -162,7 +187,7 @@ func run() -> void:
 	check(not terminal.boot_audio.success.playing and terminal.boot_audio.pending_start < 0, "Power off stops audio and cancels queued startup")
 	lab.desk._toggle_power()
 	lab.end_screen_editing()
-	editor.text = "ONLINE_\nREADY FOR INPUT\n现实键盘 → 屏幕输入"
+	terminal.conversation._refresh_transcript()
 	lab.set_print_preset(1)
 	await process_frame
 	await process_frame

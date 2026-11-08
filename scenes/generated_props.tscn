@@ -1,61 +1,94 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" path="res://models/hi3d/keyboard.glb" id="1_gew7y"]
-[ext_resource type="PackedScene" path="res://models/hi3d/lamp.glb" id="2_g6tk0"]
-[ext_resource type="PackedScene" path="res://models/hi3d/radio.glb" id="3_v63q5"]
-[ext_resource type="PackedScene" path="res://models/hi3d/recorder.glb" id="4_k5rwn"]
-[ext_resource type="PackedScene" path="res://models/hi3d/computer.glb" id="5_e2cuh"]
-[ext_resource type="PackedScene" path="res://models/hi3d/origami_bird.glb" id="6_g6tk0"]
+[ext_resource type="PackedScene" path="res://models/hi3d/keyboard.glb" id="1_jcax7"]
+[ext_resource type="PackedScene" path="res://models/hi3d/lamp.glb" id="2_uuhgl"]
+[ext_resource type="PackedScene" path="res://models/hi3d/radio.glb" id="3_6crgk"]
+[ext_resource type="PackedScene" path="res://models/hi3d/recorder.glb" id="4_y80cs"]
+[ext_resource type="PackedScene" path="res://models/hi3d/computer.glb" id="5_0ulls"]
+[ext_resource type="PackedScene" path="res://models/hi3d/origami_bird.glb" id="6_w6b70"]
+[ext_resource type="PackedScene" path="res://models/hi3d/card_holder.glb" id="7_0y7rr"]
+[ext_resource type="PackedScene" path="res://models/hi3d/rocket.glb" id="8_0onu4"]
+[ext_resource type="PackedScene" path="res://models/hi3d/wall_shelf.glb" id="9_yrk74"]
+[ext_resource type="PackedScene" path="res://models/hi3d/binder_pink.glb" id="10_c5poo"]
 
-[node name="GeneratedProps" type="Node3D" unique_id=1768993361]
+[node name="GeneratedProps" type="Node3D" unique_id=7315485]
 
-[node name="Keyboard" type="Node3D" parent="." unique_id=375091662]
+[node name="Keyboard" type="Node3D" parent="." unique_id=1887581357]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.15, 0.34, 2.65)
 visible = false
 metadata/source_task_id = "fa87944b651249dd8444fea1ba00592b"
 metadata/source_asset = "res://models/hi3d/keyboard.glb"
 
-[node name="Model" type="Node3D" parent="Keyboard" unique_id=657688866 instance=ExtResource("1_gew7y")]
+[node name="Model" type="Node3D" parent="Keyboard" unique_id=657688866 instance=ExtResource("1_jcax7")]
 transform = Transform3D(4.099796, 0, 0, 0, 4.099796, 0, 0, 0, 4.099796, 6.597905e-05, 0.42679393, -0.0039384607)
 
-[node name="Lamp" type="Node3D" parent="." unique_id=133248080]
+[node name="Lamp" type="Node3D" parent="." unique_id=272629339]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0.34, -0.55)
 metadata/source_task_id = "682a353f95c94f389e760573f17f953e"
 metadata/source_asset = "res://models/hi3d/lamp.glb"
 
-[node name="Model" type="Node3D" parent="Lamp" unique_id=1361329381 instance=ExtResource("2_g6tk0")]
+[node name="Model" type="Node3D" parent="Lamp" unique_id=1361329381 instance=ExtResource("2_uuhgl")]
 transform = Transform3D(3.500098, 0, 0, 0, 3.500098, 0, 0, 0, 3.500098, -0.000731742, 1.7498759, 4.255891e-05)
 
-[node name="Radio" type="Node3D" parent="." unique_id=944827098]
+[node name="Radio" type="Node3D" parent="." unique_id=1294029124]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.65, 0.34, 1.35)
 metadata/source_task_id = "018a007defcc4483b3c785e75dc1de81"
 metadata/source_asset = "res://models/hi3d/radio.glb"
 
-[node name="Model" type="Node3D" parent="Radio" unique_id=1598402270 instance=ExtResource("3_v63q5")]
+[node name="Model" type="Node3D" parent="Radio" unique_id=1598402270 instance=ExtResource("3_6crgk")]
 transform = Transform3D(2.0176222, 0, 0, 0, 2.0176222, 0, 0, 0, 2.0176222, 0.00017263273, 1.0088879, -0.0004984462)
 
-[node name="Recorder" type="Node3D" parent="." unique_id=808934900]
+[node name="Recorder" type="Node3D" parent="." unique_id=1956184454]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8, 0.34, 0.5)
 metadata/source_task_id = "1f84c11e18c84e83b09b161579f0cafa"
 metadata/source_asset = "res://models/hi3d/recorder.glb"
 
-[node name="Model" type="Node3D" parent="Recorder" unique_id=1977485989 instance=ExtResource("4_k5rwn")]
+[node name="Model" type="Node3D" parent="Recorder" unique_id=1977485989 instance=ExtResource("4_y80cs")]
 transform = Transform3D(2.2500253, 0, 0, 0, 2.2500253, 0, 0, 0, 2.2500253, 1.1131292e-05, 1.0356072, -1.6160491e-05)
 
-[node name="Computer" type="Node3D" parent="." unique_id=826881682]
+[node name="Computer" type="Node3D" parent="." unique_id=1884196197]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34, -0.15)
 metadata/source_task_id = "d343c25bdf4547f9a7159c4d9fb76853"
 metadata/source_asset = "res://models/hi3d/computer.glb"
 
-[node name="Model" type="Node3D" parent="Computer" unique_id=1928226937 instance=ExtResource("5_e2cuh")]
+[node name="Model" type="Node3D" parent="Computer" unique_id=1928226937 instance=ExtResource("5_0ulls")]
 transform = Transform3D(6.599455, 0, 0, 0, 6.599455, 0, 0, 0, 6.599455, -0.00013964214, 2.2687645, 0.00087905716)
 
-[node name="OrigamiBird" type="Node3D" parent="." unique_id=649996417]
-transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 3.2, 0.34, 2.6)
+[node name="OrigamiBird" type="Node3D" parent="." unique_id=1298151645]
+transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 3.2, 0.34, 3.05)
 metadata/source_asset = "res://models/hi3d/origami_bird.glb"
-metadata/source_file = "Hi3D_写实3D折纸鸟_allparts_20261108_175350.glb"
-metadata/volume_reference = "Radio"
-metadata/relative_volume = 0.5
 
-[node name="Model" type="Node3D" parent="OrigamiBird" unique_id=1890274657 instance=ExtResource("6_g6tk0")]
-transform = Transform3D(1.5276531, 0, 0, 0, 1.5276531, 0, 0, 0, 1.5276531, -1.4796474e-05, 0.76049054, -1.0061602e-05)
+[node name="Model" type="Node3D" parent="OrigamiBird" unique_id=1890274657 instance=ExtResource("6_w6b70")]
+transform = Transform3D(1.5276532, 0, 0, 0, 1.5276532, 0, 0, 0, 1.5276532, -1.4750947e-05, 0.7604906, -1.0061603e-05)
+
+[node name="CardHolder" type="Node3D" parent="." unique_id=1723749231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0.34, 1.7)
+metadata/source_task_id = "da0460b56dc94c46afc19b4fae130990"
+metadata/source_asset = "res://models/hi3d/card_holder.glb"
+
+[node name="Model" type="Node3D" parent="CardHolder" unique_id=768829285 instance=ExtResource("7_0y7rr")]
+transform = Transform3D(1.5499958, 0, 0, 0, 1.5499958, 0, 0, 0, 1.5499958, 7.483343e-06, 0.3619207, 0.00015377808)
+
+[node name="Rocket" type="Node3D" parent="." unique_id=37977184]
+transform = Transform3D(0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, 0.9659258, 5.2, 0.34, 2.65)
+metadata/source_task_id = "82388e8b16924aa29fde8eed58e2ee52"
+metadata/source_asset = "res://models/hi3d/rocket.glb"
+
+[node name="Model" type="Node3D" parent="Rocket" unique_id=1883132260 instance=ExtResource("8_0onu4")]
+transform = Transform3D(1.5094471, 0, 0, 0, 1.5094471, 0, 0, 0, 1.5094471, 0.031437654, 0.74655455, 0.01528841)
+
+[node name="WallShelf" type="Node3D" parent="." unique_id=2121136606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.197, -2.42)
+metadata/source_task_id = "ef640f630b844065945d7a18f2b0bf15"
+metadata/source_asset = "res://models/hi3d/wall_shelf.glb"
+
+[node name="Model" type="Node3D" parent="WallShelf" unique_id=1155594071 instance=ExtResource("9_yrk74")]
+transform = Transform3D(8.999307, 0, 0, 0, 8.999307, 0, 0, 0, 8.999307, -9.494289e-05, 0.6754151, 0.00085016125)
+
+[node name="BinderPink" type="Node3D" parent="." unique_id=1685028934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7, 5.513356, -2.42)
+metadata/source_task_id = "a9e0437c24c247e08f4596b4b54abf9b"
+metadata/source_asset = "res://models/hi3d/binder_pink.glb"
+
+[node name="Model" type="Node3D" parent="BinderPink" unique_id=1890804364 instance=ExtResource("10_c5poo")]
+transform = Transform3D(0.9999099, 0, 0, 0, 0.9999099, 0, 0, 0, 0.9999099, 0.00045760322, 0.4999978, 0.0006972519)

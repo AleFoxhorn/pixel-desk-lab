@@ -1,0 +1,12 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "prompt": "Use case: style-transfer. Asset type: one flat, portrait wall-poster texture for a retrofuturistic pixel-art game. Image 1 is the edit target: preserve its Atomic Heart poster composition, central faceless metallic female android with hands poised around the chest and trailing cables, the suspended salmon-pink mechanical head near the waist, the graphic geometric background, and the exact readable two-line title ATOMIC / HEART near the bottom. Image 2 is STYLE AND PALETTE ONLY: do not reproduce its desk, room, computer, or any 3D object. Translate the entire poster into that game's coherent soft mid-century space-age aesthetic: dusty rose pink, porcelain/periwinkle blue, warm cream paper, muted jade/teal, restrained deep plum shadows. Strong 16-bit pixel-art shapes, clearly stepped pixel edges, controlled ordered dithering and limited ink colors, subtle printed-paper wear. Keep the robot and floating head recognizable with simplified elegant shapes and balanced silhouette. No photorealism, smooth airbrush gradients, glossy modern sci-fi rendering or neon cyberpunk colors. Layout: retain the source's full-body vertical composition, title in bold cream pixel lettering in the lower third, enough contrast to read the figure at a small in-game size; no added slogans, logos, captions, or decorative text. Output only the complete flat rectangular portrait poster artwork viewed straight on, approximately the source's 0.71 width-to-height ratio, edge-to-edge printable texture. No frame, no room, no wall mockup, no perspective, no cast shadows around the sheet. The original image supplies content; the second supplies rendering style and colors.",
+  "asset": "atomic_heart_pixel.png",
+  "size": [
+    1055,
+    1490
+  ],
+  "scene": "res://scenes/wall_poster.tscn",
+  "reference": "User-supplied Atomic Heart poster + verification/latest_playtest_open.png",
+  "placement": "Wall facing the desk, upper left between the rack and lamp, clear of the lamp silhouette"
+}

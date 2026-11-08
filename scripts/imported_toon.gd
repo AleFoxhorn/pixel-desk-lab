@@ -5,18 +5,23 @@ const OUTLINE_SHADER: Shader = preload("res://shaders/prop_outline.gdshader")
 var entries: Array[Dictionary] = []
 var enabled: bool = false
 var surface_count: int = 0
-var outline_world_width: float = 0.012
+var outline_world_width: float = 0.018
+var tracked_ids: Dictionary = {}
 
 func bind(root: Node3D) -> void:
 	set_enabled(false)
 	entries.clear()
+	tracked_ids.clear()
 	surface_count = 0
-	var props: Node3D = root.find_child("GeneratedProps", true, false) as Node3D
+	refresh(root)
+
+func refresh(root: Node3D) -> void:
+	var props: Node3D = root if root.name == "GeneratedProps" else root.find_child("GeneratedProps", true, false) as Node3D
 	if props == null:
 		return
 	for node: Node in props.find_children("*", "MeshInstance3D", true, false):
 		var mesh_node: MeshInstance3D = node as MeshInstance3D
-		if mesh_node.mesh == null:
+		if mesh_node.mesh == null or tracked_ids.has(mesh_node.get_instance_id()):
 			continue
 		# Imported scene ownership distinguishes original meshes from later runtime controls.
 		if mesh_node.owner == null:
@@ -44,20 +49,26 @@ func bind(root: Node3D) -> void:
 				converted += 1
 			surfaces.append({"original": original_surface, "toon": toon})
 		if converted > 0:
-			entries.append({"mesh": mesh_node, "override": source_override, "surfaces": surfaces})
+			var entry: Dictionary = {"mesh": mesh_node, "override": source_override, "surfaces": surfaces}
+			entries.append(entry)
+			tracked_ids[mesh_node.get_instance_id()] = true
+			_apply_entry(entry, enabled)
 
 func set_enabled(value: bool) -> void:
 	enabled = value
 	for entry: Dictionary in entries:
-		var mesh_node: MeshInstance3D = entry["mesh"] as MeshInstance3D
-		if not is_instance_valid(mesh_node):
-			continue
-		var surfaces: Array[Dictionary] = entry["surfaces"]
-		mesh_node.material_override = null if value else entry["override"] as Material
-		for index: int in range(surfaces.size()):
-			var surface: Dictionary = surfaces[index]
-			var toon: ShaderMaterial = surface["toon"] as ShaderMaterial
-			mesh_node.set_surface_override_material(index, toon if value and toon != null else surface["original"] as Material)
+		_apply_entry(entry, value)
+
+func _apply_entry(entry: Dictionary, value: bool) -> void:
+	var mesh_node: MeshInstance3D = entry["mesh"] as MeshInstance3D
+	if not is_instance_valid(mesh_node):
+		return
+	var surfaces: Array[Dictionary] = entry["surfaces"]
+	mesh_node.material_override = null if value else entry["override"] as Material
+	for index: int in range(surfaces.size()):
+		var surface: Dictionary = surfaces[index]
+		var toon: ShaderMaterial = surface["toon"] as ShaderMaterial
+		mesh_node.set_surface_override_material(index, toon if value and toon != null else surface["original"] as Material)
 
 func _world_scale(node: Node3D) -> Vector3:
 	if node.is_inside_tree():

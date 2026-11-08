@@ -21,6 +21,9 @@ func run() -> void:
 		var aim: Vector3 = bounds.get_center()
 		if item == "Lamp":
 			aim.y = bounds.position.y + bounds.size.y * 0.78
+		elif item == "Recorder":
+			# The foreground rocket covers the case centre; click the exposed left reel.
+			aim = bounds.position + bounds.size * Vector3(0.23, 0.72, 1.0)
 		var pixel: Vector2 = lab.camera.unproject_position(aim)
 		var at: Vector2 = lab.image.global_position + pixel / Vector2(lab.scene_view.size) * lab.image.size
 		var click: InputEventMouseButton = InputEventMouseButton.new()
