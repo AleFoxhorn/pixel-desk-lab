@@ -1,0 +1,39 @@
+{
+  "project_validation": {
+    "ok": true,
+    "counts": {
+      "total": 0,
+      "errors": 0,
+      "parse_errors": 0,
+      "warnings": 0,
+      "info": 0
+    }
+  },
+  "asset_visibility": {
+    "ok": true,
+    "errors": [],
+    "counts": {
+      "total": 0,
+      "errors": 0,
+      "parse_errors": 0,
+      "warnings": 0,
+      "info": 0
+    }
+  },
+  "scene_smoke": {
+    "ok": true,
+    "counts": {
+      "scenes": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "findings": 0
+    }
+  },
+  "screen_interaction": "PASS",
+  "deferred": [
+    "keyboard"
+  ],
+  "preview": "res://verification/hi3d_environment.png"
+}

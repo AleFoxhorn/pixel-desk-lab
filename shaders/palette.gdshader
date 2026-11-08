@@ -7,6 +7,7 @@ uniform bool enabled = true;
 uniform bool reference_style = true;
 uniform bool dither_enabled = true;
 uniform float dither_strength : hint_range(0.0, 0.15) = 0.045;
+uniform float palette_strength : hint_range(0.0, 1.0) = 0.90;
 
 const vec3 palette[25] = vec3[25](
 	vec3(0.055,0.075,0.10), vec3(0.09,0.13,0.16), vec3(0.13,0.20,0.23),
@@ -69,7 +70,7 @@ void fragment() {
 				best = candidate;
 			}
 		}
-		rgb = max(max(source.r, source.g), source.b) < 0.075 ? source.rgb : mix(source.rgb, best, 0.72);
+		rgb = max(max(source.r, source.g), source.b) < 0.075 ? source.rgb : mix(source.rgb, best, palette_strength);
 	}
 	COLOR = vec4(rgb, source.a);
 }

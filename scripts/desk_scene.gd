@@ -7,7 +7,12 @@ var terminal_view: SubViewport
 var terminal_ui: ScreenTerminal
 
 const TOON_SHADER: Shader = preload("res://shaders/toon.gdshader")
+const ImportedToon: Script = preload("res://scripts/imported_toon.gd")
+var imported_toon: RefCounted
 var material_pairs: Array[Dictionary] = []
+const SCREEN_COLLISION_LAYER: int = 64
+var screen_size: Vector2 = ScreenSurface.DISPLAY_SIZE
+var fitted_screen: bool = false
 var screen: MeshInstance3D
 var power_button: Node3D
 var tuning_knob: Node3D
@@ -16,6 +21,7 @@ var powered: bool = true
 var interaction_busy: bool = false
 @export var screen_on: StandardMaterial3D
 @export var screen_off: StandardMaterial3D
+@export var screen_rim_enabled: bool = true
 var accent: Color = Color("c88659")
 
 func _ready() -> void:
@@ -29,6 +35,18 @@ func _ready() -> void:
 	_setup_interactive_screen()
 
 func _bind_saved_scene() -> void:
+	var housing: MeshInstance3D = get_node("Computer/Housing") as MeshInstance3D
+	var view_hit: StaticBody3D = StaticBody3D.new()
+	view_hit.name = "CameraSurface"
+	view_hit.collision_layer = 16
+	view_hit.collision_mask = 0
+	var view_shape: CollisionShape3D = CollisionShape3D.new()
+	var box: BoxShape3D = BoxShape3D.new()
+	box.size = housing.get_aabb().size
+	view_shape.shape = box
+	view_shape.position = housing.get_aabb().get_center()
+	view_hit.add_child(view_shape)
+	housing.add_child(view_hit)
 	screen = get_node("Computer/Screen") as MeshInstance3D
 	power_button = get_node("Computer/PowerButton") as Node3D
 	tuning_knob = get_node("Computer/TuningKnob") as Node3D
@@ -40,6 +58,8 @@ func _bind_saved_scene() -> void:
 		if mesh.has_meta("toon_material"):
 			material_pairs.append({"mesh": mesh, "smooth": mesh.get_meta("smooth_material"),
 				"toon": mesh.get_meta("toon_material")})
+	imported_toon = ImportedToon.new()
+	imported_toon.bind(self)
 
 func _build_lighting() -> void:
 	var world_environment: WorldEnvironment = WorldEnvironment.new()
@@ -180,6 +200,8 @@ func _terminal_texture() -> ViewportTexture:
 	return terminal.get_texture()
 
 func set_toon(enabled: bool) -> void:
+	if imported_toon != null:
+		imported_toon.set_enabled(enabled)
 	for pair: Dictionary in material_pairs:
 		var mesh: MeshInstance3D = pair["mesh"]
 		mesh.material_override = pair["toon"] if enabled else pair["smooth"]
@@ -378,6 +400,8 @@ func _setup_interactive_screen() -> void:
 	terminal_ui = ScreenTerminal.new()
 	terminal_view.add_child(terminal_ui)
 	screen.mesh = ScreenSurface.make_mesh()
+	_fit_imported_screen()
+	_build_screen_hit_surface()
 	screen_on = screen_on.duplicate() as StandardMaterial3D
 	screen_on.albedo_texture = terminal_view.get_texture()
 	screen_on.cull_mode = BaseMaterial3D.CULL_DISABLED
@@ -391,13 +415,56 @@ func _setup_interactive_screen() -> void:
 	rim.mesh = ScreenSurface.make_mesh()
 	rim.transform = screen.transform
 	rim.position.z -= 0.012
-	rim.scale = Vector3(1.035, 1.06, 1)
+	rim.scale = screen.scale * Vector3(1.035, 1.06, 1)
+	rim.visible = screen_rim_enabled and not fitted_screen
 	var rim_material: StandardMaterial3D = StandardMaterial3D.new()
 	rim_material.albedo_color = Color("f2cf9c")
 	rim_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	rim.material_override = rim_material
 	screen.get_parent().add_child(rim)
-	(get_node("Views/Front/LookAt") as Node3D).position = screen.position
-	(get_node("Views/Front/CameraPosition") as Node3D).position = screen.position + Vector3(0, 0, 4.4)
-	(get_node("Views/ScreenClose/LookAt") as Node3D).position = screen.position
-	(get_node("Views/ScreenClose/CameraPosition") as Node3D).position = screen.position + Vector3(0, 0, 2.8)
+	_frame_screen_views()
+
+func _fit_imported_screen() -> void:
+	var imported: MeshInstance3D = get_node_or_null("GeneratedProps/Computer/Model/world/geometry_0") as MeshInstance3D
+	var profile_path: String = "res://art/screen/hi3d_computer.json"
+	if imported == null or not FileAccess.file_exists(profile_path):
+		return
+	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(profile_path))
+	if not parsed is Dictionary:
+		return
+	var profile: Dictionary = parsed
+	var model_to_computer: Transform3D = (screen.get_parent() as Node3D).global_transform.affine_inverse() * imported.global_transform
+	var model_scale: Vector3 = model_to_computer.basis.get_scale()
+	var center: Array = profile["center"]
+	screen.mesh = ScreenSurface.make_fitted_mesh(profile, model_scale)
+	screen.transform = Transform3D(model_to_computer.basis.orthonormalized(),
+		model_to_computer * Vector3(float(center[0]), float(center[1]), float(center[2])))
+	var fitted_size: Array = profile["size"]
+	screen_size = Vector2(float(fitted_size[0]) * model_scale.x, float(fitted_size[1]) * model_scale.y)
+	fitted_screen = true
+
+func _build_screen_hit_surface() -> void:
+	var body: StaticBody3D = StaticBody3D.new()
+	body.name = "DisplaySurface"
+	body.collision_layer = SCREEN_COLLISION_LAYER
+	body.collision_mask = 0
+	var collision: CollisionShape3D = CollisionShape3D.new()
+	collision.name = "GlassShape"
+	var shape: ConcavePolygonShape3D = screen.mesh.create_trimesh_shape()
+	shape.backface_collision = true
+	collision.shape = shape
+	body.add_child(collision)
+	screen.add_child(body)
+
+func _frame_screen_views() -> void:
+	var screen_center: Vector3 = to_local(screen.global_position)
+	var normal: Vector3 = (global_basis.inverse() * screen.global_basis.z).normalized()
+	var camera_node: Camera3D = get_node("Camera") as Camera3D
+	var aspect: float = 16.0 / 9.0
+	var half_fov: float = tan(deg_to_rad(camera_node.fov * 0.5))
+	var fit: float = maxf(screen_size.y / (2.0 * half_fov), screen_size.x / (2.0 * half_fov * aspect))
+	var depth_margin: float = screen.get_aabb().size.z
+	for entry: Array in [["Front", 1.5], ["ScreenClose", 1.18]]:
+		var view: Node3D = get_node("Views/" + str(entry[0])) as Node3D
+		(view.get_node("LookAt") as Node3D).position = screen_center
+		(view.get_node("CameraPosition") as Node3D).position = screen_center + normal * (fit * float(entry[1]) + depth_margin)

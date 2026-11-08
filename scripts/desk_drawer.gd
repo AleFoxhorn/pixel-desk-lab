@@ -23,18 +23,30 @@ func _ready() -> void:
 func interact(action: String) -> void:
 	if action == "desk_drawer":
 		set_open(not is_open)
+	elif action.begins_with("desk_file_") and is_open and interaction_host != null:
+		interaction_host.call("open_desk_file", action.trim_prefix("desk_file_").to_int())
 
 func set_open(open: bool, frame_contents: bool = true) -> void:
 	if is_open == open:
 		return
 	is_open = open
+	_set_files_pickable(false)
+	if not open and interaction_host != null:
+		var reader: Control = interaction_host.get("file_reader") as Control
+		if reader != null:
+			reader.call("close")
 	if slide_motion != null and slide_motion.is_valid():
 		slide_motion.kill()
 	slide_motion = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
 	slide_motion.tween_property(slide, "position:z", TRAVEL if open else 0.0, 0.65)
+	slide_motion.tween_callback(_set_files_pickable.bind(open))
 	if frame_contents and interaction_host != null:
 		_frame_contents(open)
 	open_changed.emit(open)
+
+func _set_files_pickable(enabled: bool) -> void:
+	for node: Node in get_node("Slide/Files").find_children("PaperHit", "StaticBody3D", true, false):
+		(node as StaticBody3D).collision_layer = 1 if enabled else 0
 
 func _frame_contents(open: bool) -> void:
 	var camera: CameraDirector = interaction_host.get("camera") as CameraDirector

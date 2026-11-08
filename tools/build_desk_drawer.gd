@@ -42,6 +42,22 @@ func paper_file(node_name: String, at: Vector3, angle: float, folder_color: Stri
 	part(file, "ClipLeft", Vector3(-0.30, 0.074, -0.48), Vector3(0.015, 0.018, 0.19), "7185a3", 0.005)
 	part(file, "ClipRight", Vector3(-0.22, 0.074, -0.48), Vector3(0.015, 0.018, 0.19), "7185a3", 0.005)
 	part(file, "ClipBridge", Vector3(-0.26, 0.074, -0.57), Vector3(0.095, 0.018, 0.018), "7185a3", 0.005)
+	var body: StaticBody3D = StaticBody3D.new()
+	body.name = "PaperHit"
+	body.position.y = 0.055
+	body.collision_layer = 0
+	body.collision_mask = 0
+	body.set_meta("action", "desk_file_0" if node_name == "BlueFile" else "desk_file_1")
+	body.set_meta("interaction_target", NodePath("../../../.."))
+	file.add_child(body)
+	body.owner = drawer
+	var collision: CollisionShape3D = CollisionShape3D.new()
+	collision.name = "Shape"
+	var shape: BoxShape3D = BoxShape3D.new()
+	shape.size = Vector3(1.04, 0.065, 1.24)
+	collision.shape = shape
+	body.add_child(collision)
+	collision.owner = drawer
 
 func build() -> void:
 	geometry = DeskBuilder.new()

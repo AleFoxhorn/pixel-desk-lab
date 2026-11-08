@@ -36,3 +36,25 @@ static func make_mesh() -> ArrayMesh:
 	var mesh: ArrayMesh = ArrayMesh.new()
 	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
 	return mesh
+
+static func make_fitted_mesh(profile: Dictionary, model_scale: Vector3) -> ArrayMesh:
+	var vertices: PackedVector3Array = []
+	var normals: PackedVector3Array = []
+	var uvs: PackedVector2Array = []
+	var indices: PackedInt32Array = []
+	for value: Array in profile["vertices"]:
+		vertices.append(Vector3(float(value[0]), float(value[1]), float(value[2])) * model_scale)
+		normals.append(Vector3.BACK)
+	for value: Array in profile["uvs"]:
+		uvs.append(Vector2(float(value[0]), float(value[1])))
+	for value: int in profile["indices"]:
+		indices.append(value)
+	var arrays: Array = []
+	arrays.resize(Mesh.ARRAY_MAX)
+	arrays[Mesh.ARRAY_VERTEX] = vertices
+	arrays[Mesh.ARRAY_NORMAL] = normals
+	arrays[Mesh.ARRAY_TEX_UV] = uvs
+	arrays[Mesh.ARRAY_INDEX] = indices
+	var mesh: ArrayMesh = ArrayMesh.new()
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+	return mesh

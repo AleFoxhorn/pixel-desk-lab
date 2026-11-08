@@ -11,7 +11,8 @@
       "mesh_nodes": 1,
       "triangles": 1981624,
       "materials": 1,
-      "embedded_textures": 2
+      "embedded_textures": 2,
+      "quality_status": "visual_inspection_passed"
     },
     {
       "asset": "radio",
@@ -23,7 +24,8 @@
       "mesh_nodes": 1,
       "triangles": 1987420,
       "materials": 1,
-      "embedded_textures": 2
+      "embedded_textures": 2,
+      "quality_status": "visual_inspection_passed"
     },
     {
       "asset": "keyboard",
@@ -35,7 +37,12 @@
       "mesh_nodes": 1,
       "triangles": 1972206,
       "materials": 1,
-      "embedded_textures": 2
+      "embedded_textures": 2,
+      "quality_status": "needs_repair",
+      "quality_issues": [
+        "Generated mesh has two trackballs instead of one.",
+        "Generated key rows are incomplete."
+      ]
     },
     {
       "asset": "recorder",
@@ -47,7 +54,52 @@
       "mesh_nodes": 1,
       "triangles": 1978144,
       "materials": 1,
-      "embedded_textures": 2
+      "embedded_textures": 2,
+      "quality_status": "visual_inspection_passed"
+    },
+    {
+      "asset": "computer",
+      "task_id": "d343c25bdf4547f9a7159c4d9fb76853",
+      "model_page_url": "https://www.hi3d.ai/3d-model/d343c25bdf4547f9a7159c4d9fb76853",
+      "file": "computer.glb",
+      "bytes": 47876092,
+      "sha256": "7a265e584458c9e0b474c1c4fcb3cb59a122ef163ad9f139e74ff11b2e698869",
+      "mesh_nodes": 1,
+      "triangles": 1987650,
+      "materials": 1,
+      "embedded_textures": 2,
+      "quality_status": "visual_and_screen_interaction_verified"
+    },
+    {
+      "asset": "origami_bird",
+      "source_file": "Hi3D_写实3D折纸鸟_allparts_20261108_175350.glb",
+      "file": "origami_bird.glb",
+      "bytes": 48707908,
+      "sha256": "6cdc5e0937fcb6da3560323776d5ee841c95e645c379e4dd7b9b8667a2ffb096",
+      "mesh_nodes": 1,
+      "triangles": 1985834,
+      "materials": 1,
+      "embedded_textures": 2,
+      "source_bounds": {
+        "min": [
+          -0.500033974647522,
+          -0.497816264629364,
+          -0.2344416379928589
+        ],
+        "max": [
+          0.500053346157074,
+          0.4974348247051239,
+          0.23445481061935425
+        ]
+      },
+      "uniform_scale": 1.5276531090492573,
+      "normalized_dimensions": [
+        1.527786504947883,
+        1.5203984209064907,
+        0.7163111175446027
+      ],
+      "radio_relative_volume": 0.5,
+      "quality_status": "visual_and_placement_verified"
     }
   ]
 }

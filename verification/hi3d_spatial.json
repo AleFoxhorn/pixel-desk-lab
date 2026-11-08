@@ -13,17 +13,17 @@
     "path": "SceneViewport/DeskWorld/Camera",
     "position": [
       -0.6,
-      4.32,
-      13.78
+      3.94,
+      14.77
     ],
     "projection": "perspective",
     "size": 1
   },
   "counts": {
     "findings": 0,
-    "nodes": 341,
+    "nodes": 361,
     "off_screen": 0,
-    "on_screen": 340,
+    "on_screen": 360,
     "screen_space": 0
   },
   "dimension": "3d",
@@ -56,7 +56,7 @@
       ],
       "behind_camera": false,
       "class": "DirectionalLight3D",
-      "distance_to_camera": 14.46,
+      "distance_to_camera": 15.3,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
@@ -67,8 +67,8 @@
         0
       ],
       "screen_pos": [
-        682.58,
-        491.77
+        680.05,
+        447.78
       ]
     },
     {
@@ -82,7 +82,7 @@
       ],
       "behind_camera": false,
       "class": "OmniLight3D",
-      "distance_to_camera": 11.61,
+      "distance_to_camera": 12.56,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
@@ -93,8 +93,8 @@
         2.4
       ],
       "screen_pos": [
-        442.09,
-        227.86
+        456.76,
+        192.54
       ]
     },
     {
@@ -108,7 +108,7 @@
       ],
       "behind_camera": false,
       "class": "OmniLight3D",
-      "distance_to_camera": 15.92,
+      "distance_to_camera": 16.87,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
@@ -119,8 +119,8 @@
         -1.8
       ],
       "screen_pos": [
-        843.01,
-        248.29
+        831.83,
+        220.92
       ]
     },
     {
@@ -134,7 +134,7 @@
       ],
       "behind_camera": false,
       "class": "OmniLight3D",
-      "distance_to_camera": 12.83,
+      "distance_to_camera": 13.72,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
@@ -145,8 +145,8 @@
         1.25
       ],
       "screen_pos": [
-        687.63,
-        395.62
+        684.49,
+        353.11
       ]
     },
     {
@@ -160,7 +160,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.5,
+      "distance_to_camera": 14.28,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -171,8 +171,8 @@
         1.5
       ],
       "screen_pos": [
-        459.94,
-        587.41
+        471.67,
+        532.96
       ]
     },
     {
@@ -186,7 +186,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.76,
+      "distance_to_camera": 14.52,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -197,8 +197,8 @@
         1.5
       ],
       "screen_pos": [
-        914,
-        587.41
+        896.16,
+        532.96
       ]
     },
     {
@@ -212,7 +212,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.05,
+      "distance_to_camera": 15.82,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -223,408 +223,44 @@
         0
       ],
       "screen_pos": [
-        681.72,
-        605.52
+        679.29,
+        555.75
       ]
     },
     {
       "aabb": [
-        -1.48,
-        0.36,
-        -0.98,
-        2.95,
-        0.36,
-        2.75
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 13.92,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/Base",
-      "position": [
-        0,
-        0.54,
-        0.4
-      ],
-      "screen_pos": [
-        684.08,
-        462.44
-      ]
-    },
-    {
-      "aabb": [
-        -0.62,
-        0.71,
-        -0.61,
-        1.25,
-        0.31,
-        0.92
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.37,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/Pedestal",
-      "position": [
-        0,
-        0.86,
-        -0.15
-      ],
-      "screen_pos": [
-        682.59,
-        429.82
-      ]
-    },
-    {
-      "aabb": [
-        -1.37,
-        0.91,
-        -0.9,
-        2.75,
-        2,
-        1.6
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.1,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/Housing",
-      "position": [
-        0,
-        1.91,
-        -0.1
-      ],
-      "screen_pos": [
-        683.29,
-        356.99
-      ]
-    },
-    {
-      "aabb": [
-        -1.18,
-        1.42,
-        0.85,
-        2.39,
-        1.21,
+        -1.83,
+        1.84,
+        0.78,
+        4.15,
+        1.75,
         0
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.15,
+      "distance_to_camera": 14.07,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Computer/Screen",
       "position": [
-        0,
-        2.03,
-        0.85
+        0.22,
+        2.73,
+        0.78
       ],
       "screen_pos": [
-        687.4,
-        361.24
+        701.31,
+        270.84
       ]
     },
     {
       "aabb": [
-        -0.8,
-        1.24,
-        0.81,
-        0.3,
-        0.07,
-        0
-      ],
-      "behind_camera": false,
-      "class": "Label3D",
-      "distance_to_camera": 13.32,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@Label3D@18",
-      "position": [
-        -0.65,
-        1.28,
-        0.81
-      ],
-      "screen_pos": [
-        636.18,
-        416.38
-      ]
-    },
-    {
-      "aabb": [
-        0.53,
-        1.26,
-        0.81,
-        0.27,
-        0.04,
-        0
-      ],
-      "behind_camera": false,
-      "class": "Label3D",
-      "distance_to_camera": 13.38,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@Label3D@19",
-      "position": [
-        0.66,
-        1.28,
-        0.81
-      ],
-      "screen_pos": [
-        736.31,
-        416.38
-      ]
-    },
-    {
-      "aabb": [
-        0.86,
-        1.04,
-        0.76,
+        0.51,
+        1.4,
+        0.75,
         0.17,
         0.12,
         0.09
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 13.46,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/PowerButton",
-      "position": [
-        0.94,
-        1.1,
-        0.81
-      ],
-      "screen_pos": [
-        757.4,
-        429.68
-      ]
-    },
-    {
-      "aabb": [
-        0.79,
-        0.97,
-        0.71,
-        0.3,
-        0.27,
-        0.2
-      ],
-      "behind_camera": false,
-      "class": "StaticBody3D",
-      "distance_to_camera": 13.46,
-      "in_frustum": true,
-      "kind": "shapes",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/PowerButton/Hit_power",
-      "position": [
-        0.94,
-        1.1,
-        0.81
-      ],
-      "screen_pos": [
-        757.4,
-        429.68
-      ]
-    },
-    {
-      "aabb": [
-        0.79,
-        0.97,
-        0.71,
-        0.3,
-        0.27,
-        0.2
-      ],
-      "behind_camera": false,
-      "class": "CollisionShape3D",
-      "distance_to_camera": 13.46,
-      "in_frustum": true,
-      "kind": "shape",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/PowerButton/Hit_power/@CollisionShape3D@20",
-      "position": [
-        0.94,
-        1.1,
-        0.81
-      ],
-      "screen_pos": [
-        757.4,
-        429.68
-      ]
-    },
-    {
-      "aabb": [
-        0.65,
-        1.07,
-        0.81,
-        0.05,
-        0.06,
-        0.03
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 13.41,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/PowerLamp",
-      "position": [
-        0.68,
-        1.1,
-        0.83
-      ],
-      "screen_pos": [
-        737.72,
-        430.04
-      ]
-    },
-    {
-      "aabb": [
-        -1.08,
-        1.03,
-        0.77,
-        0.18,
-        0.18,
-        0.1
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 13.36,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Dial",
-      "position": [
-        -0.99,
-        1.12,
-        0.82
-      ],
-      "screen_pos": [
-        610.24,
-        428.38
-      ]
-    },
-    {
-      "aabb": [
-        -1,
-        1.13,
-        0.87,
-        0.02,
-        0.06,
-        0.01
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 13.29,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/DialMark",
-      "position": [
-        -0.99,
-        1.15,
-        0.88
-      ],
-      "screen_pos": [
-        610.1,
-        426.83
-      ]
-    },
-    {
-      "aabb": [
-        -1.12,
-        0.99,
-        0.71,
-        0.26,
-        0.26,
-        0.22
-      ],
-      "behind_camera": false,
-      "class": "StaticBody3D",
-      "distance_to_camera": 13.36,
-      "in_frustum": true,
-      "kind": "shapes",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Hit_knob",
-      "position": [
-        -0.99,
-        1.12,
-        0.82
-      ],
-      "screen_pos": [
-        610.24,
-        428.38
-      ]
-    },
-    {
-      "aabb": [
-        -1.12,
-        0.99,
-        0.71,
-        0.26,
-        0.26,
-        0.22
-      ],
-      "behind_camera": false,
-      "class": "CollisionShape3D",
-      "distance_to_camera": 13.36,
-      "in_frustum": true,
-      "kind": "shape",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Hit_knob/@CollisionShape3D@21",
-      "position": [
-        -0.99,
-        1.12,
-        0.82
-      ],
-      "screen_pos": [
-        610.24,
-        428.38
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        1.68,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.25,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/SideVent",
-      "position": [
-        -1.38,
-        1.7,
-        -0.2
-      ],
-      "screen_pos": [
-        583.97,
-        370.56
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        1.75,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
@@ -632,415 +268,77 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@22",
+      "path": "SceneViewport/DeskWorld/Computer/PowerButton",
       "position": [
-        -1.38,
-        1.77,
-        -0.2
+        0.59,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        583.93,
-        365.78
+        725.53,
+        361.21
       ]
     },
     {
       "aabb": [
-        -1.39,
-        1.82,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
+        0.44,
+        1.32,
+        0.69,
+        0.3,
+        0.27,
+        0.2
       ],
       "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.22,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.24,
       "in_frustum": true,
-      "kind": "visual",
+      "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@23",
+      "path": "SceneViewport/DeskWorld/Computer/PowerButton/Hit_power",
       "position": [
-        -1.38,
-        1.84,
-        -0.2
+        0.59,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        583.88,
-        360.99
+        725.53,
+        361.21
       ]
     },
     {
       "aabb": [
-        -1.39,
-        1.89,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
+        0.44,
+        1.32,
+        0.69,
+        0.3,
+        0.27,
+        0.2
       ],
       "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.21,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.24,
       "in_frustum": true,
-      "kind": "visual",
+      "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@24",
+      "path": "SceneViewport/DeskWorld/Computer/PowerButton/Hit_power/@CollisionShape3D@20",
       "position": [
-        -1.38,
-        1.9,
-        -0.2
+        0.59,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        583.83,
-        356.19
+        725.53,
+        361.21
       ]
     },
     {
       "aabb": [
-        -1.39,
-        1.95,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.2,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@25",
-      "position": [
-        -1.38,
-        1.97,
-        -0.2
-      ],
-      "screen_pos": [
-        583.79,
-        351.39
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        2.02,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.19,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@26",
-      "position": [
-        -1.38,
-        2.04,
-        -0.2
-      ],
-      "screen_pos": [
-        583.74,
-        346.57
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        2.09,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.18,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@27",
-      "position": [
-        -1.38,
-        2.11,
-        -0.2
-      ],
-      "screen_pos": [
-        583.69,
-        341.75
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        2.16,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.17,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@28",
-      "position": [
-        -1.38,
-        2.18,
-        -0.2
-      ],
-      "screen_pos": [
-        583.65,
-        336.92
-      ]
-    },
-    {
-      "aabb": [
-        -1.39,
-        2.23,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.16,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@29",
-      "position": [
-        -1.38,
-        2.24,
-        -0.2
-      ],
-      "screen_pos": [
-        583.6,
-        332.09
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        1.68,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.36,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@30",
-      "position": [
-        1.38,
-        1.7,
-        -0.2
-      ],
-      "screen_pos": [
-        781.78,
-        370.56
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        1.75,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.35,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@31",
-      "position": [
-        1.38,
-        1.77,
-        -0.2
-      ],
-      "screen_pos": [
-        781.9,
-        365.78
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        1.82,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.34,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@32",
-      "position": [
-        1.38,
-        1.84,
-        -0.2
-      ],
-      "screen_pos": [
-        782.01,
-        360.99
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        1.89,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.33,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@33",
-      "position": [
-        1.38,
-        1.9,
-        -0.2
-      ],
-      "screen_pos": [
-        782.13,
-        356.19
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        1.95,
-        -0.49,
-        0.02,
-        0.04,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.32,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@34",
-      "position": [
-        1.38,
-        1.97,
-        -0.2
-      ],
-      "screen_pos": [
-        782.25,
-        351.39
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        2.02,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.31,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@35",
-      "position": [
-        1.38,
-        2.04,
-        -0.2
-      ],
-      "screen_pos": [
-        782.37,
-        346.57
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        2.09,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.3,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@36",
-      "position": [
-        1.38,
-        2.11,
-        -0.2
-      ],
-      "screen_pos": [
-        782.49,
-        341.75
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        2.16,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.29,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@37",
-      "position": [
-        1.38,
-        2.18,
-        -0.2
-      ],
-      "screen_pos": [
-        782.61,
-        336.92
-      ]
-    },
-    {
-      "aabb": [
-        1.38,
-        2.23,
-        -0.49,
-        0.02,
-        0.03,
-        0.58
+        0.9,
+        1.37,
+        0.74,
+        0.18,
+        0.18,
+        0.1
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
@@ -1048,561 +346,93 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@38",
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Dial",
       "position": [
-        1.38,
-        2.24,
-        -0.2
+        0.99,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        782.73,
-        332.09
+        754.17,
+        361.21
       ]
     },
     {
       "aabb": [
-        -0.82,
-        1.73,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.93,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/RearVent",
-      "position": [
-        0,
-        1.75,
-        -0.91
-      ],
-      "screen_pos": [
-        680.9,
-        358.34
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        1.79,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.92,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@39",
-      "position": [
-        0,
-        1.81,
-        -0.91
-      ],
-      "screen_pos": [
-        680.93,
-        354.11
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        1.85,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.9,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@40",
-      "position": [
-        0,
-        1.88,
-        -0.91
-      ],
-      "screen_pos": [
-        680.96,
-        349.87
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        1.92,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.89,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@41",
-      "position": [
-        0,
-        1.94,
-        -0.91
-      ],
-      "screen_pos": [
-        680.99,
-        345.62
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        1.98,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.88,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@42",
-      "position": [
-        0,
-        2,
-        -0.91
-      ],
-      "screen_pos": [
-        681.02,
-        341.37
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.04,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.87,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@43",
-      "position": [
-        0,
-        2.07,
-        -0.91
-      ],
-      "screen_pos": [
-        681.05,
-        337.11
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.11,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.87,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@44",
-      "position": [
-        0,
-        2.13,
-        -0.91
-      ],
-      "screen_pos": [
-        681.08,
-        332.85
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.17,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.86,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@45",
-      "position": [
-        0,
-        2.19,
-        -0.91
-      ],
-      "screen_pos": [
-        681.11,
-        328.58
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.23,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.85,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@46",
-      "position": [
-        0,
-        2.25,
-        -0.91
-      ],
-      "screen_pos": [
-        681.14,
-        324.3
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.29,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.84,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@47",
-      "position": [
-        0,
-        2.32,
-        -0.91
-      ],
-      "screen_pos": [
-        681.17,
-        320.02
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.36,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.83,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@48",
-      "position": [
-        0,
-        2.38,
-        -0.91
-      ],
-      "screen_pos": [
-        681.2,
-        315.73
-      ]
-    },
-    {
-      "aabb": [
-        -0.82,
-        2.42,
-        -0.92,
-        1.65,
-        0.05,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 14.82,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@49",
-      "position": [
-        0,
-        2.44,
-        -0.91
-      ],
-      "screen_pos": [
-        681.23,
-        311.43
-      ]
-    },
-    {
-      "aabb": [
-        -0.85,
-        1.12,
-        -0.94,
-        1.7,
-        0.32,
-        0.03
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 15.03,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/RearPanel",
-      "position": [
-        0,
-        1.28,
-        -0.93
-      ],
-      "screen_pos": [
-        680.63,
-        389.49
-      ]
-    },
-    {
-      "aabb": [
-        -0.64,
-        1.21,
-        -0.98,
-        0.23,
-        0.13,
-        0.04
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 15.05,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/Port",
-      "position": [
-        -0.53,
-        1.28,
-        -0.96
-      ],
-      "screen_pos": [
-        644.73,
-        389.04
-      ]
-    },
-    {
-      "aabb": [
-        -0.23,
-        1.21,
-        -0.98,
-        0.23,
-        0.13,
-        0.04
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 15.06,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@50",
-      "position": [
-        -0.12,
-        1.28,
-        -0.96
-      ],
-      "screen_pos": [
-        672.43,
-        389.04
-      ]
-    },
-    {
-      "aabb": [
-        0.2,
-        1.21,
-        -0.98,
-        0.23,
-        0.13,
-        0.04
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 15.08,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@MeshInstance3D@51",
-      "position": [
-        0.32,
-        1.28,
-        -0.96
-      ],
-      "screen_pos": [
-        702.16,
-        389.04
-      ]
-    },
-    {
-      "aabb": [
-        -0.4,
-        0.98,
-        -0.95,
-        0.79,
+        0.99,
+        1.46,
+        0.84,
+        0.02,
         0.06,
-        0
-      ],
-      "behind_camera": false,
-      "class": "Label3D",
-      "distance_to_camera": 15.11,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@Label3D@52",
-      "position": [
-        0,
-        1.01,
-        -0.95
-      ],
-      "screen_pos": [
-        680.44,
-        406.97
-      ]
-    },
-    {
-      "aabb": [
-        1.39,
-        1.35,
-        -0.19,
-        0,
-        0.06,
-        0.39
-      ],
-      "behind_camera": false,
-      "class": "Label3D",
-      "distance_to_camera": 14.23,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@Label3D@53",
-      "position": [
-        1.39,
-        1.38,
-        0
-      ],
-      "screen_pos": [
-        783.64,
-        395.92
-      ]
-    },
-    {
-      "aabb": [
-        -0.72,
-        0.45,
-        1.77,
-        1.44,
-        0.16,
-        0.06
+        0.01
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.58,
+      "distance_to_camera": 14.22,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/TrayWell",
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/DialMark",
       "position": [
-        0,
-        0.53,
-        1.8
+        0.99,
+        1.49,
+        0.85
       ],
       "screen_pos": [
-        688.96,
-        494.4
+        754.69,
+        359.46
       ]
     },
     {
       "aabb": [
-        -0.67,
-        0.47,
-        1.75,
-        1.34,
-        0.12,
-        0.07
+        0.86,
+        1.33,
+        0.68,
+        0.26,
+        0.26,
+        0.22
       ],
       "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 12.59,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.28,
       "in_frustum": true,
-      "kind": "visual",
+      "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/MediaTray/TrayFace",
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Hit_knob",
       "position": [
-        0,
-        0.53,
-        1.79
+        0.99,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        688.92,
-        494.15
+        754.17,
+        361.21
       ]
     },
     {
       "aabb": [
-        -0.59,
-        0.53,
-        1.14,
-        1.18,
-        0.03,
-        0.63
+        0.86,
+        1.33,
+        0.68,
+        0.26,
+        0.26,
+        0.22
       ],
       "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 12.9,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.28,
       "in_frustum": true,
-      "kind": "visual",
+      "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/MediaTray/TrayPlate",
+      "path": "SceneViewport/DeskWorld/Computer/TuningKnob/Hit_knob/@CollisionShape3D@21",
       "position": [
-        0,
-        0.54,
-        1.46
+        0.99,
+        1.46,
+        0.79
       ],
       "screen_pos": [
-        687.68,
-        485.05
+        754.17,
+        361.21
       ]
     },
     {
@@ -1616,7 +446,7 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 12.59,
+      "distance_to_camera": 13.43,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
@@ -1627,8 +457,8 @@
         1.79
       ],
       "screen_pos": [
-        688.92,
-        494.15
+        685.61,
+        443.91
       ]
     },
     {
@@ -1642,7 +472,7 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 12.59,
+      "distance_to_camera": 13.43,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
@@ -1653,67 +483,1393 @@
         1.79
       ],
       "screen_pos": [
-        688.92,
-        494.15
+        685.61,
+        443.91
+      ]
+    },
+    {
+      "aabb": [
+        -1.76,
+        0.44,
+        1.66,
+        3.97,
+        0.22,
+        0.97
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.09,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/KeyboardWell",
+      "position": [
+        0.22,
+        0.55,
+        2.15
+      ],
+      "screen_pos": [
+        704.25,
+        449.73
+      ]
+    },
+    {
+      "aabb": [
+        -0.77,
+        0.46,
+        2.59,
+        1.53,
+        0.09,
+        0.16
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.59,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/SpaceBar",
+      "position": [
+        0,
+        0.5,
+        2.67
+      ],
+      "screen_pos": [
+        688.51,
+        464.58
+      ]
+    },
+    {
+      "aabb": [
+        -1.63,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_0",
+      "position": [
+        -1.51,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        570.82,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        -1.31,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_1",
+      "position": [
+        -1.19,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        594.68,
+        435.32
       ]
     },
     {
       "aabb": [
         -1,
-        0.51,
-        1.82,
-        0.2,
-        0.05,
-        0
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
       ],
       "behind_camera": false,
-      "class": "Label3D",
-      "distance_to_camera": 12.55,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.37,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/@Label3D@55",
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_2",
       "position": [
-        -0.9,
-        0.53,
-        1.82
+        -0.88,
+        0.65,
+        1.81
       ],
       "screen_pos": [
-        615.48,
-        494.9
+        618.53,
+        435.32
       ]
     },
     {
       "aabb": [
-        -1.22,
-        1.38,
-        0.84,
-        2.47,
-        1.28,
-        0
+        -0.69,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.16,
+      "distance_to_camera": 13.37,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/Computer/ReferenceScreenRim",
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_3",
       "position": [
-        0,
-        2.03,
-        0.84
+        -0.57,
+        0.65,
+        1.81
       ],
       "screen_pos": [
-        687.39,
-        361.12
+        642.39,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        -0.38,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.37,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_4",
+      "position": [
+        -0.26,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        666.25,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        -0.06,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.38,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_5",
+      "position": [
+        0.06,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        690.11,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.4,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_6",
+      "position": [
+        0.37,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        713.96,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        0.56,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.43,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_7",
+      "position": [
+        0.68,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        737.82,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        0.88,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.46,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_8",
+      "position": [
+        1,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        761.68,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        1.19,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.5,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_9",
+      "position": [
+        1.31,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        785.53,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        1.5,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.55,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_10",
+      "position": [
+        1.62,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        809.39,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        1.81,
+        0.6,
+        1.73,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.61,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_0_11",
+      "position": [
+        1.93,
+        0.65,
+        1.81
+      ],
+      "screen_pos": [
+        833.25,
+        435.32
+      ]
+    },
+    {
+      "aabb": [
+        -1.63,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_0",
+      "position": [
+        -1.51,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        569.72,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -1.31,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_1",
+      "position": [
+        -1.19,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        593.96,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -1,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_2",
+      "position": [
+        -0.88,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        618.19,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -0.69,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_3",
+      "position": [
+        -0.57,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        642.43,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -0.38,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.17,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_4",
+      "position": [
+        -0.26,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        666.67,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -0.06,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.18,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_5",
+      "position": [
+        0.06,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        690.9,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.2,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_6",
+      "position": [
+        0.37,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        715.14,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        0.56,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.23,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_7",
+      "position": [
+        0.68,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        739.38,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        0.88,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.26,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_8",
+      "position": [
+        1,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        763.61,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        1.19,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.3,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_9",
+      "position": [
+        1.31,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        787.85,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        1.5,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.35,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_10",
+      "position": [
+        1.62,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        812.08,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        1.81,
+        0.56,
+        1.95,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.41,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_1_11",
+      "position": [
+        1.93,
+        0.61,
+        2.03
+      ],
+      "screen_pos": [
+        836.32,
+        442.4
+      ]
+    },
+    {
+      "aabb": [
+        -1.63,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_0",
+      "position": [
+        -1.51,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        568.59,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -1.31,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_1",
+      "position": [
+        -1.19,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        593.21,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -1,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_2",
+      "position": [
+        -0.88,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        617.84,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -0.69,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_3",
+      "position": [
+        -0.57,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        642.47,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -0.38,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.97,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_4",
+      "position": [
+        -0.26,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        667.1,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -0.06,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.98,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_5",
+      "position": [
+        0.06,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        691.72,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_6",
+      "position": [
+        0.37,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        716.35,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        0.56,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.03,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_7",
+      "position": [
+        0.68,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        740.98,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        0.88,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_8",
+      "position": [
+        1,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        765.61,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        1.19,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.1,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_9",
+      "position": [
+        1.31,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        790.24,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        1.5,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.15,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_10",
+      "position": [
+        1.62,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        814.86,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        1.81,
+        0.53,
+        2.17,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.21,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_2_11",
+      "position": [
+        1.93,
+        0.57,
+        2.25
+      ],
+      "screen_pos": [
+        839.49,
+        449.71
+      ]
+    },
+    {
+      "aabb": [
+        -1.63,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_0",
+      "position": [
+        -1.51,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        567.41,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -1.31,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_1",
+      "position": [
+        -1.19,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        592.45,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -1,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_2",
+      "position": [
+        -0.88,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        617.48,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -0.69,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.76,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_3",
+      "position": [
+        -0.57,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        642.51,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -0.38,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.77,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_4",
+      "position": [
+        -0.26,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        667.54,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -0.06,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.78,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_5",
+      "position": [
+        0.06,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        692.57,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        0.25,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.8,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_6",
+      "position": [
+        0.37,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        717.61,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        0.56,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.83,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_7",
+      "position": [
+        0.68,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        742.64,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        0.88,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.86,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_8",
+      "position": [
+        1,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        767.67,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        1.19,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.91,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_9",
+      "position": [
+        1.31,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        792.7,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        1.5,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 12.96,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_10",
+      "position": [
+        1.62,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        817.73,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        1.81,
+        0.49,
+        2.38,
+        0.24,
+        0.1,
+        0.17
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.01,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/Key_3_11",
+      "position": [
+        1.93,
+        0.54,
+        2.47
+      ],
+      "screen_pos": [
+        842.77,
+        457.25
+      ]
+    },
+    {
+      "aabb": [
+        -1.99,
+        0.33,
+        1.54,
+        4.42,
+        0.34,
+        1.37
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.04,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/LegacyKeyboardBase",
+      "position": [
+        0.22,
+        0.49,
+        2.22
+      ],
+      "screen_pos": [
+        704.54,
+        455.34
+      ]
+    },
+    {
+      "aabb": [
+        -1.99,
+        0.32,
+        1.54,
+        4.42,
+        0.41,
+        1.38
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.02,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/FocusHitbox",
+      "position": [
+        0.22,
+        0.53,
+        2.23
+      ],
+      "screen_pos": [
+        704.6,
+        452.81
+      ]
+    },
+    {
+      "aabb": [
+        -1.99,
+        0.32,
+        1.54,
+        4.42,
+        0.41,
+        1.38
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.02,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/Computer/Keyboard/FocusHitbox/@CollisionShape3D@61",
+      "position": [
+        0.22,
+        0.53,
+        2.23
+      ],
+      "screen_pos": [
+        704.6,
+        452.81
       ]
     },
     {
       "aabb": [
         -0.6,
-        4.32,
-        13.78,
+        3.94,
+        14.77,
         0,
         0,
         0
@@ -1723,60 +1879,60 @@
       "path": "SceneViewport/DeskWorld/Camera",
       "position": [
         -0.6,
-        4.32,
-        13.78
+        3.94,
+        14.77
       ]
     },
     {
       "aabb": [
-        0,
-        2.03,
-        5.25,
+        0.22,
+        2.73,
+        5.18,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 8.85,
+      "distance_to_camera": 9.7,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/Front/CameraPosition",
       "position": [
-        0,
-        2.03,
-        5.25
+        0.22,
+        2.73,
+        5.18
       ],
       "screen_pos": [
-        709.33,
-        448.96
+        726.61,
+        309.68
       ]
     },
     {
       "aabb": [
-        0,
-        2.03,
-        0.85,
+        0.22,
+        2.73,
+        0.78,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 13.14,
+      "distance_to_camera": 14.07,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/Front/LookAt",
       "position": [
-        0,
-        2.03,
-        0.85
+        0.22,
+        2.73,
+        0.78
       ],
       "screen_pos": [
-        686.45,
-        360.45
+        699.78,
+        269.74
       ]
     },
     {
@@ -1790,7 +1946,7 @@
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 12.15,
+      "distance_to_camera": 12.99,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
@@ -1801,8 +1957,8 @@
         3.34
       ],
       "screen_pos": [
-        42.98,
-        279.75
+        90.51,
+        237.67
       ]
     },
     {
@@ -1816,7 +1972,7 @@
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 13.92,
+      "distance_to_camera": 14.81,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
@@ -1827,8 +1983,8 @@
         0.2
       ],
       "screen_pos": [
-        683.89,
-        403.26
+        681.21,
+        363.42
       ]
     },
     {
@@ -1842,7 +1998,7 @@
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 21.05,
+      "distance_to_camera": 22.02,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
@@ -1853,8 +2009,8 @@
         -7.06
       ],
       "screen_pos": [
-        781.04,
-        210.58
+        775.12,
+        191.29
       ]
     },
     {
@@ -1868,7 +2024,7 @@
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 14.21,
+      "distance_to_camera": 15.11,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
@@ -1879,60 +2035,60 @@
         -0.1
       ],
       "screen_pos": [
-        682.99,
-        397.23
+        680.41,
+        358.52
       ]
     },
     {
       "aabb": [
-        0,
-        2.03,
-        3.65,
+        0.22,
+        2.73,
+        3.58,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 10.4,
+      "distance_to_camera": 11.29,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/ScreenClose/CameraPosition",
       "position": [
-        0,
-        2.03,
-        3.65
+        0.22,
+        2.73,
+        3.58
       ],
       "screen_pos": [
-        698.8,
-        408.21
+        714.45,
+        291.59
       ]
     },
     {
       "aabb": [
-        0,
-        2.03,
-        0.85,
+        0.22,
+        2.73,
+        0.78,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "Marker3D",
-      "distance_to_camera": 13.14,
+      "distance_to_camera": 14.07,
       "in_frustum": true,
       "kind": "point",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/Views/ScreenClose/LookAt",
       "position": [
-        0,
-        2.03,
-        0.85
+        0.22,
+        2.73,
+        0.78
       ],
       "screen_pos": [
-        686.45,
-        360.45
+        699.78,
+        269.74
       ]
     },
     {
@@ -1946,7 +2102,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.81,
+      "distance_to_camera": 17.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -1957,8 +2113,8 @@
         -3
       ],
       "screen_pos": [
-        676.63,
-        225.11
+        674.74,
+        200.7
       ]
     },
     {
@@ -1972,7 +2128,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.76,
+      "distance_to_camera": 18.66,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -1983,8 +2139,8 @@
         0
       ],
       "screen_pos": [
-        263.74,
-        243.6
+        283.23,
+        218.1
       ]
     },
     {
@@ -1998,7 +2154,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.71,
+      "distance_to_camera": 18.62,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2009,8 +2165,8 @@
         0
       ],
       "screen_pos": [
-        270.01,
-        243.23
+        289.18,
+        217.73
       ]
     },
     {
@@ -2024,7 +2180,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.06,
+      "distance_to_camera": 18,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2035,8 +2191,8 @@
         0
       ],
       "screen_pos": [
-        417.24,
-        243.6
+        428.78,
+        218.1
       ]
     },
     {
@@ -2050,7 +2206,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.02,
+      "distance_to_camera": 17.97,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2061,8 +2217,8 @@
         0
       ],
       "screen_pos": [
-        423.61,
-        243.23
+        434.83,
+        217.73
       ]
     },
     {
@@ -2076,7 +2232,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.7,
+      "distance_to_camera": 17.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2087,8 +2243,8 @@
         0
       ],
       "screen_pos": [
-        570.75,
-        243.6
+        574.33,
+        218.1
       ]
     },
     {
@@ -2102,7 +2258,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.69,
+      "distance_to_camera": 17.65,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2113,8 +2269,8 @@
         0
       ],
       "screen_pos": [
-        577.22,
-        243.23
+        580.47,
+        217.73
       ]
     },
     {
@@ -2128,7 +2284,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.72,
+      "distance_to_camera": 17.68,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2139,8 +2295,8 @@
         0
       ],
       "screen_pos": [
-        724.25,
-        243.6
+        719.89,
+        218.1
       ]
     },
     {
@@ -2154,7 +2310,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.72,
+      "distance_to_camera": 17.68,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2165,8 +2321,8 @@
         0
       ],
       "screen_pos": [
-        730.83,
-        243.23
+        726.12,
+        217.73
       ]
     },
     {
@@ -2180,7 +2336,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.11,
+      "distance_to_camera": 18.05,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2191,8 +2347,8 @@
         0
       ],
       "screen_pos": [
-        877.76,
-        243.6
+        865.44,
+        218.1
       ]
     },
     {
@@ -2206,7 +2362,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.12,
+      "distance_to_camera": 18.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2217,8 +2373,8 @@
         0
       ],
       "screen_pos": [
-        884.43,
-        243.23
+        871.76,
+        217.73
       ]
     },
     {
@@ -2232,7 +2388,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.84,
+      "distance_to_camera": 18.75,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2243,8 +2399,8 @@
         0
       ],
       "screen_pos": [
-        1031.26,
-        243.6
+        1011,
+        218.1
       ]
     },
     {
@@ -2258,7 +2414,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.87,
+      "distance_to_camera": 18.77,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2269,8 +2425,8 @@
         0
       ],
       "screen_pos": [
-        1038.04,
-        243.23
+        1017.41,
+        217.73
       ]
     },
     {
@@ -2284,7 +2440,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.88,
+      "distance_to_camera": 19.74,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2295,8 +2451,8 @@
         0
       ],
       "screen_pos": [
-        1184.77,
-        243.6
+        1156.55,
+        218.1
       ]
     },
     {
@@ -2310,7 +2466,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.92,
+      "distance_to_camera": 19.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2321,8 +2477,8 @@
         0
       ],
       "screen_pos": [
-        1191.65,
-        243.23
+        1163.05,
+        217.73
       ]
     },
     {
@@ -2336,7 +2492,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 20.18,
+      "distance_to_camera": 20.98,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2347,8 +2503,8 @@
         0
       ],
       "screen_pos": [
-        1338.27,
-        243.6
+        1302.1,
+        218.1
       ]
     },
     {
@@ -2362,7 +2518,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 20.23,
+      "distance_to_camera": 21.03,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2373,8 +2529,8 @@
         0
       ],
       "screen_pos": [
-        1345.26,
-        243.23
+        1308.7,
+        217.73
       ]
     },
     {
@@ -2388,7 +2544,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.63,
+      "distance_to_camera": 18.54,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2399,8 +2555,8 @@
         0
       ],
       "screen_pos": [
-        1021.54,
-        228.99
+        1001.58,
+        204
       ]
     },
     {
@@ -2414,7 +2570,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.59,
+      "distance_to_camera": 18.51,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2425,8 +2581,8 @@
         0
       ],
       "screen_pos": [
-        1022.46,
-        229.1
+        1002.41,
+        204.05
       ]
     },
     {
@@ -2440,7 +2596,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.55,
+      "distance_to_camera": 18.47,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2451,8 +2607,8 @@
         0
       ],
       "screen_pos": [
-        1023.39,
-        229.22
+        1003.24,
+        204.1
       ]
     },
     {
@@ -2466,7 +2622,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.52,
+      "distance_to_camera": 18.43,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2477,8 +2633,8 @@
         0
       ],
       "screen_pos": [
-        1024.31,
-        229.34
+        1004.07,
+        204.16
       ]
     },
     {
@@ -2492,7 +2648,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.48,
+      "distance_to_camera": 18.39,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2503,8 +2659,8 @@
         0
       ],
       "screen_pos": [
-        1025.25,
-        229.46
+        1004.91,
+        204.21
       ]
     },
     {
@@ -2518,7 +2674,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.31,
+      "distance_to_camera": 18.2,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2529,8 +2685,8 @@
         0
       ],
       "screen_pos": [
-        978.15,
-        300.55
+        960.48,
+        271.83
       ]
     },
     {
@@ -2544,7 +2700,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.16,
+      "distance_to_camera": 18.09,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2555,8 +2711,8 @@
         -2.53
       ],
       "screen_pos": [
-        972.49,
-        217.7
+        954.88,
+        192.99
       ]
     },
     {
@@ -2570,7 +2726,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.19,
+      "distance_to_camera": 18.12,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2581,8 +2737,8 @@
         -2.53
       ],
       "screen_pos": [
-        978.64,
-        217.5
+        960.7,
+        192.8
       ]
     },
     {
@@ -2596,7 +2752,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.25,
+      "distance_to_camera": 18.2,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2607,8 +2763,8 @@
         -2.53
       ],
       "screen_pos": [
-        993.72,
-        127.7
+        974.71,
+        107.46
       ]
     },
     {
@@ -2622,7 +2778,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.14,
+      "distance_to_camera": 18.98,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2633,8 +2789,8 @@
         -2.53
       ],
       "screen_pos": [
-        1099.14,
-        348.62
+        1075.33,
+        317.63
       ]
     },
     {
@@ -2648,7 +2804,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.77,
+      "distance_to_camera": 18.68,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2659,8 +2815,8 @@
         -2.53
       ],
       "screen_pos": [
-        1084.05,
-        195.29
+        1060.44,
+        171.68
       ]
     },
     {
@@ -2674,7 +2830,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.84,
+      "distance_to_camera": 17.77,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2685,8 +2841,8 @@
         -2.53
       ],
       "screen_pos": [
-        884.14,
-        268.57
+        871.31,
+        241.39
       ]
     },
     {
@@ -2700,7 +2856,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.39,
+      "distance_to_camera": 18.32,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2711,8 +2867,8 @@
         -2.53
       ],
       "screen_pos": [
-        1020.17,
-        187.39
+        999.93,
+        164.16
       ]
     },
     {
@@ -2726,7 +2882,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.8,
+      "distance_to_camera": 17.74,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2737,8 +2893,8 @@
         -2.53
       ],
       "screen_pos": [
-        887.23,
-        223
+        874.14,
+        198.03
       ]
     },
     {
@@ -2752,7 +2908,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.41,
+      "distance_to_camera": 18.34,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2763,8 +2919,8 @@
         -2.53
       ],
       "screen_pos": [
-        1023.08,
-        201.76
+        1002.73,
+        177.83
       ]
     },
     {
@@ -2778,7 +2934,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.99,
+      "distance_to_camera": 17.89,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2789,8 +2945,8 @@
         -2.53
       ],
       "screen_pos": [
-        897.75,
-        320.39
+        884.32,
+        290.73
       ]
     },
     {
@@ -2804,7 +2960,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.43,
+      "distance_to_camera": 18.35,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2815,8 +2971,8 @@
         -2.53
       ],
       "screen_pos": [
-        1026.85,
-        194.11
+        1006.28,
+        170.55
       ]
     },
     {
@@ -2830,7 +2986,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18,
+      "distance_to_camera": 18.87,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2841,8 +2997,8 @@
         -2.53
       ],
       "screen_pos": [
-        1102.79,
-        282.06
+        1078.53,
+        254.23
       ]
     },
     {
@@ -2856,7 +3012,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.63,
+      "distance_to_camera": 18.56,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2867,8 +3023,8 @@
         -2.53
       ],
       "screen_pos": [
-        1064.55,
-        161.33
+        1041.86,
+        139.41
       ]
     },
     {
@@ -2882,7 +3038,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.01,
+      "distance_to_camera": 17.92,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2893,8 +3049,8 @@
         -2.53
       ],
       "screen_pos": [
-        906.45,
-        315.93
+        892.55,
+        286.48
       ]
     },
     {
@@ -2908,7 +3064,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.49,
+      "distance_to_camera": 18.41,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2919,8 +3075,8 @@
         -2.53
       ],
       "screen_pos": [
-        1038.6,
-        179.36
+        1017.35,
+        156.54
       ]
     },
     {
@@ -2934,7 +3090,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.5,
+      "distance_to_camera": 18.36,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2945,8 +3101,8 @@
         -2.53
       ],
       "screen_pos": [
-        982.73,
-        364.94
+        965,
+        333.2
       ]
     },
     {
@@ -2960,7 +3116,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.95,
+      "distance_to_camera": 18.87,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2971,8 +3127,8 @@
         -2.53
       ],
       "screen_pos": [
-        1115.9,
-        144.21
+        1090.39,
+        123.14
       ]
     },
     {
@@ -2986,7 +3142,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.94,
+      "distance_to_camera": 17.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -2997,8 +3153,8 @@
         -2.53
       ],
       "screen_pos": [
-        928.98,
-        191.29
+        913.6,
+        167.88
       ]
     },
     {
@@ -3012,7 +3168,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17,
+      "distance_to_camera": 17.94,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3023,8 +3179,8 @@
         -2.53
       ],
       "screen_pos": [
-        939.98,
-        201.31
+        924.04,
+        177.4
       ]
     },
     {
@@ -3038,7 +3194,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.13,
+      "distance_to_camera": 19,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3049,8 +3205,8 @@
         -2.53
       ],
       "screen_pos": [
-        1125.67,
-        267.02
+        1100.14,
+        239.91
       ]
     },
     {
@@ -3064,7 +3220,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.99,
+      "distance_to_camera": 18.89,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3075,8 +3231,8 @@
         -2.53
       ],
       "screen_pos": [
-        1119.18,
-        184.67
+        1093.66,
+        161.58
       ]
     },
     {
@@ -3090,7 +3246,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.89,
+      "distance_to_camera": 18.81,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3101,8 +3257,8 @@
         -2.53
       ],
       "screen_pos": [
-        1105.74,
-        129.34
+        1080.71,
+        109.02
       ]
     },
     {
@@ -3116,7 +3272,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.56,
+      "distance_to_camera": 18.43,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3127,8 +3283,8 @@
         -2.53
       ],
       "screen_pos": [
-        998.26,
-        359.1
+        979.71,
+        327.62
       ]
     },
     {
@@ -3142,7 +3298,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.2,
+      "distance_to_camera": 19.08,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3153,8 +3309,8 @@
         0
       ],
       "screen_pos": [
-        1145.58,
-        218.89
+        1118.8,
+        194.11
       ]
     },
     {
@@ -3168,7 +3324,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.53,
+      "distance_to_camera": 19.41,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3179,8 +3335,8 @@
         -2.53
       ],
       "screen_pos": [
-        1196.06,
-        178.3
+        1166.41,
+        155.53
       ]
     },
     {
@@ -3194,7 +3350,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.38,
+      "distance_to_camera": 19.23,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3205,8 +3361,8 @@
         -2.53
       ],
       "screen_pos": [
-        1155.55,
-        286.3
+        1128.54,
+        258.26
       ]
     },
     {
@@ -3220,7 +3376,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.35,
+      "distance_to_camera": 18.29,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3231,8 +3387,8 @@
         -2.53
       ],
       "screen_pos": [
-        1013.07,
-        138.97
+        993.05,
+        118.17
       ]
     },
     {
@@ -3246,7 +3402,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.23,
+      "distance_to_camera": 18.18,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3257,8 +3413,8 @@
         -2.53
       ],
       "screen_pos": [
-        991.08,
-        140.79
+        972.25,
+        119.89
       ]
     },
     {
@@ -3272,7 +3428,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.47,
+      "distance_to_camera": 18.38,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3283,8 +3439,8 @@
         -2.53
       ],
       "screen_pos": [
-        1027.55,
-        240.85
+        1007.09,
+        215
       ]
     },
     {
@@ -3298,7 +3454,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.72,
+      "distance_to_camera": 18.58,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3309,8 +3465,8 @@
         -2.53
       ],
       "screen_pos": [
-        1022.16,
-        368.03
+        1002.4,
+        336.13
       ]
     },
     {
@@ -3324,7 +3480,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18,
+      "distance_to_camera": 18.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3335,8 +3491,8 @@
         -2.53
       ],
       "screen_pos": [
-        1120.88,
-        178.37
+        1095.24,
+        155.59
       ]
     },
     {
@@ -3350,7 +3506,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.49,
+      "distance_to_camera": 18.37,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3361,8 +3517,8 @@
         -2.53
       ],
       "screen_pos": [
-        999.45,
-        330.88
+        980.75,
+        300.72
       ]
     },
     {
@@ -3376,7 +3532,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.95,
+      "distance_to_camera": 17.86,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3387,8 +3543,8 @@
         -2.53
       ],
       "screen_pos": [
-        893.58,
-        310.02
+        880.34,
+        280.85
       ]
     },
     {
@@ -3402,7 +3558,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.47,
+      "distance_to_camera": 18.4,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3413,8 +3569,8 @@
         -2.53
       ],
       "screen_pos": [
-        1035.9,
-        173.31
+        1014.78,
+        150.79
       ]
     },
     {
@@ -3428,7 +3584,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.04,
+      "distance_to_camera": 18.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3439,8 +3595,8 @@
         0
       ],
       "screen_pos": [
-        1103.21,
-        300.18
+        1079,
+        271.48
       ]
     },
     {
@@ -3454,7 +3610,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17,
+      "distance_to_camera": 17.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3465,8 +3621,8 @@
         -2.53
       ],
       "screen_pos": [
-        889.17,
-        340.27
+        876.23,
+        309.68
       ]
     },
     {
@@ -3480,7 +3636,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.07,
+      "distance_to_camera": 18.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3491,8 +3647,8 @@
         -2.53
       ],
       "screen_pos": [
-        1130.95,
-        186.46
+        1104.81,
+        163.29
       ]
     },
     {
@@ -3506,7 +3662,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.72,
+      "distance_to_camera": 18.58,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3517,8 +3673,8 @@
         -2.53
       ],
       "screen_pos": [
-        1030.07,
-        351.92
+        1009.85,
+        320.78
       ]
     },
     {
@@ -3532,7 +3688,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.35,
+      "distance_to_camera": 18.26,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3543,8 +3699,8 @@
         -2.53
       ],
       "screen_pos": [
-        1004.54,
-        241.51
+        985.3,
+        215.64
       ]
     },
     {
@@ -3558,7 +3714,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.89,
+      "distance_to_camera": 17.8,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3569,8 +3725,8 @@
         -2.53
       ],
       "screen_pos": [
-        881.25,
-        304.07
+        868.65,
+        275.19
       ]
     },
     {
@@ -3584,7 +3740,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.85,
+      "distance_to_camera": 17.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3595,8 +3751,8 @@
         -2.53
       ],
       "screen_pos": [
-        887.35,
-        272.65
+        874.36,
+        245.27
       ]
     },
     {
@@ -3610,7 +3766,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.92,
+      "distance_to_camera": 17.88,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3621,8 +3777,8 @@
         -2.53
       ],
       "screen_pos": [
-        924.39,
-        160.38
+        909.18,
+        138.5
       ]
     },
     {
@@ -3636,7 +3792,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.83,
+      "distance_to_camera": 18.69,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3647,8 +3803,8 @@
         -2.53
       ],
       "screen_pos": [
-        1049.12,
-        351.88
+        1027.91,
+        320.74
       ]
     },
     {
@@ -3662,7 +3818,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.2,
+      "distance_to_camera": 18.14,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3673,8 +3829,8 @@
         -2.53
       ],
       "screen_pos": [
-        983.59,
-        199.01
+        965.33,
+        175.22
       ]
     },
     {
@@ -3688,7 +3844,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.75,
+      "distance_to_camera": 17.69,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3699,8 +3855,8 @@
         -2.53
       ],
       "screen_pos": [
-        860.78,
-        269.25
+        849.18,
+        242.03
       ]
     },
     {
@@ -3714,7 +3870,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.35,
+      "distance_to_camera": 18.25,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3725,8 +3881,8 @@
         -2.53
       ],
       "screen_pos": [
-        996.39,
-        273.54
+        977.68,
+        246.12
       ]
     },
     {
@@ -3740,7 +3896,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.79,
+      "distance_to_camera": 17.73,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3751,8 +3907,8 @@
         -2.53
       ],
       "screen_pos": [
-        877.7,
-        255.92
+        865.18,
+        229.34
       ]
     },
     {
@@ -3766,7 +3922,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.77,
+      "distance_to_camera": 18.71,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3777,8 +3933,8 @@
         0
       ],
       "screen_pos": [
-        1086.05,
-        106.2
+        1062,
+        87.05
       ]
     },
     {
@@ -3792,7 +3948,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.67,
+      "distance_to_camera": 18.61,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3803,8 +3959,8 @@
         -2.53
       ],
       "screen_pos": [
-        1067.81,
-        98.86
+        1044.71,
+        80.09
       ]
     },
     {
@@ -3818,7 +3974,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.17,
+      "distance_to_camera": 19.09,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3829,8 +3985,8 @@
         -2.53
       ],
       "screen_pos": [
-        1146.31,
-        94.62
+        1118.96,
+        76.07
       ]
     },
     {
@@ -3844,7 +4000,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.04,
+      "distance_to_camera": 17.97,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3855,8 +4011,8 @@
         -2.53
       ],
       "screen_pos": [
-        942.7,
-        235.93
+        926.71,
+        210.32
       ]
     },
     {
@@ -3870,7 +4026,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.76,
+      "distance_to_camera": 18.64,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3881,8 +4037,8 @@
         -2.53
       ],
       "screen_pos": [
-        1063.08,
-        287.67
+        1040.91,
+        259.57
       ]
     },
     {
@@ -3896,7 +4052,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.33,
+      "distance_to_camera": 18.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3907,8 +4063,8 @@
         -2.53
       ],
       "screen_pos": [
-        954.6,
-        356.91
+        938.31,
+        325.53
       ]
     },
     {
@@ -3922,7 +4078,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.91,
+      "distance_to_camera": 17.86,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3933,8 +4089,8 @@
         -2.53
       ],
       "screen_pos": [
-        920.64,
-        178.63
+        905.68,
+        155.84
       ]
     },
     {
@@ -3948,7 +4104,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.74,
+      "distance_to_camera": 18.62,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3959,8 +4115,8 @@
         -2.53
       ],
       "screen_pos": [
-        1055.8,
-        300.69
+        1034.07,
+        271.96
       ]
     },
     {
@@ -3974,7 +4130,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.91,
+      "distance_to_camera": 18.8,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -3985,8 +4141,8 @@
         -2.53
       ],
       "screen_pos": [
-        1103.08,
-        214.04
+        1078.53,
+        189.5
       ]
     },
     {
@@ -4000,7 +4156,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.75,
+      "distance_to_camera": 18.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4011,8 +4167,8 @@
         -2.53
       ],
       "screen_pos": [
-        1083.91,
-        168.65
+        1060.2,
+        146.36
       ]
     },
     {
@@ -4026,7 +4182,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.3,
+      "distance_to_camera": 18.26,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4037,8 +4193,8 @@
         -2.53
       ],
       "screen_pos": [
-        1001.96,
-        103.79
+        982.44,
+        84.77
       ]
     },
     {
@@ -4052,7 +4208,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.12,
+      "distance_to_camera": 18.99,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4063,8 +4219,8 @@
         0
       ],
       "screen_pos": [
-        1123.26,
-        270.39
+        1097.87,
+        243.12
       ]
     },
     {
@@ -4078,7 +4234,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.84,
+      "distance_to_camera": 17.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4089,8 +4245,8 @@
         -2.53
       ],
       "screen_pos": [
-        892.13,
-        249.87
+        878.84,
+        223.59
       ]
     },
     {
@@ -4104,7 +4260,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.49,
+      "distance_to_camera": 18.41,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4115,8 +4271,8 @@
         -2.53
       ],
       "screen_pos": [
-        1036.78,
-        208.3
+        1015.72,
+        184.04
       ]
     },
     {
@@ -4130,7 +4286,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.88,
+      "distance_to_camera": 17.83,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4141,8 +4297,8 @@
         -2.53
       ],
       "screen_pos": [
-        913.13,
-        181.01
+        898.58,
+        158.1
       ]
     },
     {
@@ -4156,7 +4312,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.28,
+      "distance_to_camera": 18.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4167,8 +4323,8 @@
         -2.53
       ],
       "screen_pos": [
-        995.88,
-        225.72
+        977.05,
+        200.61
       ]
     },
     {
@@ -4182,7 +4338,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.08,
+      "distance_to_camera": 17.99,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4193,8 +4349,8 @@
         -2.53
       ],
       "screen_pos": [
-        933.74,
-        295.57
+        918.37,
+        267.09
       ]
     },
     {
@@ -4208,7 +4364,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.85,
+      "distance_to_camera": 18.73,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4219,8 +4375,8 @@
         -2.53
       ],
       "screen_pos": [
-        1081.56,
-        274.92
+        1058.38,
+        247.43
       ]
     },
     {
@@ -4234,7 +4390,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.85,
+      "distance_to_camera": 17.77,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4245,8 +4401,8 @@
         -2.53
       ],
       "screen_pos": [
-        868.59,
-        309.32
+        856.66,
+        280.19
       ]
     },
     {
@@ -4260,7 +4416,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.76,
+      "distance_to_camera": 17.69,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4271,8 +4427,8 @@
         -2.53
       ],
       "screen_pos": [
-        864.6,
-        262.32
+        852.78,
+        235.44
       ]
     },
     {
@@ -4286,7 +4442,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.19,
+      "distance_to_camera": 18.14,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4297,8 +4453,8 @@
         -2.53
       ],
       "screen_pos": [
-        982.26,
-        145.55
+        963.91,
+        124.41
       ]
     },
     {
@@ -4312,7 +4468,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.07,
+      "distance_to_camera": 18.93,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4323,8 +4479,8 @@
         -2.53
       ],
       "screen_pos": [
-        1099.48,
-        323.09
+        1075.55,
+        293.3
       ]
     },
     {
@@ -4338,7 +4494,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.14,
+      "distance_to_camera": 19.02,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4349,8 +4505,8 @@
         -2.53
       ],
       "screen_pos": [
-        1133.19,
-        242.57
+        1107.17,
+        216.64
       ]
     },
     {
@@ -4364,7 +4520,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.89,
+      "distance_to_camera": 18.81,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4375,8 +4531,8 @@
         -2.53
       ],
       "screen_pos": [
-        1105.54,
-        139.46
+        1080.56,
+        118.64
       ]
     },
     {
@@ -4390,7 +4546,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.1,
+      "distance_to_camera": 18.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4401,8 +4557,8 @@
         -2.53
       ],
       "screen_pos": [
-        1110.38,
-        304.97
+        1085.81,
+        276.04
       ]
     },
     {
@@ -4416,7 +4572,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.47,
+      "distance_to_camera": 18.38,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4427,8 +4583,8 @@
         0
       ],
       "screen_pos": [
-        1027.34,
-        234.89
+        1006.87,
+        209.34
       ]
     },
     {
@@ -4442,7 +4598,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.24,
+      "distance_to_camera": 18.13,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4453,8 +4609,8 @@
         -2.53
       ],
       "screen_pos": [
-        941.57,
-        347.06
+        925.92,
+        316.15
       ]
     },
     {
@@ -4468,7 +4624,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.23,
+      "distance_to_camera": 19.12,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4479,8 +4635,8 @@
         -2.53
       ],
       "screen_pos": [
-        1155.77,
-        159.18
+        1128.19,
+        137.36
       ]
     },
     {
@@ -4494,7 +4650,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.64,
+      "distance_to_camera": 18.56,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4505,8 +4661,8 @@
         -2.53
       ],
       "screen_pos": [
-        1064.96,
-        166.92
+        1042.26,
+        144.71
       ]
     },
     {
@@ -4520,7 +4676,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.28,
+      "distance_to_camera": 19.18,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4531,8 +4687,8 @@
         -2.53
       ],
       "screen_pos": [
-        1163.78,
-        133.56
+        1135.65,
+        113.03
       ]
     },
     {
@@ -4546,7 +4702,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.98,
+      "distance_to_camera": 17.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4557,8 +4713,8 @@
         -2.53
       ],
       "screen_pos": [
-        909.9,
-        296.37
+        895.78,
+        267.85
       ]
     },
     {
@@ -4572,7 +4728,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.41,
+      "distance_to_camera": 18.3,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4583,8 +4739,8 @@
         -2.53
       ],
       "screen_pos": [
-        991.57,
-        317.9
+        973.24,
+        288.36
       ]
     },
     {
@@ -4598,7 +4754,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.53,
+      "distance_to_camera": 18.45,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4609,8 +4765,8 @@
         -2.53
       ],
       "screen_pos": [
-        1044.96,
-        187.83
+        1023.41,
+        164.58
       ]
     },
     {
@@ -4624,7 +4780,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.9,
+      "distance_to_camera": 17.86,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4635,8 +4791,8 @@
         -2.53
       ],
       "screen_pos": [
-        919.91,
-        167.46
+        904.96,
+        145.23
       ]
     },
     {
@@ -4650,7 +4806,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.04,
+      "distance_to_camera": 18.89,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4661,8 +4817,8 @@
         -2.53
       ],
       "screen_pos": [
-        1092.54,
-        326.11
+        1068.98,
+        296.18
       ]
     },
     {
@@ -4676,7 +4832,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.01,
+      "distance_to_camera": 18.87,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4687,8 +4843,8 @@
         -2.53
       ],
       "screen_pos": [
-        1086.98,
-        331.79
+        1063.73,
+        301.59
       ]
     },
     {
@@ -4702,7 +4858,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.11,
+      "distance_to_camera": 18,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4713,8 +4869,8 @@
         -2.53
       ],
       "screen_pos": [
-        917.95,
-        335.91
+        903.5,
+        305.52
       ]
     },
     {
@@ -4728,7 +4884,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.52,
+      "distance_to_camera": 18.47,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4739,8 +4895,8 @@
         0
       ],
       "screen_pos": [
-        1042.07,
-        96.29
+        1020.35,
+        77.65
       ]
     },
     {
@@ -4754,7 +4910,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.84,
+      "distance_to_camera": 17.77,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4765,8 +4921,8 @@
         -2.53
       ],
       "screen_pos": [
-        889.01,
-        260.45
+        875.91,
+        233.65
       ]
     },
     {
@@ -4780,7 +4936,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.09,
+      "distance_to_camera": 18.04,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4791,8 +4947,8 @@
         -2.53
       ],
       "screen_pos": [
-        962.06,
-        189.34
+        944.92,
+        166.02
       ]
     },
     {
@@ -4806,7 +4962,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18,
+      "distance_to_camera": 18.87,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4817,8 +4973,8 @@
         -2.53
       ],
       "screen_pos": [
-        1102.92,
-        280.3
+        1078.64,
+        252.55
       ]
     },
     {
@@ -4832,7 +4988,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.13,
+      "distance_to_camera": 18.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4843,8 +4999,8 @@
         -2.53
       ],
       "screen_pos": [
-        963.71,
-        229
+        946.59,
+        203.73
       ]
     },
     {
@@ -4858,7 +5014,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.74,
+      "distance_to_camera": 18.64,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4869,8 +5025,8 @@
         -2.53
       ],
       "screen_pos": [
-        1076.37,
-        216.72
+        1053.25,
+        192.05
       ]
     },
     {
@@ -4884,7 +5040,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.01,
+      "distance_to_camera": 18.87,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4895,8 +5051,8 @@
         -2.53
       ],
       "screen_pos": [
-        1098.21,
-        300.33
+        1074.26,
+        271.62
       ]
     },
     {
@@ -4910,7 +5066,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.99,
+      "distance_to_camera": 18.92,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4921,8 +5077,8 @@
         -2.53
       ],
       "screen_pos": [
-        1120.3,
-        99.43
+        1094.37,
+        80.63
       ]
     },
     {
@@ -4936,7 +5092,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.34,
+      "distance_to_camera": 19.22,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4947,8 +5103,8 @@
         -2.53
       ],
       "screen_pos": [
-        1166.98,
-        209.78
+        1139.02,
+        185.46
       ]
     },
     {
@@ -4962,7 +5118,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.91,
+      "distance_to_camera": 18.8,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4973,8 +5129,8 @@
         -2.53
       ],
       "screen_pos": [
-        1102.8,
-        217.09
+        1078.27,
+        192.4
       ]
     },
     {
@@ -4988,7 +5144,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.07,
+      "distance_to_camera": 19,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -4999,8 +5155,8 @@
         -2.53
       ],
       "screen_pos": [
-        1131.92,
-        94.89
+        1105.35,
+        76.32
       ]
     },
     {
@@ -5014,7 +5170,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.19,
+      "distance_to_camera": 18.15,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5025,8 +5181,8 @@
         -2.53
       ],
       "screen_pos": [
-        982.82,
-        128.89
+        964.4,
+        108.6
       ]
     },
     {
@@ -5040,7 +5196,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.84,
+      "distance_to_camera": 18.72,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5051,8 +5207,8 @@
         -2.53
       ],
       "screen_pos": [
-        1077.6,
-        283.08
+        1054.66,
+        255.2
       ]
     },
     {
@@ -5066,7 +5222,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.44,
+      "distance_to_camera": 18.36,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5077,8 +5233,8 @@
         -2.53
       ],
       "screen_pos": [
-        1027.5,
-        209.17
+        1006.94,
+        184.87
       ]
     },
     {
@@ -5092,7 +5248,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.41,
+      "distance_to_camera": 18.29,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5103,8 +5259,8 @@
         -2.53
       ],
       "screen_pos": [
-        987.94,
-        322.81
+        969.82,
+        293.04
       ]
     },
     {
@@ -5118,7 +5274,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.04,
+      "distance_to_camera": 17.94,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5129,8 +5285,8 @@
         -2.53
       ],
       "screen_pos": [
-        904.59,
-        330.04
+        890.82,
+        299.93
       ]
     },
     {
@@ -5144,7 +5300,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.99,
+      "distance_to_camera": 18.92,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5155,8 +5311,8 @@
         -2.53
       ],
       "screen_pos": [
-        1118.61,
-        84.98
+        1092.72,
+        66.92
       ]
     },
     {
@@ -5170,7 +5326,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.98,
+      "distance_to_camera": 18.83,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5181,8 +5337,8 @@
         -2.53
       ],
       "screen_pos": [
-        1073.51,
-        351.94
+        1051.04,
+        320.8
       ]
     },
     {
@@ -5196,7 +5352,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.25,
+      "distance_to_camera": 18.13,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5207,8 +5363,8 @@
         -2.53
       ],
       "screen_pos": [
-        944.06,
-        344.77
+        928.28,
+        313.97
       ]
     },
     {
@@ -5222,7 +5378,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.6,
+      "distance_to_camera": 18.49,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5233,8 +5389,8 @@
         -2.53
       ],
       "screen_pos": [
-        1041.62,
-        270.34
+        1020.52,
+        243.07
       ]
     },
     {
@@ -5248,7 +5404,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.19,
+      "distance_to_camera": 17.2,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5259,8 +5415,8 @@
         0
       ],
       "screen_pos": [
-        678.9,
-        101.47
+        676.78,
+        82.36
       ]
     },
     {
@@ -5274,7 +5430,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.89,
+      "distance_to_camera": 16.9,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5285,8 +5441,8 @@
         0
       ],
       "screen_pos": [
-        679.65,
-        99.94
+        677.45,
+        80.58
       ]
     },
     {
@@ -5300,7 +5456,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.87,
+      "distance_to_camera": 16.88,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5311,8 +5467,8 @@
         0
       ],
       "screen_pos": [
-        679.75,
-        96.38
+        677.53,
+        77.17
       ]
     },
     {
@@ -5326,7 +5482,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.09,
+      "distance_to_camera": 17.09,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5337,8 +5493,8 @@
         0
       ],
       "screen_pos": [
-        462.44,
-        125.04
+        472.26,
+        104.38
       ]
     },
     {
@@ -5352,7 +5508,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.06,
+      "distance_to_camera": 17.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5363,8 +5519,8 @@
         0
       ],
       "screen_pos": [
-        804.41,
-        125.04
+        795.32,
+        104.38
       ]
     },
     {
@@ -5378,7 +5534,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.43,
+      "distance_to_camera": 14.26,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5389,8 +5545,8 @@
         1.05
       ],
       "screen_pos": [
-        685.94,
-        510.1
+        683.01,
+        461.69
       ]
     },
     {
@@ -5404,7 +5560,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.37,
+      "distance_to_camera": 14.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5415,8 +5571,8 @@
         1.05
       ],
       "screen_pos": [
-        686.07,
-        494.63
+        683.12,
+        447.09
       ]
     },
     {
@@ -5430,7 +5586,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 9.87,
+      "distance_to_camera": 10.64,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5441,8 +5597,8 @@
         4.78
       ],
       "screen_pos": [
-        703.8,
-        611.65
+        698.29,
+        537.28
       ]
     },
     {
@@ -5456,7 +5612,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.65,
+      "distance_to_camera": 15.42,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5467,8 +5623,8 @@
         1.05
       ],
       "screen_pos": [
-        174.42,
-        491.3
+        204.2,
+        443.95
       ]
     },
     {
@@ -5482,7 +5638,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.19,
+      "distance_to_camera": 15.93,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5493,8 +5649,8 @@
         1.05
       ],
       "screen_pos": [
-        1197.78,
-        491.3
+        1162.09,
+        443.95
       ]
     },
     {
@@ -5508,7 +5664,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.84,
+      "distance_to_camera": 11.52,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5519,8 +5675,8 @@
         4.79
       ],
       "screen_pos": [
-        229.53,
-        674.04
+        264.68,
+        595.03
       ]
     },
     {
@@ -5534,7 +5690,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.21,
+      "distance_to_camera": 10.93,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5545,8 +5701,8 @@
         4.79
       ],
       "screen_pos": [
-        492.65,
-        674.04
+        505.27,
+        595.03
       ]
     },
     {
@@ -5560,7 +5716,7 @@
       ],
       "behind_camera": false,
       "class": "OmniLight3D",
-      "distance_to_camera": 13.42,
+      "distance_to_camera": 14.35,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
@@ -5571,8 +5727,8 @@
         0.8
       ],
       "screen_pos": [
-        389.39,
-        269.48
+        405.71,
+        235.72
       ]
     },
     {
@@ -5586,7 +5742,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.67,
+      "distance_to_camera": 18.5,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5597,8 +5753,8 @@
         -2.08
       ],
       "screen_pos": [
-        197.47,
-        390.82
+        220.87,
+        356.99
       ]
     },
     {
@@ -5612,7 +5768,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.44,
+      "distance_to_camera": 18.24,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5623,8 +5779,8 @@
         -1.4
       ],
       "screen_pos": [
-        120.64,
-        398.6
+        149.24,
+        362.95
       ]
     },
     {
@@ -5638,7 +5794,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.79,
+      "distance_to_camera": 17.57,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5649,8 +5805,8 @@
         -0.64
       ],
       "screen_pos": [
-        94.39,
-        410.3
+        125.87,
+        372.29
       ]
     },
     {
@@ -5664,7 +5820,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.72,
+      "distance_to_camera": 17.51,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5675,8 +5831,8 @@
         -0.55
       ],
       "screen_pos": [
-        89.76,
-        411.61
+        121.67,
+        373.31
       ]
     },
     {
@@ -5690,7 +5846,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 18.5,
+      "distance_to_camera": 19.23,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5701,8 +5857,8 @@
         -1.91
       ],
       "screen_pos": [
-        159.1,
-        551.82
+        184.12,
+        510.18
       ]
     },
     {
@@ -5716,7 +5872,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.64,
+      "distance_to_camera": 18.35,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5727,8 +5883,8 @@
         -0.89
       ],
       "screen_pos": [
-        127.9,
-        575.9
+        156.17,
+        530.38
       ]
     },
     {
@@ -5742,7 +5898,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.71,
+      "distance_to_camera": 17.55,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5753,8 +5909,8 @@
         -1.4
       ],
       "screen_pos": [
-        235.91,
-        398.6
+        258.16,
+        362.95
       ]
     },
     {
@@ -5768,7 +5924,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.03,
+      "distance_to_camera": 16.85,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5779,8 +5935,8 @@
         -0.64
       ],
       "screen_pos": [
-        215.49,
-        410.3
+        239.97,
+        372.29
       ]
     },
     {
@@ -5794,7 +5950,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.96,
+      "distance_to_camera": 16.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5805,8 +5961,8 @@
         -0.55
       ],
       "screen_pos": [
-        211.55,
-        411.61
+        236.39,
+        373.31
       ]
     },
     {
@@ -5820,7 +5976,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.92,
+      "distance_to_camera": 18.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5831,8 +5987,8 @@
         -1.91
       ],
       "screen_pos": [
-        251.36,
-        551.82
+        271.57,
+        510.18
       ]
     },
     {
@@ -5846,7 +6002,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.03,
+      "distance_to_camera": 17.77,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5857,8 +6013,8 @@
         -0.89
       ],
       "screen_pos": [
-        226.14,
-        575.9
+        248.99,
+        530.38
       ]
     },
     {
@@ -5872,7 +6028,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.65,
+      "distance_to_camera": 18.39,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5883,8 +6039,8 @@
         -1.37
       ],
       "screen_pos": [
-        189.56,
-        549.63
+        213.79,
+        506.68
       ]
     },
     {
@@ -5898,7 +6054,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.63,
+      "distance_to_camera": 18.37,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5909,8 +6065,8 @@
         -1.37
       ],
       "screen_pos": [
-        189.22,
-        545.42
+        213.49,
+        502.67
       ]
     },
     {
@@ -5924,7 +6080,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.98,
+      "distance_to_camera": 17.71,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5935,8 +6091,8 @@
         -0.6
       ],
       "screen_pos": [
-        166.82,
-        565.32
+        193.48,
+        519.45
       ]
     },
     {
@@ -5950,7 +6106,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.09,
+      "distance_to_camera": 17.81,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5961,8 +6117,8 @@
         -0.68
       ],
       "screen_pos": [
-        169.84,
-        570.45
+        196.17,
+        524.57
       ]
     },
     {
@@ -5976,7 +6132,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.29,
+      "distance_to_camera": 18.07,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -5987,8 +6143,8 @@
         -1.37
       ],
       "screen_pos": [
-        183.33,
-        472.51
+        208.22,
+        433.2
       ]
     },
     {
@@ -6002,7 +6158,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.27,
+      "distance_to_camera": 18.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6013,8 +6169,8 @@
         -1.37
       ],
       "screen_pos": [
-        182.98,
-        468.19
+        207.9,
+        429.09
       ]
     },
     {
@@ -6028,7 +6184,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.61,
+      "distance_to_camera": 17.38,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6039,8 +6195,8 @@
         -0.6
       ],
       "screen_pos": [
-        159.94,
-        484.48
+        187.36,
+        442.6
       ]
     },
     {
@@ -6054,7 +6210,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.71,
+      "distance_to_camera": 17.48,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6065,8 +6221,8 @@
         -0.68
       ],
       "screen_pos": [
-        163.05,
-        490.21
+        190.12,
+        448.25
       ]
     },
     {
@@ -6080,7 +6236,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.01,
+      "distance_to_camera": 17.83,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6091,8 +6247,8 @@
         -1.37
       ],
       "screen_pos": [
-        176.93,
-        393.23
+        202.5,
+        357.78
       ]
     },
     {
@@ -6106,7 +6262,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17,
+      "distance_to_camera": 17.82,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6117,8 +6273,8 @@
         -1.37
       ],
       "screen_pos": [
-        176.57,
-        388.79
+        202.18,
+        353.56
       ]
     },
     {
@@ -6132,7 +6288,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.33,
+      "distance_to_camera": 17.13,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6143,8 +6299,8 @@
         -0.6
       ],
       "screen_pos": [
-        152.86,
-        401.26
+        181.07,
+        363.61
       ]
     },
     {
@@ -6158,7 +6314,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.42,
+      "distance_to_camera": 17.22,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6169,8 +6325,8 @@
         -0.68
       ],
       "screen_pos": [
-        156.05,
-        407.62
+        183.91,
+        369.83
       ]
     },
     {
@@ -6184,7 +6340,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.83,
+      "distance_to_camera": 17.68,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6195,8 +6351,8 @@
         -1.37
       ],
       "screen_pos": [
-        170.34,
-        311.69
+        196.62,
+        280.33
       ]
     },
     {
@@ -6210,7 +6366,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.82,
+      "distance_to_camera": 17.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6221,8 +6377,8 @@
         -1.37
       ],
       "screen_pos": [
-        169.97,
-        307.13
+        196.29,
+        276
       ]
     },
     {
@@ -6236,7 +6392,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.13,
+      "distance_to_camera": 16.98,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6247,8 +6403,8 @@
         -0.6
       ],
       "screen_pos": [
-        145.56,
-        315.54
+        174.6,
+        282.4
       ]
     },
     {
@@ -6262,7 +6418,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.22,
+      "distance_to_camera": 17.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6273,8 +6429,8 @@
         -0.68
       ],
       "screen_pos": [
-        148.86,
-        322.57
+        177.52,
+        289.22
       ]
     },
     {
@@ -6288,7 +6444,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.72,
+      "distance_to_camera": 17.6,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6299,8 +6455,8 @@
         -1.36
       ],
       "screen_pos": [
-        162.92,
-        223.75
+        190.01,
+        196.91
       ]
     },
     {
@@ -6314,7 +6470,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 16.72,
+      "distance_to_camera": 17.61,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6325,8 +6481,8 @@
         -1.37
       ],
       "screen_pos": [
-        162.68,
-        216.89
+        189.8,
+        190.44
       ]
     },
     {
@@ -6340,7 +6496,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.92,
+      "distance_to_camera": 16.8,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6351,8 +6507,8 @@
         -0.48
       ],
       "screen_pos": [
-        133.54,
-        223.11
+        163.97,
+        194.76
       ]
     },
     {
@@ -6366,7 +6522,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 17.66,
+      "distance_to_camera": 18.4,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6377,13 +6533,91 @@
         -1.37
       ],
       "screen_pos": [
-        189.71,
-        551.45
+        213.92,
+        508.42
       ]
     },
     {
       "aabb": [
         -8.57,
+        -1.29,
+        -0.55,
+        0.08,
+        0.08,
+        0.02
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 18.01,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_-1_25",
+      "position": [
+        -8.53,
+        -1.25,
+        -0.54
+      ],
+      "screen_pos": [
+        135.53,
+        515.97
+      ]
+    },
+    {
+      "aabb": [
+        -8.57,
+        1.01,
+        -0.55,
+        0.08,
+        0.08,
+        0.02
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 17.48,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_1_05",
+      "position": [
+        -8.53,
+        1.05,
+        -0.54
+      ],
+      "screen_pos": [
+        122.6,
+        372.18
+      ]
+    },
+    {
+      "aabb": [
+        -8.57,
+        3.36,
+        -0.55,
+        0.08,
+        0.08,
+        0.02
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 17.25,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_3_4",
+      "position": [
+        -8.53,
+        3.4,
+        -0.54
+      ],
+      "screen_pos": [
+        108.69,
+        217.45
+      ]
+    },
+    {
+      "aabb": [
+        -6.81,
         -1.29,
         -0.55,
         0.08,
@@ -6396,84 +6630,6 @@
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_-1_25",
-      "position": [
-        -8.53,
-        -1.25,
-        -0.54
-      ],
-      "screen_pos": [
-        105.27,
-        561.85
-      ]
-    },
-    {
-      "aabb": [
-        -8.57,
-        1.01,
-        -0.55,
-        0.08,
-        0.08,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 16.7,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_1_05",
-      "position": [
-        -8.53,
-        1.05,
-        -0.54
-      ],
-      "screen_pos": [
-        90.71,
-        410.45
-      ]
-    },
-    {
-      "aabb": [
-        -8.57,
-        3.36,
-        -0.55,
-        0.08,
-        0.08,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 16.4,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
-      "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_-0_88_3_4",
-      "position": [
-        -8.53,
-        3.4,
-        -0.54
-      ],
-      "screen_pos": [
-        75.01,
-        247
-      ]
-    },
-    {
-      "aabb": [
-        -6.81,
-        -1.29,
-        -0.55,
-        0.08,
-        0.08,
-        0.02
-      ],
-      "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 16.56,
-      "in_frustum": true,
-      "kind": "visual",
-      "on_screen": true,
       "path": "SceneViewport/DeskWorld/CabinEnvironment/SideRack/Fastener_0_88_-1_25",
       "position": [
         -6.77,
@@ -6481,8 +6637,8 @@
         -0.54
       ],
       "screen_pos": [
-        223.95,
-        561.85
+        247.49,
+        515.97
       ]
     },
     {
@@ -6496,7 +6652,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.94,
+      "distance_to_camera": 16.76,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6507,8 +6663,8 @@
         -0.54
       ],
       "screen_pos": [
-        212.62,
-        410.45
+        237.43,
+        372.18
       ]
     },
     {
@@ -6522,7 +6678,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 15.63,
+      "distance_to_camera": 16.52,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6533,8 +6689,8 @@
         -0.54
       ],
       "screen_pos": [
-        200.4,
-        247
+        226.61,
+        217.45
       ]
     },
     {
@@ -6548,7 +6704,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.33,
+      "distance_to_camera": 11.05,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6559,8 +6715,8 @@
         4.73
       ],
       "screen_pos": [
-        445.95,
-        671.04
+        462.47,
+        592.72
       ]
     },
     {
@@ -6574,7 +6730,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.96,
+      "distance_to_camera": 12.59,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6585,8 +6741,8 @@
         4.73
       ],
       "screen_pos": [
-        1299.56,
-        671.04
+        1243.4,
+        592.72
       ]
     },
     {
@@ -6600,7 +6756,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.52,
+      "distance_to_camera": 13.26,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6611,8 +6767,8 @@
         2.85
       ],
       "screen_pos": [
-        977.68,
-        602.53
+        953.24,
+        540.91
       ]
     },
     {
@@ -6626,7 +6782,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.81,
+      "distance_to_camera": 12.5,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6637,8 +6793,8 @@
         3.82
       ],
       "screen_pos": [
-        1006.28,
-        666.27
+        977.7,
+        594.86
       ]
     },
     {
@@ -6652,7 +6808,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.57,
+      "distance_to_camera": 12.3,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6663,8 +6819,8 @@
         3.82
       ],
       "screen_pos": [
-        1009.75,
-        614.5
+        980.65,
+        546.54
       ]
     },
     {
@@ -6678,7 +6834,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.27,
+      "distance_to_camera": 12.01,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6689,8 +6845,8 @@
         3.82
       ],
       "screen_pos": [
-        860.81,
-        640.42
+        843.5,
+        570.72
       ]
     },
     {
@@ -6704,7 +6860,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.32,
+      "distance_to_camera": 12.04,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6715,8 +6871,8 @@
         3.85
       ],
       "screen_pos": [
-        866.07,
-        654.24
+        848.35,
+        583.43
       ]
     },
     {
@@ -6730,7 +6886,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.28,
+      "distance_to_camera": 12.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6741,8 +6897,8 @@
         3.82
       ],
       "screen_pos": [
-        1155.22,
-        640.42
+        1114.84,
+        570.72
       ]
     },
     {
@@ -6756,7 +6912,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.29,
+      "distance_to_camera": 12.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6767,8 +6923,8 @@
         3.85
       ],
       "screen_pos": [
-        1150.32,
-        654.24
+        1110.3,
+        583.43
       ]
     },
     {
@@ -6782,7 +6938,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.75,
+      "distance_to_camera": 12.45,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6793,8 +6949,8 @@
         3.85
       ],
       "screen_pos": [
-        1007.75,
-        660.93
+        978.94,
+        589.68
       ]
     },
     {
@@ -6808,7 +6964,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.73,
+      "distance_to_camera": 12.44,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6819,8 +6975,8 @@
         3.85
       ],
       "screen_pos": [
-        1007.95,
-        657.9
+        979.12,
+        586.85
       ]
     },
     {
@@ -6834,7 +6990,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.3,
+      "distance_to_camera": 12.03,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6845,8 +7001,8 @@
         3.84
       ],
       "screen_pos": [
-        872.02,
-        646.2
+        853.82,
+        575.99
       ]
     },
     {
@@ -6860,7 +7016,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.23,
+      "distance_to_camera": 11.98,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6871,8 +7027,8 @@
         3.84
       ],
       "screen_pos": [
-        872.63,
-        631.92
+        854.33,
+        562.67
       ]
     },
     {
@@ -6886,7 +7042,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.3,
+      "distance_to_camera": 12.02,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6897,8 +7053,8 @@
         3.87
       ],
       "screen_pos": [
-        865.52,
-        655.12
+        847.81,
+        584.12
       ]
     },
     {
@@ -6912,7 +7068,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.23,
+      "distance_to_camera": 12.91,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6923,8 +7079,8 @@
         3.84
       ],
       "screen_pos": [
-        1144.71,
-        646.2
+        1105.12,
+        575.99
       ]
     },
     {
@@ -6938,7 +7094,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.17,
+      "distance_to_camera": 12.86,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6949,8 +7105,8 @@
         3.84
       ],
       "screen_pos": [
-        1146.03,
-        631.92
+        1106.23,
+        562.67
       ]
     },
     {
@@ -6964,7 +7120,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.27,
+      "distance_to_camera": 12.95,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -6975,8 +7131,8 @@
         3.87
       ],
       "screen_pos": [
-        1152.24,
-        655.12
+        1112,
+        584.12
       ]
     },
     {
@@ -6990,7 +7146,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.45,
+      "distance_to_camera": 13.18,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7001,8 +7157,8 @@
         2.96
       ],
       "screen_pos": [
-        980.59,
-        611.1
+        955.74,
+        548.36
       ]
     },
     {
@@ -7016,7 +7172,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.85,
+      "distance_to_camera": 11.53,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7027,8 +7183,8 @@
         4.82
       ],
       "screen_pos": [
-        1045.35,
-        687.26
+        1010.63,
+        607.09
       ]
     },
     {
@@ -7042,7 +7198,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.8,
+      "distance_to_camera": 11.47,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7053,8 +7209,8 @@
         4.88
       ],
       "screen_pos": [
-        1048,
-        690.59
+        1012.86,
+        609.65
       ]
     },
     {
@@ -7068,7 +7224,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.69,
+      "distance_to_camera": 11.38,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7079,8 +7235,8 @@
         4.88
       ],
       "screen_pos": [
-        1049.97,
-        665.78
+        1014.49,
+        586.64
       ]
     },
     {
@@ -7094,7 +7250,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.93,
+      "distance_to_camera": 11.59,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7105,8 +7261,8 @@
         4.87
       ],
       "screen_pos": [
-        1045.48,
-        715.87
+        1010.74,
+        633.22
       ]
     },
     {
@@ -7120,7 +7276,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.59,
+      "distance_to_camera": 11.28,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7131,8 +7287,8 @@
         4.94
       ],
       "screen_pos": [
-        1001.42,
-        692.9
+        970.11,
+        611.31
       ]
     },
     {
@@ -7146,7 +7302,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.92,
+      "distance_to_camera": 11.59,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7157,8 +7313,8 @@
         4.94
       ],
       "screen_pos": [
-        1099.51,
-        692.9
+        1059.7,
+        611.31
       ]
     },
     {
@@ -7172,7 +7328,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.68,
+      "distance_to_camera": 11.35,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7183,8 +7339,8 @@
         5.01
       ],
       "screen_pos": [
-        1053.78,
-        696.15
+        1017.66,
+        613.68
       ]
     },
     {
@@ -7198,7 +7354,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 10.65,
+      "distance_to_camera": 11.32,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7209,8 +7365,8 @@
         5.03
       ],
       "screen_pos": [
-        1054.98,
-        693.94
+        1018.67,
+        611.44
       ]
     },
     {
@@ -7224,7 +7380,7 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 10.72,
+      "distance_to_camera": 11.4,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
@@ -7235,8 +7391,8 @@
         4.96
       ],
       "screen_pos": [
-        1051.52,
-        693.68
+        1015.79,
+        611.83
       ]
     },
     {
@@ -7250,7 +7406,7 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 10.72,
+      "distance_to_camera": 11.4,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
@@ -7261,8 +7417,8 @@
         4.96
       ],
       "screen_pos": [
-        1051.52,
-        693.68
+        1015.79,
+        611.83
       ]
     },
     {
@@ -7276,7 +7432,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.5,
+      "distance_to_camera": 12.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7287,8 +7443,8 @@
         3.89
       ],
       "screen_pos": [
-        948.97,
-        658.24
+        924.66,
+        586.9
       ]
     },
     {
@@ -7302,7 +7458,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.04,
+      "distance_to_camera": 12.78,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7313,8 +7469,8 @@
         3.2
       ],
       "screen_pos": [
-        911.44,
-        629.11
+        891.27,
+        563.89
       ]
     },
     {
@@ -7328,7 +7484,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.49,
+      "distance_to_camera": 12.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7339,8 +7495,8 @@
         3.89
       ],
       "screen_pos": [
-        949.07,
-        656.36
+        924.75,
+        585.14
       ]
     },
     {
@@ -7354,7 +7510,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.5,
+      "distance_to_camera": 12.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7365,8 +7521,8 @@
         3.88
       ],
       "screen_pos": [
-        950.42,
-        654.94
+        926.01,
+        583.87
       ]
     },
     {
@@ -7380,7 +7536,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.5,
+      "distance_to_camera": 12.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7391,8 +7547,8 @@
         3.87
       ],
       "screen_pos": [
-        948.83,
-        653.42
+        924.56,
+        582.51
       ]
     },
     {
@@ -7406,7 +7562,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.5,
+      "distance_to_camera": 12.22,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7417,8 +7573,8 @@
         3.86
       ],
       "screen_pos": [
-        950.18,
-        652.01
+        925.81,
+        581.25
       ]
     },
     {
@@ -7432,7 +7588,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.79,
+      "distance_to_camera": 12.52,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7443,8 +7599,8 @@
         3.49
       ],
       "screen_pos": [
-        928.41,
-        635.54
+        906.45,
+        568.23
       ]
     },
     {
@@ -7458,7 +7614,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.72,
+      "distance_to_camera": 12.45,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7469,8 +7625,8 @@
         3.61
       ],
       "screen_pos": [
-        943.75,
-        640.57
+        920.39,
+        572.18
       ]
     },
     {
@@ -7484,7 +7640,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.6,
+      "distance_to_camera": 12.32,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7495,8 +7651,8 @@
         3.74
       ],
       "screen_pos": [
-        942.9,
-        645.9
+        919.36,
+        576.37
       ]
     },
     {
@@ -7510,7 +7666,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.49,
+      "distance_to_camera": 12.21,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7521,8 +7677,8 @@
         3.83
       ],
       "screen_pos": [
-        936.66,
-        650.09
+        913.41,
+        579.65
       ]
     },
     {
@@ -7536,7 +7692,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.41,
+      "distance_to_camera": 12.13,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7547,8 +7703,8 @@
         3.95
       ],
       "screen_pos": [
-        947.06,
-        655
+        922.77,
+        583.5
       ]
     },
     {
@@ -7562,7 +7718,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.3,
+      "distance_to_camera": 12.02,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7573,8 +7729,8 @@
         4.04
       ],
       "screen_pos": [
-        940.73,
-        659.35
+        916.74,
+        586.9
       ]
     },
     {
@@ -7588,7 +7744,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.23,
+      "distance_to_camera": 11.94,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7599,8 +7755,8 @@
         4.16
       ],
       "screen_pos": [
-        951.39,
-        664.47
+        926.3,
+        590.89
       ]
     },
     {
@@ -7614,7 +7770,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.19,
+      "distance_to_camera": 11.89,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7625,8 +7781,8 @@
         4.3
       ],
       "screen_pos": [
-        984.07,
-        671.17
+        955.99,
+        596.1
       ]
     },
     {
@@ -7640,7 +7796,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.84,
+      "distance_to_camera": 12.58,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7651,8 +7807,8 @@
         3.39
       ],
       "screen_pos": [
-        911.89,
-        630.49
+        891.37,
+        564.13
       ]
     },
     {
@@ -7666,7 +7822,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.86,
+      "distance_to_camera": 12.59,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7677,8 +7833,8 @@
         3.39
       ],
       "screen_pos": [
-        919.37,
-        630.77
+        898.28,
+        564.35
       ]
     },
     {
@@ -7692,7 +7848,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.93,
+      "distance_to_camera": 12.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7703,8 +7859,60 @@
         3.3
       ],
       "screen_pos": [
-        914.16,
-        627.07
+        893.62,
+        561.43
+      ]
+    },
+    {
+      "aabb": [
+        2.05,
+        -0.56,
+        3.23,
+        1.14,
+        0.07,
+        1.33
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.19,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/DeskDrawer/Slide/Files/BlueFile/PaperHit",
+      "position": [
+        2.62,
+        -0.53,
+        3.89
+      ],
+      "screen_pos": [
+        924.9,
+        582.29
+      ]
+    },
+    {
+      "aabb": [
+        2.05,
+        -0.56,
+        3.23,
+        1.14,
+        0.07,
+        1.33
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.19,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/DeskDrawer/Slide/Files/BlueFile/PaperHit/Shape",
+      "position": [
+        2.62,
+        -0.53,
+        3.89
+      ],
+      "screen_pos": [
+        924.9,
+        582.29
       ]
     },
     {
@@ -7718,7 +7926,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.02,
+      "distance_to_camera": 12.71,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7729,8 +7937,8 @@
         3.74
       ],
       "screen_pos": [
-        1059.29,
-        650.79
+        1026.72,
+        580.92
       ]
     },
     {
@@ -7744,7 +7952,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.67,
+      "distance_to_camera": 13.38,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7755,8 +7963,8 @@
         3.05
       ],
       "screen_pos": [
-        1052.11,
-        622.34
+        1021.86,
+        558.4
       ]
     },
     {
@@ -7770,7 +7978,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.01,
+      "distance_to_camera": 12.71,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7781,8 +7989,8 @@
         3.74
       ],
       "screen_pos": [
-        1059.43,
-        648.93
+        1026.85,
+        579.18
       ]
     },
     {
@@ -7796,7 +8004,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.02,
+      "distance_to_camera": 12.72,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7807,8 +8015,8 @@
         3.73
       ],
       "screen_pos": [
-        1060.43,
-        647.42
+        1027.79,
+        577.84
       ]
     },
     {
@@ -7822,7 +8030,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.01,
+      "distance_to_camera": 12.71,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7833,8 +8041,8 @@
         3.72
       ],
       "screen_pos": [
-        1058.73,
-        646.04
+        1026.23,
+        576.6
       ]
     },
     {
@@ -7848,7 +8056,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.02,
+      "distance_to_camera": 12.72,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7859,8 +8067,8 @@
         3.71
       ],
       "screen_pos": [
-        1059.73,
-        644.53
+        1027.18,
+        575.26
       ]
     },
     {
@@ -7874,7 +8082,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.24,
+      "distance_to_camera": 12.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7885,8 +8093,8 @@
         3.37
       ],
       "screen_pos": [
-        1029.33,
-        629.74
+        999.99,
+        563.53
       ]
     },
     {
@@ -7900,7 +8108,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.22,
+      "distance_to_camera": 12.92,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7911,8 +8119,8 @@
         3.46
       ],
       "screen_pos": [
-        1046.56,
-        633.55
+        1015.68,
+        566.53
       ]
     },
     {
@@ -7926,7 +8134,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.1,
+      "distance_to_camera": 12.8,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7937,8 +8145,8 @@
         3.59
       ],
       "screen_pos": [
-        1049.47,
-        639
+        1018.03,
+        570.82
       ]
     },
     {
@@ -7952,7 +8160,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.97,
+      "distance_to_camera": 12.68,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7963,8 +8171,8 @@
         3.71
       ],
       "screen_pos": [
-        1046.77,
-        643.75
+        1015.23,
+        574.55
       ]
     },
     {
@@ -7978,7 +8186,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.93,
+      "distance_to_camera": 12.63,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -7989,8 +8197,8 @@
         3.8
       ],
       "screen_pos": [
-        1059.46,
-        647.83
+        1026.67,
+        577.75
       ]
     },
     {
@@ -8004,7 +8212,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.81,
+      "distance_to_camera": 12.5,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8015,8 +8223,8 @@
         3.92
       ],
       "screen_pos": [
-        1056.81,
-        652.77
+        1023.91,
+        581.62
       ]
     },
     {
@@ -8030,7 +8238,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.76,
+      "distance_to_camera": 12.45,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8041,8 +8249,8 @@
         4.01
       ],
       "screen_pos": [
-        1069.84,
-        657.02
+        1035.63,
+        584.94
       ]
     },
     {
@@ -8056,7 +8264,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 11.81,
+      "distance_to_camera": 12.49,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8067,8 +8275,8 @@
         4.1
       ],
       "screen_pos": [
-        1103.44,
-        660.93
+        1066.27,
+        587.97
       ]
     },
     {
@@ -8082,7 +8290,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.24,
+      "distance_to_camera": 12.96,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8093,8 +8301,8 @@
         3.29
       ],
       "screen_pos": [
-        1011.55,
-        626
+        983.71,
+        560.46
       ]
     },
     {
@@ -8108,7 +8316,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.28,
+      "distance_to_camera": 13,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8119,8 +8327,8 @@
         3.29
       ],
       "screen_pos": [
-        1018.52,
-        625.67
+        990.18,
+        560.2
       ]
     },
     {
@@ -8134,7 +8342,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 12.33,
+      "distance_to_camera": 13.06,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8145,34 +8353,60 @@
         3.2
       ],
       "screen_pos": [
-        1011.25,
-        622.35
+        983.65,
+        557.58
       ]
     },
     {
       "aabb": [
-        -1.9,
-        0.34,
-        1.64,
-        4.1,
-        0.85,
-        2.01
+        3.25,
+        -0.55,
+        3.07,
+        1.16,
+        0.07,
+        1.34
       ],
       "behind_camera": false,
-      "class": "MeshInstance3D",
-      "distance_to_camera": 11.71,
+      "class": "StaticBody3D",
+      "distance_to_camera": 12.69,
       "in_frustum": true,
-      "kind": "visual",
+      "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Keyboard/Model/world/geometry_0",
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/DeskDrawer/Slide/Files/RoseFile/PaperHit",
       "position": [
-        0.15,
-        0.77,
-        2.65
+        3.83,
+        -0.52,
+        3.74
       ],
       "screen_pos": [
-        705.83,
-        497.11
+        1027.04,
+        576.37
+      ]
+    },
+    {
+      "aabb": [
+        3.25,
+        -0.55,
+        3.07,
+        1.16,
+        0.07,
+        1.34
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 12.69,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/CabinEnvironment/DeskDrawer/Slide/Files/RoseFile/PaperHit/Shape",
+      "position": [
+        3.83,
+        -0.52,
+        3.74
+      ],
+      "screen_pos": [
+        1027.04,
+        576.37
       ]
     },
     {
@@ -8186,7 +8420,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.98,
+      "distance_to_camera": 15.88,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8197,8 +8431,60 @@
         -0.55
       ],
       "screen_pos": [
-        377.14,
-        339.17
+        392.57,
+        304.66
+      ]
+    },
+    {
+      "aabb": [
+        -5.52,
+        0.34,
+        -1.34,
+        2.34,
+        3.5,
+        1.58
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 15.88,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/FocusHitbox",
+      "position": [
+        -4.35,
+        2.09,
+        -0.55
+      ],
+      "screen_pos": [
+        392.57,
+        304.66
+      ]
+    },
+    {
+      "aabb": [
+        -5.52,
+        0.34,
+        -1.34,
+        2.34,
+        3.5,
+        1.58
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 15.88,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/FocusHitbox/@CollisionShape3D@62",
+      "position": [
+        -4.35,
+        2.09,
+        -0.55
+      ],
+      "screen_pos": [
+        392.57,
+        304.66
       ]
     },
     {
@@ -8212,19 +8498,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.83,
+      "distance_to_camera": 15.67,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@MeshInstance3D@79",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@MeshInstance3D@87",
       "position": [
         -4.35,
         0.62,
         -0.08
       ],
       "screen_pos": [
-        373.24,
-        447.71
+        389.12,
+        406.25
       ]
     },
     {
@@ -8238,19 +8524,19 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 14.83,
+      "distance_to_camera": 15.67,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@81",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@89",
       "position": [
         -4.35,
         0.62,
         -0.08
       ],
       "screen_pos": [
-        373.24,
-        447.71
+        389.12,
+        406.25
       ]
     },
     {
@@ -8264,45 +8550,71 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 14.83,
+      "distance_to_camera": 15.67,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@81/@CollisionShape3D@80",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/lamp_power/@StaticBody3D@89/@CollisionShape3D@88",
       "position": [
         -4.35,
         0.62,
         -0.08
       ],
       "screen_pos": [
-        373.24,
-        447.71
+        389.12,
+        406.25
       ]
     },
     {
       "aabb": [
-        -4,
-        2.61,
-        -0.47,
+        -3.93,
+        2.79,
+        -0.27,
         0,
         0,
         0
       ],
       "behind_camera": false,
       "class": "OmniLight3D",
-      "distance_to_camera": 14.75,
+      "distance_to_camera": 15.44,
       "in_frustum": true,
       "kind": "light",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/InteractiveLampLight",
       "position": [
-        -4,
-        2.61,
-        -0.47
+        -3.93,
+        2.79,
+        -0.27
       ],
       "screen_pos": [
-        398.91,
-        303.23
+        414.45,
+        259.82
+      ]
+    },
+    {
+      "aabb": [
+        -4.14,
+        2.67,
+        -0.48,
+        0.42,
+        0.23,
+        0.42
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 15.44,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Lamp/BreathingBulb",
+      "position": [
+        -3.93,
+        2.79,
+        -0.27
+      ],
+      "screen_pos": [
+        414.45,
+        259.82
       ]
     },
     {
@@ -8316,7 +8628,7 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.41,
+      "distance_to_camera": 14.25,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
@@ -8327,8 +8639,60 @@
         1.35
       ],
       "screen_pos": [
-        317.35,
-        420.78
+        338.7,
+        376.46
+      ]
+    },
+    {
+      "aabb": [
+        -5.6,
+        0.34,
+        0.92,
+        1.9,
+        2.02,
+        0.87
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 14.25,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/FocusHitbox",
+      "position": [
+        -4.65,
+        1.35,
+        1.35
+      ],
+      "screen_pos": [
+        338.7,
+        376.46
+      ]
+    },
+    {
+      "aabb": [
+        -5.6,
+        0.34,
+        0.92,
+        1.9,
+        2.02,
+        0.87
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 14.25,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/FocusHitbox/@CollisionShape3D@63",
+      "position": [
+        -4.65,
+        1.35,
+        1.35
+      ],
+      "screen_pos": [
+        338.7,
+        376.46
       ]
     },
     {
@@ -8342,19 +8706,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.17,
+      "distance_to_camera": 13.98,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@MeshInstance3D@58",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@MeshInstance3D@66",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        310.85,
-        478.61
+        333.15,
+        429.35
       ]
     },
     {
@@ -8368,19 +8732,19 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.17,
+      "distance_to_camera": 13.98,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@60",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@68",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        310.85,
-        478.61
+        333.15,
+        429.35
       ]
     },
     {
@@ -8394,19 +8758,19 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.17,
+      "distance_to_camera": 13.98,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@60/@CollisionShape3D@59",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_power/@StaticBody3D@68/@CollisionShape3D@67",
       "position": [
         -4.63,
         0.72,
         1.78
       ],
       "screen_pos": [
-        310.85,
-        478.61
+        333.15,
+        429.35
       ]
     },
     {
@@ -8420,19 +8784,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.09,
+      "distance_to_camera": 13.91,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@61",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@69",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        332.57,
-        478.61
+        353.4,
+        429.35
       ]
     },
     {
@@ -8446,19 +8810,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.07,
+      "distance_to_camera": 13.89,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@62",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@MeshInstance3D@70",
       "position": [
         -4.37,
         0.75,
         1.79
       ],
       "screen_pos": [
-        332.1,
-        476.67
+        352.98,
+        427.47
       ]
     },
     {
@@ -8472,19 +8836,19 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.09,
+      "distance_to_camera": 13.91,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@64",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@72",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        332.57,
-        478.61
+        353.4,
+        429.35
       ]
     },
     {
@@ -8498,19 +8862,19 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.09,
+      "distance_to_camera": 13.91,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@64/@CollisionShape3D@63",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_volume/@StaticBody3D@72/@CollisionShape3D@71",
       "position": [
         -4.37,
         0.72,
         1.78
       ],
       "screen_pos": [
-        332.57,
-        478.61
+        353.4,
+        429.35
       ]
     },
     {
@@ -8524,19 +8888,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.02,
+      "distance_to_camera": 13.84,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@65",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@73",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        352.74,
-        478.61
+        372.2,
+        429.35
       ]
     },
     {
@@ -8550,19 +8914,19 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13,
+      "distance_to_camera": 13.82,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@66",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@MeshInstance3D@74",
       "position": [
         -4.12,
         0.75,
         1.79
       ],
       "screen_pos": [
-        352.3,
-        476.67
+        371.81,
+        427.47
       ]
     },
     {
@@ -8576,19 +8940,19 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.02,
+      "distance_to_camera": 13.84,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@68",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@76",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        352.74,
-        478.61
+        372.2,
+        429.35
       ]
     },
     {
@@ -8602,24 +8966,24 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.02,
+      "distance_to_camera": 13.84,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@68/@CollisionShape3D@67",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Radio/radio_tuning/@StaticBody3D@76/@CollisionShape3D@75",
       "position": [
         -4.12,
         0.72,
         1.78
       ],
       "screen_pos": [
-        352.74,
-        478.61
+        372.2,
+        429.35
       ]
     },
     {
       "aabb": [
-        3.22,
+        3.67,
         0.34,
         -0.15,
         2.25,
@@ -8628,24 +8992,76 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.48,
+      "distance_to_camera": 15.47,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
       "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/Model/world/geometry_0",
       "position": [
-        4.35,
+        4.8,
         1.38,
         0.5
       ],
       "screen_pos": [
-        1010.21,
-        403.98
+        1018.67,
+        363.25
       ]
     },
     {
       "aabb": [
-        3.69,
+        3.68,
+        0.34,
+        -0.15,
+        2.25,
+        2.07,
+        1.3
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 15.47,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/FocusHitbox",
+      "position": [
+        4.8,
+        1.38,
+        0.5
+      ],
+      "screen_pos": [
+        1018.67,
+        363.25
+      ]
+    },
+    {
+      "aabb": [
+        3.68,
+        0.34,
+        -0.15,
+        2.25,
+        2.07,
+        1.3
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 15.47,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/FocusHitbox/@CollisionShape3D@64",
+      "position": [
+        4.8,
+        1.38,
+        0.5
+      ],
+      "screen_pos": [
+        1018.67,
+        363.25
+      ]
+    },
+    {
+      "aabb": [
+        4.14,
         0.76,
         1.08,
         0.2,
@@ -8654,24 +9070,24 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.86,
+      "distance_to_camera": 14.82,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@MeshInstance3D@69",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@MeshInstance3D@77",
       "position": [
-        3.79,
+        4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        980.68,
-        453.36
+        991.35,
+        407.99
       ]
     },
     {
       "aabb": [
-        3.67,
+        4.12,
         0.74,
         1.04,
         0.24,
@@ -8680,24 +9096,24 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.86,
+      "distance_to_camera": 14.82,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@71",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@79",
       "position": [
-        3.79,
+        4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        980.68,
-        453.36
+        991.35,
+        407.99
       ]
     },
     {
       "aabb": [
-        3.67,
+        4.12,
         0.74,
         1.04,
         0.24,
@@ -8706,24 +9122,24 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.86,
+      "distance_to_camera": 14.82,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@71/@CollisionShape3D@70",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_play/@StaticBody3D@79/@CollisionShape3D@78",
       "position": [
-        3.79,
+        4.24,
         0.86,
         1.1
       ],
       "screen_pos": [
-        980.68,
-        453.36
+        991.35,
+        407.99
       ]
     },
     {
       "aabb": [
-        3.94,
+        4.39,
         0.76,
         1.08,
         0.2,
@@ -8732,24 +9148,24 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 13.94,
+      "distance_to_camera": 14.91,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@MeshInstance3D@72",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@MeshInstance3D@80",
       "position": [
-        4.03,
+        4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        999.9,
-        453.36
+        1009.33,
+        407.99
       ]
     },
     {
       "aabb": [
-        3.92,
+        4.37,
         0.74,
         1.04,
         0.24,
@@ -8758,24 +9174,24 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 13.94,
+      "distance_to_camera": 14.91,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@74",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@82",
       "position": [
-        4.03,
+        4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        999.9,
-        453.36
+        1009.33,
+        407.99
       ]
     },
     {
       "aabb": [
-        3.92,
+        4.37,
         0.74,
         1.04,
         0.24,
@@ -8784,24 +9200,24 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 13.94,
+      "distance_to_camera": 14.91,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@74/@CollisionShape3D@73",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_stop/@StaticBody3D@82/@CollisionShape3D@81",
       "position": [
-        4.03,
+        4.49,
         0.86,
         1.1
       ],
       "screen_pos": [
-        999.9,
-        453.36
+        1009.33,
+        407.99
       ]
     },
     {
       "aabb": [
-        4.91,
+        5.36,
         0.77,
         1.14,
         0.18,
@@ -8810,24 +9226,24 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.25,
+      "distance_to_camera": 15.22,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@75",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@83",
       "position": [
-        5,
+        5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1076.74,
-        454.44
+        1081.21,
+        408.83
       ]
     },
     {
       "aabb": [
-        5,
+        5.45,
         0.87,
         1.17,
         0.01,
@@ -8836,24 +9252,24 @@
       ],
       "behind_camera": false,
       "class": "MeshInstance3D",
-      "distance_to_camera": 14.22,
+      "distance_to_camera": 15.2,
       "in_frustum": true,
       "kind": "visual",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@76",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@MeshInstance3D@84",
       "position": [
-        5,
+        5.45,
         0.89,
         1.17
       ],
       "screen_pos": [
-        1077.5,
-        452.2
+        1081.94,
+        406.67
       ]
     },
     {
       "aabb": [
-        4.89,
+        5.34,
         0.75,
         1.1,
         0.22,
@@ -8862,24 +9278,24 @@
       ],
       "behind_camera": false,
       "class": "StaticBody3D",
-      "distance_to_camera": 14.25,
+      "distance_to_camera": 15.22,
       "in_frustum": true,
       "kind": "shapes",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@78",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@86",
       "position": [
-        5,
+        5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1076.74,
-        454.44
+        1081.21,
+        408.83
       ]
     },
     {
       "aabb": [
-        4.89,
+        5.34,
         0.75,
         1.1,
         0.22,
@@ -8888,25 +9304,129 @@
       ],
       "behind_camera": false,
       "class": "CollisionShape3D",
-      "distance_to_camera": 14.25,
+      "distance_to_camera": 15.22,
       "in_frustum": true,
       "kind": "shape",
       "on_screen": true,
-      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@78/@CollisionShape3D@77",
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Recorder/recorder_level/@StaticBody3D@86/@CollisionShape3D@85",
       "position": [
-        5,
+        5.45,
         0.86,
         1.15
       ],
       "screen_pos": [
-        1076.74,
-        454.44
+        1081.21,
+        408.83
+      ]
+    },
+    {
+      "aabb": [
+        -3.3,
+        0.34,
+        -1.46,
+        6.6,
+        4.54,
+        2.62
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 14.99,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/Computer/Model/world/geometry_0",
+      "position": [
+        0,
+        2.61,
+        -0.15
+      ],
+      "screen_pos": [
+        680.87,
+        272.79
+      ]
+    },
+    {
+      "aabb": [
+        2.36,
+        0.34,
+        1.95,
+        1.69,
+        1.52,
+        1.29
+      ],
+      "behind_camera": false,
+      "class": "MeshInstance3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "visual",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/Model/world/geometry_0",
+      "position": [
+        3.2,
+        1.1,
+        2.6
+      ],
+      "screen_pos": [
+        949.61,
+        415.65
+      ]
+    },
+    {
+      "aabb": [
+        2.36,
+        0.34,
+        1.95,
+        1.69,
+        1.52,
+        1.29
+      ],
+      "behind_camera": false,
+      "class": "StaticBody3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "shapes",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/FocusHitbox",
+      "position": [
+        3.2,
+        1.1,
+        2.6
+      ],
+      "screen_pos": [
+        949.61,
+        415.65
+      ]
+    },
+    {
+      "aabb": [
+        2.36,
+        0.34,
+        1.95,
+        1.69,
+        1.52,
+        1.29
+      ],
+      "behind_camera": false,
+      "class": "CollisionShape3D",
+      "distance_to_camera": 13.06,
+      "in_frustum": true,
+      "kind": "shape",
+      "on_screen": true,
+      "path": "SceneViewport/DeskWorld/GeneratedProps/OrigamiBird/FocusHitbox/@CollisionShape3D@65",
+      "position": [
+        3.2,
+        1.1,
+        2.6
+      ],
+      "screen_pos": [
+        949.61,
+        415.65
       ]
     }
   ],
   "passed": true,
   "rect_format": "[x, y, width, height]",
-  "total_nodes": 341,
+  "total_nodes": 361,
   "truncated": false,
   "viewport": {
     "height": 720,

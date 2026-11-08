@@ -37,11 +37,17 @@ func _process(delta: float) -> void:
 		lab.status.text = "%s · %d%%" % [controls[active]["label"], roundi(float(states[active]) * 100)]
 
 func _bind_props() -> void:
+	var legacy_keyboard: Node3D = lab.desk.get_node_or_null("Computer/Keyboard") as Node3D
+	if legacy_keyboard != null:
+		_register_focus(legacy_keyboard)
 	var props: Node = lab.desk.find_child("GeneratedProps", true, false)
 	if props == null:
 		return
 	for child: Node in props.get_children():
-		if child is Node3D:
+		# The computer keeps its screen and camera-region interaction routes.
+		if str(child.name) == "Computer":
+			continue
+		if child is Node3D and (child as Node3D).is_visible_in_tree():
 			_register_focus(child as Node3D)
 	for item: String in ["Radio", "Recorder", "Lamp"]:
 		var holder: Node3D = props.get_node_or_null(item) as Node3D
@@ -61,13 +67,14 @@ func _bind_props() -> void:
 			_add(holder, bounds, "recorder.level", "录音机电平 · 左右拖动", Vector3(0.79, 0.25, 1.0), true)
 		else:
 			_add(holder, bounds, "lamp.power", "台灯开关 · 点击", Vector3(0.5, 0.08, 0.8), false)
-			lamp_light = OmniLight3D.new()
+			lamp_light = preload("res://scripts/lamp_pulse.gd").new()
 			lamp_light.name = "InteractiveLampLight"
-			lamp_light.position = bounds.position + bounds.size * Vector3(0.65, 0.65, 0.55)
+			lamp_light.position = bounds.position + bounds.size * Vector3(0.68, 0.70, 0.68)
 			lamp_light.light_color = Color("ffd6a0")
 			lamp_light.light_energy = 0.8
 			lamp_light.omni_range = 5.0
 			holder.add_child(lamp_light)
+			lamp_light.call("attach_bulb", holder, bounds.position + bounds.size * Vector3(0.68, 0.70, 0.68), bounds.size.x * 0.09)
 			states["lamp.power"] = 1.0
 
 func _register_focus(holder: Node3D) -> void:
@@ -76,7 +83,7 @@ func _register_focus(holder: Node3D) -> void:
 	var bounds: AABB = _bounds(holder)
 	if bounds.size.length() < 0.001:
 		return
-	var labels: Dictionary = {"Keyboard": "键盘", "Radio": "收音机", "Lamp": "台灯", "Recorder": "录音机"}
+	var labels: Dictionary = {"Keyboard": "键盘", "Radio": "收音机", "Lamp": "台灯", "Recorder": "录音机", "OrigamiBird": "折纸鸟"}
 	focus_targets[holder.get_instance_id()] = {"bounds": bounds, "label": labels.get(str(holder.name), str(holder.name))}
 	var body: StaticBody3D = StaticBody3D.new()
 	body.name = "FocusHitbox"
@@ -157,8 +164,12 @@ func _pick(at: Vector2, mask: int = 4) -> Dictionary:
 	var pixel: Vector2 = lab.image_uv(at) * Vector2(lab.scene_view.size)
 	var origin: Vector3 = lab.camera.project_ray_origin(pixel)
 	var ray: Vector3 = lab.camera.project_ray_normal(pixel)
-	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(origin, origin + ray * 40, mask)
-	return lab.scene_view.find_world_3d().direct_space_state.intersect_ray(query)
+	var query_mask: int = mask | 16 if mask == 8 else mask
+	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(origin, origin + ray * 40, query_mask)
+	var result: Dictionary = lab.scene_view.find_world_3d().direct_space_state.intersect_ray(query)
+	if mask == 8 and not result.is_empty() and not (result["collider"] as Node).has_meta("focus_target"):
+		return {}
+	return result
 
 func _unhandled_input(event: InputEvent) -> void:
 	if lab != null and event is InputEventKey and (event as InputEventKey).pressed and (event as InputEventKey).keycode == KEY_ESCAPE and not lab.camera.focused_item.is_empty():
@@ -170,11 +181,22 @@ func _unhandled_input(event: InputEvent) -> void:
 	var button: InputEventMouseButton = event as InputEventMouseButton
 	if button.button_index != MOUSE_BUTTON_LEFT or not button.pressed:
 		return
+	# Unhandled input keeps UI buttons independent from scene click-away dismissal.
+	if not lab.camera.focused_item.is_empty():
+		var focused_hit: Dictionary = _pick(button.position, 8)
+		var target: Node3D = null
+		if not focused_hit.is_empty():
+			target = (focused_hit["collider"] as Node).get_meta("focus_target") as Node3D
+		if target == null or str(target.name) != lab.camera.focused_item:
+			lab.select_view(4)
+			get_viewport().set_input_as_handled()
+			return
 	var hit: Dictionary = _pick(button.position)
 	if hit.is_empty():
 		var focus_hit: Dictionary = _pick(button.position, 8)
 		if not focus_hit.is_empty():
-			focus_item((focus_hit["collider"] as Node).get_meta("focus_target") as Node3D)
+			if lab.camera.focused_item.is_empty():
+				focus_item((focus_hit["collider"] as Node).get_meta("focus_target") as Node3D)
 			get_viewport().set_input_as_handled()
 		return
 	active = str((hit["collider"] as Node).get_meta("prop_control", ""))
@@ -207,7 +229,10 @@ func set_value(id: String, value: float) -> void:
 	if bool(controls[id]["knob"]):
 		(controls[id]["pivot"] as Node3D).rotation.z = lerpf(deg_to_rad(135), deg_to_rad(-135), float(states[id]))
 	if id == "lamp.power" and lamp_light != null:
-		lamp_light.visible = value > 0.5
+		if lamp_light.has_method("set_powered"):
+			lamp_light.call("set_powered", value > 0.5)
+		else:
+			lamp_light.visible = value > 0.5
 	if id == "recorder.stop":
 		states["recorder.play"] = 0.0
 	control_changed.emit(id, float(states[id]))

@@ -39,7 +39,7 @@ func _process(_delta: float) -> void:
 		sin(orbit_pitch), cos(orbit_yaw) * cos(orbit_pitch)) * orbit_distance
 	look_at(focus_point)
 
-func go_to(index: int, immediate: bool = false) -> void:
+func go_to(index: int, immediate: bool = false, side: int = 0) -> void:
 	focused_item = ""
 	if motion != null and motion.is_valid():
 		motion.kill()
@@ -57,6 +57,10 @@ func go_to(index: int, immediate: bool = false) -> void:
 		view = {"yaw": rad_to_deg(atan2(offset.x, offset.z)),
 			"pitch": rad_to_deg(asin(offset.y / radius)), "distance": radius, "focus": focus_marker.position}
 	var yaw_target: float = orbit_yaw + wrapf(deg_to_rad(float(view["yaw"])) - orbit_yaw, -PI, PI)
+	if active_view == 1 and side != 0:
+		view = view.duplicate()
+		view["yaw"] = 65.0 * float(side)
+		yaw_target = orbit_yaw + wrapf(deg_to_rad(float(view["yaw"])) - orbit_yaw, -PI, PI)
 	if immediate:
 		orbit_yaw = yaw_target
 		orbit_pitch = deg_to_rad(float(view["pitch"]))

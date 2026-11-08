@@ -2167,16 +2167,16 @@ omni_range = 8.0
 [node name="SideRack" type="Node3D" parent="." unique_id=1467322174 instance=ExtResource("2_8k5iw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.65, 0, -1.4)
 
-[node name="DeskFrontPanelLeft" type="MeshInstance3D" parent="." unique_id=1242340580]
+[node name="DeskFrontPanelLeft" type="MeshInstance3D" parent="." unique_id=857538174]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.455, -0.3, 4.73)
 material_override = SubResource("StandardMaterial3D_cvpar")
 mesh = SubResource("BoxMesh_3oj56")
 
-[node name="DeskFrontPanelRight" type="MeshInstance3D" parent="." unique_id=588415395]
+[node name="DeskFrontPanelRight" type="MeshInstance3D" parent="." unique_id=2115385685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.705, -0.3, 4.73)
 material_override = SubResource("StandardMaterial3D_e10hk")
 mesh = SubResource("BoxMesh_jct65")
 
-[node name="DeskDrawer" type="Node3D" parent="." unique_id=1923051880 instance=ExtResource("3_rtk08")]
+[node name="DeskDrawer" type="Node3D" parent="." unique_id=347793288 instance=ExtResource("3_rtk08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, -0.41, 4.76)
 script = ExtResource("4_cvpar")

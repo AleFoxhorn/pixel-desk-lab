@@ -3,6 +3,8 @@ extends Control
 
 const DeskScene: Script = preload("res://scripts/desk_scene.gd")
 const CameraDirector: Script = preload("res://scripts/camera_director.gd")
+const FileReader: Script = preload("res://scripts/file_reader.gd")
+var file_reader: FileReader
 signal physical_key_changed(keycode: int, pressed: bool)
 var editing_screen: bool = false
 var held_keys: Dictionary = {}
@@ -37,10 +39,17 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_build_pipeline()
 	_build_interface()
+	var reader_layer: CanvasLayer = CanvasLayer.new()
+	reader_layer.name = "ReadingLayer"
+	reader_layer.layer = 10
+	add_child(reader_layer)
+	file_reader = FileReader.new()
+	file_reader.name = "FileReader"
+	reader_layer.add_child(file_reader)
+	file_reader.reading_changed.connect(_set_reading)
 	get_viewport().size_changed.connect(_layout_image)
 	_layout_image()
-	set_mode(3)
-	set_reference_style(true)
+	apply_playtest_style()
 	select_view(4, true)
 	prop_input = preload("res://scripts/prop_interactions.gd").new()
 	prop_input.name = "PropInteractions"
@@ -50,6 +59,18 @@ func _ready() -> void:
 		capture_mode = true
 		_verify.call_deferred()
 
+func apply_playtest_style() -> void:
+	# One launch preset applies the same palette, blur and vignette to all imported props.
+	style_button.set_pressed_no_signal(true)
+	dither_button.set_pressed_no_signal(true)
+	resolution.select(0)
+	print_option.select(1)
+	post.set_shader_parameter("dither_enabled", true)
+	post.set_shader_parameter("dither_strength", 0.03)
+	set_reference_style(true)
+	set_mode(3)
+	set_print_preset(1)
+
 func _build_pipeline() -> void:
 	# Models, lighting, camera, view markers and post-process now live in saved scenes.
 	scene_view = get_node("SceneViewport") as SubViewport
@@ -58,7 +79,7 @@ func _build_pipeline() -> void:
 	image = get_node("StyledImage") as TextureRect
 	image.texture = scene_view.get_texture()
 	post = image.material as ShaderMaterial
-	post.set_shader_parameter("dither_strength", 0.018)
+	post.set_shader_parameter("dither_strength", 0.03)
 	print_pass = ColorRect.new()
 	print_pass.name = "PrintPass"
 	print_pass.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -167,7 +188,7 @@ func _build_interface() -> void:
 	resolution.add_item("480 × 270")
 	resolution.add_item("320 × 180")
 	resolution.add_item("1280 × 720")
-	resolution.selected = 3
+	resolution.selected = 0
 	resolution.item_selected.connect(func(_index: int) -> void: _update_resolution())
 	row.add_child(resolution)
 
@@ -198,11 +219,11 @@ func _layout_image() -> void:
 	print_pass.size = image.size
 	print_material.set_shader_parameter("image_scale", image.size / window_size)
 
-func select_view(index: int, immediate: bool = false) -> void:
+func select_view(index: int, immediate: bool = false, side: int = 0) -> void:
 	if prop_input != null:
 		prop_input.cancel()
 	end_screen_editing()
-	camera.go_to(index, immediate)
+	camera.go_to(index, immediate, side)
 	view_buttons[index].button_pressed = true
 
 func set_mode(index: int) -> void:
@@ -219,15 +240,18 @@ func set_mode(index: int) -> void:
 func _update_resolution() -> void:
 	var sizes: Array[Vector2i] = [Vector2i(640, 360), Vector2i(480, 270), Vector2i(320, 180), Vector2i(1280, 720)]
 	scene_view.size = sizes[resolution.selected] if mode >= 2 else Vector2i(1280, 720)
+	print_material.set_shader_parameter("source_size", Vector2(scene_view.size))
 
 func _unhandled_input(event: InputEvent) -> void:
+	if file_reader != null and file_reader.visible:
+		return
 	if event is InputEventMouseButton:
 		var button: InputEventMouseButton = event
 		if button.button_index == MOUSE_BUTTON_LEFT and button.pressed:
 			var screen_pixel: Vector2 = screen_coordinates(button.position)
 			if desk.powered and screen_pixel.x >= 0:
 				if camera.active_view != 0 and camera.active_view != 3:
-					select_view(0)
+					select_view(3)
 				editing_screen = true
 				desk.terminal_ui.begin_editing()
 				forward_screen_mouse(event, screen_pixel)
@@ -244,8 +268,37 @@ func _unhandled_input(event: InputEvent) -> void:
 					if target != null and target.has_method("interact"):
 						target.call("interact", str(collider.get_meta("action")))
 						get_viewport().set_input_as_handled()
+						return
+			var region: Vector2i = computer_view_at(button.position)
+			if region.x >= 0:
+				select_view(region.x, false, region.y)
+				get_viewport().set_input_as_handled()
+			elif camera.active_view in [0, 1, 2, 3]:
+				select_view(4)
+				get_viewport().set_input_as_handled()
+
+func computer_view_at(at: Vector2) -> Vector2i:
+	var hit: Dictionary = pick(at, 16)
+	if hit.is_empty():
+		return Vector2i(-1, 0)
+	var housing: Node3D = (hit["collider"] as Node).get_parent() as Node3D
+	var point: Vector3 = housing.to_local(hit["position"])
+	var bounds: AABB = (housing as MeshInstance3D).get_aabb()
+	point = (point - bounds.get_center()) / bounds.size
+	var normal: Vector3 = housing.global_basis.inverse() * (hit["normal"] as Vector3)
+	# Front edges lead around the computer; side rear edges continue to its back.
+	var side: int = 1 if point.x >= 0 else -1
+	if absf(normal.x) > 0.5:
+		return Vector2i(2, 0) if point.z < -0.2375 else Vector2i(1, side)
+	if normal.z < -0.5:
+		return Vector2i(1, side) if absf(point.x) > 0.3455 else Vector2i(2, 0)
+	if absf(point.x) > 0.3818:
+		return Vector2i(1, side)
+	return Vector2i(0, 0)
 
 func _input(event: InputEvent) -> void:
+	if file_reader != null and file_reader.visible:
+		return
 	if not editing_screen or not desk.powered:
 		return
 	if event is InputEventKey:
@@ -289,45 +342,48 @@ func end_screen_editing() -> void:
 	if desk != null and desk.terminal_ui != null:
 		desk.terminal_ui.end_editing()
 
+func open_desk_file(index: int) -> void:
+	end_screen_editing()
+	file_reader.open_at(index)
+
+func _set_reading(reading: bool) -> void:
+	overlay.visible = not reading
+
 func image_uv(screen_position: Vector2) -> Vector2:
 	var uv: Vector2 = (screen_position - image.global_position) / image.size
 	if print_pass.visible:
-		var centered: Vector2 = uv - Vector2(0.5, 0.5)
-		uv += centered * centered.length_squared() * 0.018 * print_strength
-		uv.x += sin(uv.y * 112.0) * 0.00045 * print_strength
-	return uv
+		# Share print.gdshader's pixel centre and warp for screen UI and every ray pick.
+		var source_size: Vector2 = Vector2(scene_view.size)
+		var pixel_uv: Vector2 = ((uv * source_size).floor() + Vector2(0.5, 0.5)) / source_size
+		var centered: Vector2 = pixel_uv - Vector2(0.5, 0.5)
+		uv = pixel_uv + centered * centered.length_squared() * 0.018 * print_strength
+		uv.x += sin(pixel_uv.y * 112.0) * 0.00045 * print_strength
+	return uv.clamp(Vector2.ZERO, Vector2.ONE)
 
 func screen_coordinates(screen_position: Vector2) -> Vector2:
 	if not image.get_global_rect().has_point(screen_position):
 		return Vector2(-1, -1)
 	var pixel: Vector2 = image_uv(screen_position) * Vector2(scene_view.size)
-	var origin: Vector3 = desk.screen.to_local(camera.project_ray_origin(pixel))
-	var direction: Vector3 = desk.screen.global_basis.inverse() * camera.project_ray_normal(pixel)
-	if direction.z >= -0.0001:
+	var origin: Vector3 = camera.project_ray_origin(pixel)
+	var direction: Vector3 = camera.project_ray_normal(pixel)
+	if (desk.screen.global_basis.inverse() * direction).z >= -0.0001:
 		return Vector2(-1, -1)
-	var distance: float = -origin.z / direction.z
-	if distance < 0:
+	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(origin, origin + direction * 40.0, desk.SCREEN_COLLISION_LAYER)
+	var hit: Dictionary = scene_view.find_world_3d().direct_space_state.intersect_ray(query)
+	if hit.is_empty():
 		return Vector2(-1, -1)
-	var point: Vector3 = origin + direction * distance
-	var uv: Vector2 = Vector2(point.x / desk.ScreenSurface.DISPLAY_SIZE.x + 0.5, 0.5 - point.y / desk.ScreenSurface.DISPLAY_SIZE.y)
-	if not Geometry2D.is_point_in_polygon(uv, desk.ScreenSurface.outline()):
-		return Vector2(-1, -1)
+	var point: Vector3 = desk.screen.to_local(hit["position"])
+	var uv: Vector2 = Vector2(point.x / desk.screen_size.x + 0.5, 0.5 - point.y / desk.screen_size.y)
 	return uv * Vector2(desk.ScreenSurface.TEXTURE_SIZE)
 
-func pick(screen_position: Vector2) -> Dictionary:
+func pick(screen_position: Vector2, mask: int = 1) -> Dictionary:
 	if not image.get_global_rect().has_point(screen_position):
 		return {}
-	var uv: Vector2 = (screen_position - image.global_position) / image.size
-	# Match the stable distortion in print.gdshader so visible controls remain clickable.
-	if print_pass.visible:
-		var centered: Vector2 = uv - Vector2(0.5, 0.5)
-		var warped: Vector2 = uv + centered * centered.length_squared() * 0.018 * print_strength
-		warped.x += sin(uv.y * 112.0) * 0.00045 * print_strength
-		uv = warped.clamp(Vector2.ZERO, Vector2.ONE)
+	var uv: Vector2 = image_uv(screen_position)
 	var viewport_pixel: Vector2 = uv * Vector2(scene_view.size)
 	var origin: Vector3 = camera.project_ray_origin(viewport_pixel)
 	var direction: Vector3 = camera.project_ray_normal(viewport_pixel)
-	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(origin, origin + direction * 30.0, 1)
+	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(origin, origin + direction * 30.0, mask)
 	return scene_view.find_world_3d().direct_space_state.intersect_ray(query)
 
 func _notification(what: int) -> void:
@@ -339,12 +395,14 @@ func _process(_delta: float) -> void:
 		end_screen_editing()
 	if capture_mode or desk == null or status == null:
 		return
+	if file_reader != null and file_reader.visible:
+		return
 	var hit: Dictionary = pick(get_global_mouse_position())
 	hover_action = ""
 	if not hit.is_empty():
 		var collider: CollisionObject3D = hit["collider"]
 		hover_action = str(collider.get_meta("action", ""))
-	var names: Dictionary = {"power": "电源 · 点击切换", "knob": "旋钮 · 转动后复位", "tray": "托盘 · 推出后复位", "desk_drawer": "抽屉 · 点击开合"}
+	var names: Dictionary = {"power": "电源 · 点击切换", "knob": "旋钮 · 转动后复位", "tray": "托盘 · 推出后复位", "desk_drawer": "抽屉 · 点击开合", "desk_file_0": "文件 · 点击阅读", "desk_file_1": "文件 · 点击阅读"}
 	status.text = "正在编辑" if editing_screen else str(names.get(hover_action, "点击屏幕输入"))
 	image.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND if not hover_action.is_empty() else Control.CURSOR_ARROW
 

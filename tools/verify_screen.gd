@@ -47,6 +47,7 @@ func run() -> void:
 	var point: Vector3 = lab.desk.screen.to_global(Vector3(0, 0, 0))
 	var viewport_point: Vector2 = camera.unproject_position(point)
 	var click: Vector2 = lab.image.global_position + viewport_point / Vector2(lab.scene_view.size) * lab.image.size
+	await physics_frame
 	check(lab.screen_coordinates(click).distance_to(Vector2(lab.desk.ScreenSurface.TEXTURE_SIZE) * 0.5) < 1.0, "Ray to screen UV")
 	mouse(click, true)
 	mouse(click, false)
@@ -61,7 +62,7 @@ func run() -> void:
 	for character: String in "HELLOWORLD":
 		key(character.to_upper().unicode_at(0), character.unicode_at(0))
 	var unlock_uv: Vector2 = terminal.unlock_button.get_global_rect().get_center() / Vector2(lab.desk.ScreenSurface.TEXTURE_SIZE)
-	var unlock_world: Vector3 = lab.desk.screen.to_global(Vector3((unlock_uv.x - 0.5) * 2.5, (0.5 - unlock_uv.y) * 1.25, 0))
+	var unlock_world: Vector3 = lab.desk.screen.to_global(Vector3((unlock_uv.x - 0.5) * lab.desk.screen_size.x, (0.5 - unlock_uv.y) * lab.desk.screen_size.y, 0))
 	var unlock_pixel: Vector2 = camera.unproject_position(unlock_world)
 	var unlock_click: Vector2 = lab.image.global_position + unlock_pixel / Vector2(lab.scene_view.size) * lab.image.size
 	mouse(unlock_click, true)
