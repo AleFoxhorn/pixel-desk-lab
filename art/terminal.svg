@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+<rect width="640" height="400" fill="#102b29"/>
+<g fill="#91cda8" font-family="monospace">
+<text x="35" y="47" font-size="21" letter-spacing="4">NORTH / RELAY SYSTEMS</text>
+<path d="M35 65H605" stroke="#487e67" stroke-width="2"/>
+<text x="37" y="100" font-size="13" fill="#568c74">PERSONAL TERMINAL       /       08 NOV 2083</text>
+<text x="37" y="152" font-size="19">LOCAL NODE</text>
+<text x="37" y="209" font-size="48">ONLINE_</text>
+<text x="37" y="261" font-size="15" fill="#65967b">NO EXTERNAL TRANSMISSION</text>
+<rect x="37" y="294" width="380" height="40" fill="#244e40"/>
+<text x="53" y="320" font-size="15">01 / WAITING FOR INPUT</text>
+<text x="37" y="373" font-size="12" fill="#568c74">MEM 64K     SYS 1.04                 LINK: --</text>
+</g>
+<g fill="none" stroke="#649f7c" stroke-width="2"><rect x="486" y="128" width="107" height="120"/><path d="M496 234V210H510V183H524V201H538V164H552V191H566V147H581V234"/></g>
+<g stroke="#081d1b" opacity=".22"><path d="M0 4H640 M0 12H640 M0 20H640 M0 28H640 M0 36H640 M0 44H640 M0 52H640 M0 60H640 M0 68H640 M0 76H640 M0 84H640 M0 92H640 M0 100H640 M0 108H640 M0 116H640 M0 124H640 M0 132H640 M0 140H640 M0 148H640 M0 156H640 M0 164H640 M0 172H640 M0 180H640 M0 188H640 M0 196H640 M0 204H640 M0 212H640 M0 220H640 M0 228H640 M0 236H640 M0 244H640 M0 252H640 M0 260H640 M0 268H640 M0 276H640 M0 284H640 M0 292H640 M0 300H640 M0 308H640 M0 316H640 M0 324H640 M0 332H640 M0 340H640 M0 348H640 M0 356H640 M0 364H640 M0 372H640 M0 380H640 M0 388H640 M0 396H640"/></g>
+</svg>

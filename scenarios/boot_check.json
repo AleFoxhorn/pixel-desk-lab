@@ -1,0 +1,14 @@
+{
+  "scene_path": "scenes/main.tscn",
+  "steps": [
+    {
+      "type": "spatial_report",
+      "label": "boot",
+      "ascii": true,
+      "fail_on": [
+        "no_camera_3d",
+        "no_light_3d"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://models/hi3d/keyboard.glb" id="1_xul5d"]
+[ext_resource type="PackedScene" path="res://models/hi3d/lamp.glb" id="2_gew7y"]
+[ext_resource type="PackedScene" path="res://models/hi3d/radio.glb" id="3_g6tk0"]
+[ext_resource type="PackedScene" path="res://models/hi3d/recorder.glb" id="4_v63q5"]
+
+[node name="GeneratedProps" type="Node3D" unique_id=1069683758]
+
+[node name="Keyboard" type="Node3D" parent="." unique_id=1555254403]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.15, 0.34, 2.65)
+metadata/source_task_id = "fa87944b651249dd8444fea1ba00592b"
+metadata/source_asset = "res://models/hi3d/keyboard.glb"
+
+[node name="Model" type="Node3D" parent="Keyboard" unique_id=657688866 instance=ExtResource("1_xul5d")]
+transform = Transform3D(4.099796, 0, 0, 0, 4.099796, 0, 0, 0, 4.099796, 6.597905e-05, 0.42679393, -0.0039384607)
+
+[node name="Lamp" type="Node3D" parent="." unique_id=612400206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0.34, -0.55)
+metadata/source_task_id = "682a353f95c94f389e760573f17f953e"
+metadata/source_asset = "res://models/hi3d/lamp.glb"
+
+[node name="Model" type="Node3D" parent="Lamp" unique_id=1361329381 instance=ExtResource("2_gew7y")]
+transform = Transform3D(3.500098, 0, 0, 0, 3.500098, 0, 0, 0, 3.500098, -0.000731742, 1.7498759, 4.255891e-05)
+
+[node name="Radio" type="Node3D" parent="." unique_id=801606532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.65, 0.34, 1.35)
+metadata/source_task_id = "018a007defcc4483b3c785e75dc1de81"
+metadata/source_asset = "res://models/hi3d/radio.glb"
+
+[node name="Model" type="Node3D" parent="Radio" unique_id=1598402270 instance=ExtResource("3_g6tk0")]
+transform = Transform3D(2.0176222, 0, 0, 0, 2.0176222, 0, 0, 0, 2.0176222, 0.00017263273, 1.0088879, -0.0004984462)
+
+[node name="Recorder" type="Node3D" parent="." unique_id=1289019884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0.34, 0.5)
+metadata/source_task_id = "1f84c11e18c84e83b09b161579f0cafa"
+metadata/source_asset = "res://models/hi3d/recorder.glb"
+
+[node name="Model" type="Node3D" parent="Recorder" unique_id=1977485989 instance=ExtResource("4_v63q5")]
+transform = Transform3D(2.2500253, 0, 0, 0, 2.2500253, 0, 0, 0, 2.2500253, 1.1131292e-05, 1.0356072, -1.6160491e-05)

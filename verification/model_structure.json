@@ -1,0 +1,750 @@
+{
+	"assessment": "multiple_mesh_nodes_inspect_part_names",
+	"asset": "res://scenes/desk_world.tscn",
+	"interaction_hotspots": [
+		{
+			"action": "power",
+			"path": "Computer/PowerButton/Hit_power"
+		},
+		{
+			"action": "knob",
+			"path": "Computer/TuningKnob/Hit_knob"
+		},
+		{
+			"action": "tray",
+			"path": "Computer/MediaTray/Hit_tray"
+		}
+	],
+	"limits": "Mesh nodes can be transformed independently. Surfaces are material regions, not guaranteed parts. Connected geometry requires cutting; skinned meshes require bone-aware inspection.",
+	"mesh_nodes": 104,
+	"meshes": [
+		{
+			"bounds": "[P: (-3.9, -0.11, -2.25), S: (7.8, 0.22, 4.5)]",
+			"has_skin": false,
+			"path": "DeskEdge",
+			"position": "(0.0, 0.12, 0.35)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-3.875, -0.04, -2.23), S: (7.75, 0.08, 4.46)]",
+			"has_skin": false,
+			"path": "DeskSurface",
+			"position": "(0.0, 0.27, 0.35)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-2.2, -0.0125, -1.68), S: (4.4, 0.025, 3.36)]",
+			"has_skin": false,
+			"path": "DeskMat",
+			"position": "(0.0, 0.325, 0.36)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-3.55, -0.035, -0.0125), S: (7.1, 0.07, 0.025)]",
+			"has_skin": false,
+			"path": "FrontRail",
+			"position": "(0.0, 0.11, 2.61)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.12, -0.85, -0.125), S: (0.24, 1.7, 0.25)]",
+			"has_skin": false,
+			"path": "Leg",
+			"position": "(-2.9, -0.8, 1.5)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.12, -0.85, -0.125), S: (0.24, 1.7, 0.25)]",
+			"has_skin": false,
+			"path": "@MeshInstance3D@2",
+			"position": "(2.9, -0.8, 1.5)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-100.0, -0.05, -100.0), S: (200.0, 0.1, 200.0)]",
+			"has_skin": false,
+			"path": "Floor",
+			"position": "(0.0, -1.7, 0.0)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-1.475, -0.18, -1.375), S: (2.95, 0.36, 2.75)]",
+			"has_skin": false,
+			"path": "Computer/Base",
+			"position": "(0.0, 0.54, 0.4)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.625, -0.155, -0.46), S: (1.25, 0.31, 0.92)]",
+			"has_skin": false,
+			"path": "Computer/Pedestal",
+			"position": "(0.0, 0.86, -0.15)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-1.375, -1.0, -0.8), S: (2.75, 2.0, 1.6)]",
+			"has_skin": false,
+			"path": "Computer/Housing",
+			"position": "(0.0, 1.91, -0.1)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-1.245, -0.88, -0.08), S: (2.49, 1.76, 0.16)]",
+			"has_skin": false,
+			"path": "Computer/Bezel",
+			"position": "(0.0, 1.94, 0.71)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-1.075, -0.69, -0.03), S: (2.15, 1.38, 0.06)]",
+			"has_skin": false,
+			"path": "Computer/ScreenRecess",
+			"position": "(0.0, 2.02, 0.81)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.97, -0.6, 0.0), S: (1.94, 1.2, 0.0)]",
+			"has_skin": false,
+			"path": "Computer/Screen",
+			"position": "(0.0, 2.03, 0.854)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.085, -0.06, -0.045), S: (0.17, 0.12, 0.09)]",
+			"has_skin": false,
+			"path": "Computer/PowerButton",
+			"position": "(0.94, 1.1, 0.81)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0275, -0.0275, -0.015), S: (0.055, 0.055, 0.03)]",
+			"has_skin": false,
+			"path": "Computer/PowerLamp",
+			"position": "(0.68, 1.1, 0.83)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.09, -0.05, -0.09), S: (0.18, 0.1, 0.18)]",
+			"has_skin": false,
+			"path": "Computer/TuningKnob/Dial",
+			"position": "(0.0, 0.0, 0.0)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.009, -0.03, -0.006), S: (0.018, 0.06, 0.012)]",
+			"has_skin": false,
+			"path": "Computer/TuningKnob/DialMark",
+			"position": "(0.0, 0.035, 0.058)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-1.32, -0.0275, -0.375), S: (2.64, 0.055, 0.75)]",
+			"has_skin": false,
+			"path": "Computer/KeyboardWell",
+			"position": "(0.0, 0.747, 1.04)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_0",
+			"position": "(-1.15, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_1",
+			"position": "(-0.942, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_2",
+			"position": "(-0.734, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_3",
+			"position": "(-0.526, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_4",
+			"position": "(-0.318, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_5",
+			"position": "(-0.11, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_6",
+			"position": "(0.098, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_7",
+			"position": "(0.306, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_8",
+			"position": "(0.514, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_9",
+			"position": "(0.722, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_10",
+			"position": "(0.93, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_0_11",
+			"position": "(1.138, 0.79, 0.77)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_0",
+			"position": "(-1.15, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_1",
+			"position": "(-0.942, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_2",
+			"position": "(-0.734, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_3",
+			"position": "(-0.526, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_4",
+			"position": "(-0.318, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_5",
+			"position": "(-0.11, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_6",
+			"position": "(0.098, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_7",
+			"position": "(0.306, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_8",
+			"position": "(0.514, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_9",
+			"position": "(0.722, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_10",
+			"position": "(0.93, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_1_11",
+			"position": "(1.138, 0.79, 0.94)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_0",
+			"position": "(-1.15, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_1",
+			"position": "(-0.942, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_2",
+			"position": "(-0.734, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_3",
+			"position": "(-0.526, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_4",
+			"position": "(-0.318, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_5",
+			"position": "(-0.11, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_6",
+			"position": "(0.098, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_7",
+			"position": "(0.306, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_8",
+			"position": "(0.514, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_9",
+			"position": "(0.722, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_10",
+			"position": "(0.93, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_2_11",
+			"position": "(1.138, 0.79, 1.11)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_0",
+			"position": "(-1.15, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_1",
+			"position": "(-0.942, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_2",
+			"position": "(-0.734, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_3",
+			"position": "(-0.526, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_4",
+			"position": "(-0.318, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_5",
+			"position": "(-0.11, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_6",
+			"position": "(0.098, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_7",
+			"position": "(0.306, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_8",
+			"position": "(0.514, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_9",
+			"position": "(0.722, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_10",
+			"position": "(0.93, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.08, -0.036, -0.06), S: (0.16, 0.072, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/Key_3_11",
+			"position": "(1.138, 0.79, 1.28)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.51, -0.03, -0.06), S: (1.02, 0.06, 0.12)]",
+			"has_skin": false,
+			"path": "Computer/SpaceBar",
+			"position": "(-0.15, 0.79, 1.44)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/SideVent",
+			"position": "(-1.384, 1.7, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@22",
+			"position": "(-1.384, 1.768, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@23",
+			"position": "(-1.384, 1.836, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@24",
+			"position": "(-1.384, 1.904, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@25",
+			"position": "(-1.384, 1.972, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@26",
+			"position": "(-1.384, 2.04, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@27",
+			"position": "(-1.384, 2.108, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@28",
+			"position": "(-1.384, 2.176, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@29",
+			"position": "(-1.384, 2.244, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@30",
+			"position": "(1.384, 1.7, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@31",
+			"position": "(1.384, 1.768, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@32",
+			"position": "(1.384, 1.836, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@33",
+			"position": "(1.384, 1.904, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@34",
+			"position": "(1.384, 1.972, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@35",
+			"position": "(1.384, 2.04, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@36",
+			"position": "(1.384, 2.108, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@37",
+			"position": "(1.384, 2.176, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.0075, -0.0175, -0.29), S: (0.015, 0.035, 0.58)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@38",
+			"position": "(1.384, 2.244, -0.2)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/RearVent",
+			"position": "(0.0, 1.75, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@39",
+			"position": "(0.0, 1.813, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@40",
+			"position": "(0.0, 1.876, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@41",
+			"position": "(0.0, 1.939, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@42",
+			"position": "(0.0, 2.002, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@43",
+			"position": "(0.0, 2.065, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@44",
+			"position": "(0.0, 2.128, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@45",
+			"position": "(0.0, 2.191, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@46",
+			"position": "(0.0, 2.254, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@47",
+			"position": "(0.0, 2.317, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@48",
+			"position": "(0.0, 2.38, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.825, -0.0225, -0.009), S: (1.65, 0.045, 0.018)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@49",
+			"position": "(0.0, 2.443, -0.907)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.85, -0.16, -0.0175), S: (1.7, 0.32, 0.035)]",
+			"has_skin": false,
+			"path": "Computer/RearPanel",
+			"position": "(0.0, 1.28, -0.925)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.115, -0.065, -0.02), S: (0.23, 0.13, 0.04)]",
+			"has_skin": false,
+			"path": "Computer/Port",
+			"position": "(-0.53, 1.28, -0.958)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.115, -0.065, -0.02), S: (0.23, 0.13, 0.04)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@50",
+			"position": "(-0.12, 1.28, -0.958)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.115, -0.065, -0.02), S: (0.23, 0.13, 0.04)]",
+			"has_skin": false,
+			"path": "Computer/@MeshInstance3D@51",
+			"position": "(0.32, 1.28, -0.958)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.72, -0.08, -0.03), S: (1.44, 0.16, 0.06)]",
+			"has_skin": false,
+			"path": "Computer/TrayWell",
+			"position": "(0.0, 0.53, 1.8)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.67, -0.06, -0.035), S: (1.34, 0.12, 0.07)]",
+			"has_skin": false,
+			"path": "Computer/MediaTray/TrayFace",
+			"position": "(0.0, 0.0, 0.0)",
+			"surfaces": 1
+		},
+		{
+			"bounds": "[P: (-0.59, -0.0175, -0.315), S: (1.18, 0.035, 0.63)]",
+			"has_skin": false,
+			"path": "Computer/MediaTray/TrayPlate",
+			"position": "(0.0, 0.015, -0.33)",
+			"surfaces": 1
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+  "source": "HI3D",
+  "assets": [
+    {
+      "asset": "lamp",
+      "task_id": "682a353f95c94f389e760573f17f953e",
+      "model_page_url": "https://www.hi3d.ai/3d-model/682a353f95c94f389e760573f17f953e",
+      "file": "lamp.glb",
+      "bytes": 47294852,
+      "sha256": "accf22a7c996a67f2f17642f26be3edd11d160232f5c16010bdab3309acf533a",
+      "mesh_nodes": 1,
+      "triangles": 1981624,
+      "materials": 1,
+      "embedded_textures": 2
+    },
+    {
+      "asset": "radio",
+      "task_id": "018a007defcc4483b3c785e75dc1de81",
+      "model_page_url": "https://www.hi3d.ai/3d-model/018a007defcc4483b3c785e75dc1de81",
+      "file": "radio.glb",
+      "bytes": 50039640,
+      "sha256": "ee166a14c518ec5734ec882560471edf83da96d4be314c419fe75f6dc8054d4a",
+      "mesh_nodes": 1,
+      "triangles": 1987420,
+      "materials": 1,
+      "embedded_textures": 2
+    },
+    {
+      "asset": "keyboard",
+      "task_id": "fa87944b651249dd8444fea1ba00592b",
+      "model_page_url": "https://www.hi3d.ai/3d-model/fa87944b651249dd8444fea1ba00592b",
+      "file": "keyboard.glb",
+      "bytes": 47873920,
+      "sha256": "3f3ca5db7c92d397f240824d53fe915e130f4a434d4aaaddb5bbbe113a2923f8",
+      "mesh_nodes": 1,
+      "triangles": 1972206,
+      "materials": 1,
+      "embedded_textures": 2
+    },
+    {
+      "asset": "recorder",
+      "task_id": "1f84c11e18c84e83b09b161579f0cafa",
+      "model_page_url": "https://www.hi3d.ai/3d-model/1f84c11e18c84e83b09b161579f0cafa",
+      "file": "recorder.glb",
+      "bytes": 48713428,
+      "sha256": "5d4ddcb61cfed8b460317c547e2d1cf4520d204fac659b667389c92c087f1d23",
+      "mesh_nodes": 1,
+      "triangles": 1978144,
+      "materials": 1,
+      "embedded_textures": 2
+    }
+  ]
+}
