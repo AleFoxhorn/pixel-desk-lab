@@ -1348,18 +1348,18 @@ albedo_color = Color(0.28627452, 0.20784314, 0.32156864, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_kuua7"]
 size = Vector3(0.024, 0.52, 0.015)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cvpar"]
+shading_mode = 0
+albedo_color = Color(0.42745098, 0.2627451, 0.41960785, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3oj56"]
+size = Vector3(8.29, 0.52, 0.08)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e10hk"]
 shading_mode = 0
 albedo_color = Color(0.42745098, 0.2627451, 0.41960785, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jct65"]
-size = Vector3(8.29, 0.52, 0.08)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_roe4a"]
-shading_mode = 0
-albedo_color = Color(0.42745098, 0.2627451, 0.41960785, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_os3mf"]
 size = Vector3(1.79, 0.52, 0.08)
 
 [node name="CabinEnvironment" type="Node3D" unique_id=1157080853]
@@ -2167,16 +2167,16 @@ omni_range = 8.0
 [node name="SideRack" type="Node3D" parent="." unique_id=1467322174 instance=ExtResource("2_8k5iw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.65, 0, -1.4)
 
-[node name="DeskFrontPanelLeft" type="MeshInstance3D" parent="." unique_id=1419399679]
+[node name="DeskFrontPanelLeft" type="MeshInstance3D" parent="." unique_id=1242340580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.455, -0.3, 4.73)
+material_override = SubResource("StandardMaterial3D_cvpar")
+mesh = SubResource("BoxMesh_3oj56")
+
+[node name="DeskFrontPanelRight" type="MeshInstance3D" parent="." unique_id=588415395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.705, -0.3, 4.73)
 material_override = SubResource("StandardMaterial3D_e10hk")
 mesh = SubResource("BoxMesh_jct65")
 
-[node name="DeskFrontPanelRight" type="MeshInstance3D" parent="." unique_id=374447759]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.705, -0.3, 4.73)
-material_override = SubResource("StandardMaterial3D_roe4a")
-mesh = SubResource("BoxMesh_os3mf")
-
-[node name="DeskDrawer" type="Node3D" parent="." unique_id=164041616 instance=ExtResource("3_rtk08")]
+[node name="DeskDrawer" type="Node3D" parent="." unique_id=1923051880 instance=ExtResource("3_rtk08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, -0.41, 4.76)
 script = ExtResource("4_cvpar")

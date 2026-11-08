@@ -79,6 +79,7 @@ func build() -> void:
 	body.collision_layer = 1
 	body.collision_mask = 0
 	body.set_meta("action", "desk_drawer")
+	body.set_meta("interaction_target", NodePath("../.."))
 	body.position = Vector3(0, 0, 0.20)
 	slide.add_child(body)
 	body.owner = drawer

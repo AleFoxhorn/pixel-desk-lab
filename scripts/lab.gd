@@ -238,7 +238,12 @@ func _unhandled_input(event: InputEvent) -> void:
 			if not hit.is_empty():
 				var collider: CollisionObject3D = hit["collider"]
 				if collider.has_meta("action"):
-					desk.interact(str(collider.get_meta("action")))
+					var target: Node = desk
+					if collider.has_meta("interaction_target"):
+						target = collider.get_node_or_null(collider.get_meta("interaction_target") as NodePath)
+					if target != null and target.has_method("interact"):
+						target.call("interact", str(collider.get_meta("action")))
+						get_viewport().set_input_as_handled()
 
 func _input(event: InputEvent) -> void:
 	if not editing_screen or not desk.powered:

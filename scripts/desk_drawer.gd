@@ -1,5 +1,5 @@
 extends Node3D
-## Self-contained furniture interaction using the lab's distortion-corrected picker.
+## Self-contained furniture motion and camera framing; the lab routes picked actions here.
 signal open_changed(open: bool)
 
 const CameraDirector: Script = preload("res://scripts/camera_director.gd")
@@ -19,20 +19,10 @@ func _ready() -> void:
 			interaction_host = ancestor as Control
 			break
 		ancestor = ancestor.get_parent()
-	set_process_unhandled_input(interaction_host != null)
 
-func _unhandled_input(event: InputEvent) -> void:
-	if not event is InputEventMouseButton:
-		return
-	var button: InputEventMouseButton = event as InputEventMouseButton
-	if button.button_index != MOUSE_BUTTON_LEFT or not button.pressed:
-		return
-	var hit: Dictionary = interaction_host.call("pick", button.position)
-	if hit.get("collider") != hitbox:
-		return
-	interaction_host.call("end_screen_editing")
-	set_open(not is_open)
-	get_viewport().set_input_as_handled()
+func interact(action: String) -> void:
+	if action == "desk_drawer":
+		set_open(not is_open)
 
 func set_open(open: bool, frame_contents: bool = true) -> void:
 	if is_open == open:
@@ -51,14 +41,14 @@ func _frame_contents(open: bool) -> void:
 	if camera == null:
 		return
 	# A view button replaces camera.motion; respect a view chosen while the drawer is open.
-	if not open and (return_view.is_empty() or camera.motion != camera_motion):
+	if not open and (return_view.is_empty() or camera.motion != camera_motion or camera.active_view != int(return_view["view"])):
 		return_view.clear()
 		return
 	if open:
 		# Save the original destination when reopening during the return transition.
-		if return_view.is_empty() or camera.motion != camera_motion:
+		if return_view.is_empty() or camera.motion != camera_motion or camera.active_view != int(return_view["view"]):
 			return_view = {"yaw": camera.orbit_yaw, "pitch": camera.orbit_pitch,
-				"distance": camera.orbit_distance, "focus": camera.focus_point}
+				"distance": camera.orbit_distance, "focus": camera.focus_point, "view": camera.active_view}
 	if camera.motion != null and camera.motion.is_valid():
 		camera.motion.kill()
 	camera_motion = camera.create_tween().set_parallel(true).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
