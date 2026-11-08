@@ -102,10 +102,19 @@ func run() -> void:
 	await shot("window_close")
 	# Re-trigger after the camera settles so the short blink is visible in the capture.
 	effect.call("trigger")
-	await create_timer(0.06).timeout
+	# GPU frame time can exceed the entire flash. Advance and freeze its actual
+	# Tween for a deterministic 60 ms capture, then resume normal playback.
+	var reveal_motion: Tween = effect.get("motion") as Tween
+	check(reveal_motion != null and reveal_motion.is_valid(), "Trigger must create its reveal animation")
+	if reveal_motion != null and reveal_motion.is_valid():
+		reveal_motion.pause()
+		reveal_motion.custom_step(0.06)
 	check(bool(effect.get("effect_active")) and float(material.get_shader_parameter("reveal_amount")) > 0.0, "Green reveal must be active briefly after triggering")
 	await shot("window_reveal")
+	if reveal_motion != null and reveal_motion.is_valid():
+		reveal_motion.play()
 	await create_timer(0.75).timeout
+	await process_frame
 	check(not bool(effect.get("effect_active")) and is_zero_approx(float(material.get_shader_parameter("reveal_amount"))), "Green reveal must finish and restore the glass within 0.8 seconds")
 	var original_motion: Tween = camera.get("motion") as Tween
 	click(window_pixel())
@@ -136,6 +145,7 @@ func run() -> void:
 	var buttons: Array = lab.get("view_buttons")
 	var environment: Button = buttons[4] as Button
 	click(environment.get_global_rect().get_center())
+	check(not bool(window.get("active")), "View-button signal must clear window state synchronously")
 	await process_frame
 	check_closed("A scene view button must also leave the window close-up")
 	check(int(camera.get("active_view")) == 4, "View button must retain its requested camera preset")

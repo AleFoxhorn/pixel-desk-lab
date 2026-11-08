@@ -100,15 +100,15 @@ func _build_lighting() -> void:
 	environment.background_color = Color("111c22")
 	environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	environment.ambient_light_color = Color("76857f")
-	environment.ambient_light_energy = 0.43
+	environment.ambient_light_energy = 0.12
 	environment.tonemap_mode = Environment.TONE_MAPPER_LINEAR
 	world_environment.environment = environment
 	add_child(world_environment)
 	var key: DirectionalLight3D = DirectionalLight3D.new()
 	key.name = "KeyLight"
-	key.rotation_degrees = Vector3(-48.0, -30.0, 0.0)
+	key.rotation_degrees = Vector3(-34.0, -56.0, 0.0)
 	key.light_color = Color("fff0d0")
-	key.light_energy = 1.12
+	key.light_energy = 1.35
 	key.shadow_enabled = true
 	add_child(key)
 
@@ -425,7 +425,7 @@ func set_reference_style(enabled: bool) -> void:
 	var environment: Environment = (get_node("Environment") as WorldEnvironment).environment
 	environment.background_color = Color("465578") if enabled else Color("111c22")
 	environment.ambient_light_color = Color("abbcde") if enabled else Color("76857f")
-	environment.ambient_light_energy = 0.28 if enabled else 0.24
+	environment.ambient_light_energy = 0.12
 
 func _setup_interactive_screen() -> void:
 	var old_terminal: Node = get_node_or_null("TerminalTexture")

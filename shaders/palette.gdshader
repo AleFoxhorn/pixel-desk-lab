@@ -8,6 +8,7 @@ uniform bool reference_style = true;
 uniform bool dither_enabled = true;
 uniform float dither_strength : hint_range(0.0, 0.15) = 0.045;
 uniform float palette_strength : hint_range(0.0, 1.0) = 0.90;
+uniform float scene_brightness : hint_range(0.5, 1.2) = 1.0;
 
 const vec3 palette[25] = vec3[25](
 	vec3(0.055,0.075,0.10), vec3(0.09,0.13,0.16), vec3(0.13,0.20,0.23),
@@ -49,6 +50,11 @@ const vec3 reference_palette[25] = vec3[25](
 );
 const float bayer[16] = float[16](0.0,8.0,2.0,10.0,12.0,4.0,14.0,6.0,
 	3.0,11.0,1.0,9.0,15.0,7.0,13.0,5.0);
+// Keep the mirror character's lavender accent within the same limited-color treatment.
+const vec3 violet_palette[5] = vec3[5](
+	vec3(0.26,0.20,0.35), vec3(0.43,0.35,0.52), vec3(0.59,0.49,0.69),
+	vec3(0.74,0.65,0.81), vec3(0.84,0.78,0.89)
+);
 
 void fragment() {
 	vec4 source = texture(TEXTURE, UV);
@@ -70,7 +76,20 @@ void fragment() {
 				best = candidate;
 			}
 		}
-		rgb = max(max(source.r, source.g), source.b) < 0.075 ? source.rgb : mix(source.rgb, best, palette_strength);
+		if (reference_style && source.b > source.r * 1.025 && source.r > source.g * 1.025) {
+			for (int i = 0; i < 5; i++) {
+				vec3 delta = sample_color - violet_palette[i];
+				float distance = dot(delta * delta, vec3(0.30, 0.52, 0.18));
+				if (distance < best_distance) {
+					best_distance = distance;
+					best = violet_palette[i];
+				}
+			}
+		}
+		float chroma = max(max(source.r,source.g),source.b)-min(min(source.r,source.g),source.b);
+		float mapping = chroma < 0.12 && source.r > source.b * 1.01 ? min(palette_strength,0.25) : palette_strength;
+		rgb = max(max(source.r, source.g), source.b) < 0.075 ? source.rgb : mix(source.rgb, best, mapping);
 	}
-	COLOR = vec4(rgb, source.a);
+	// Apply after palette mapping so the slow lamp pulse survives color quantization.
+	COLOR = vec4(clamp(rgb * scene_brightness, vec3(0.0), vec3(1.0)), source.a);
 }

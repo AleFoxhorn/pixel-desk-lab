@@ -23,6 +23,8 @@ func _ready() -> void:
 func interact(action: String) -> void:
 	if action == "desk_drawer":
 		set_open(not is_open)
+	elif action == "drawer_origami" and is_open and interaction_host != null:
+		interaction_host.call("open_origami")
 	elif action.begins_with("desk_file_") and is_open and interaction_host != null:
 		interaction_host.call("open_desk_file", action.trim_prefix("desk_file_").to_int())
 
@@ -39,6 +41,9 @@ func set_open(open: bool, frame_contents: bool = true) -> void:
 		var reader: Control = interaction_host.get("file_reader") as Control
 		if reader != null:
 			reader.call("close")
+		var inspector: Node = interaction_host.get("origami_inspector") as Node
+		if inspector != null:
+			inspector.call("close")
 	if slide_motion != null and slide_motion.is_valid():
 		slide_motion.kill()
 	slide_motion = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
@@ -49,6 +54,9 @@ func set_open(open: bool, frame_contents: bool = true) -> void:
 	open_changed.emit(open)
 
 func _set_files_pickable(enabled: bool) -> void:
+	var bird_hit: StaticBody3D = get_node_or_null("Slide/OrigamiBird/OrigamiHit") as StaticBody3D
+	if bird_hit != null:
+		bird_hit.collision_layer = 1 if enabled else 0
 	for node: Node in get_node("Slide/Files").find_children("PaperHit", "StaticBody3D", true, false):
 		(node as StaticBody3D).collision_layer = 1 if enabled else 0
 

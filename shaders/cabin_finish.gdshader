@@ -1,6 +1,6 @@
 // World-space projection adapted from the Godot triplanar template.
 shader_type spatial;
-render_mode unshaded, cull_disabled;
+render_mode ambient_light_disabled, cull_disabled;
 uniform bool desktop = false;
 varying vec3 projection_position;
 
@@ -35,4 +35,16 @@ void fragment() {
 	vec2 grain_uv = desktop ? p.xz : p.xy;
 	float grain = hash(floor(grain_uv * 160.0)) - 0.5;
 	ALBEDO = clamp(color + grain * 0.032, vec3(0.0), vec3(1.0));
+	ROUGHNESS = 1.0;
+	SPECULAR = 0.0;
+	// Keep the backdrop painted; let the desktop receive the left key and cast shadows.
+	EMISSION = ALBEDO * (desktop ? vec3(0.22, 0.23, 0.28) : vec3(1.0));
+}
+
+void light() {
+	if (desktop) {
+		float lit = clamp(dot(normalize(NORMAL), normalize(LIGHT)) * ATTENUATION, 0.0, 1.0);
+		float band = step(0.30, lit) * 0.78 + step(0.75, lit) * 0.12;
+		DIFFUSE_LIGHT = max(DIFFUSE_LIGHT, ALBEDO * clamp(LIGHT_COLOR / PI, vec3(0.0), vec3(1.0)) * band);
+	}
 }

@@ -38,7 +38,7 @@ func _initialize() -> void:
 		var factor: float = float(item["extent"]) / bounds.size[axis]
 		var holder: Node3D = Node3D.new()
 		holder.name = str(item["node"])
-		holder.visible = str(item["id"]) != "keyboard"
+		holder.visible = str(item["id"]) not in ["keyboard", "origami_bird"]
 		holder.position = item["at"]
 		holder.rotation_degrees.y = float(item.get("yaw", 0.0))
 		props.add_child(holder)

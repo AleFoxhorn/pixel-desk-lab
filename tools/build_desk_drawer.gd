@@ -112,6 +112,9 @@ func build() -> void:
 	files.owner = drawer
 	paper_file("BlueFile", Vector3(-0.63, -0.175, -0.87), -5.0, "9bb2c6", -0.27)
 	paper_file("RoseFile", Vector3(0.58, -0.165, -1.02), 6.0, "d9949e", 0.27)
+	var origami: Node3D = (load("res://scenes/drawer_origami.tscn") as PackedScene).instantiate() as Node3D
+	slide.add_child(origami)
+	origami.owner = drawer
 	var packed: PackedScene = PackedScene.new()
 	assert(packed.pack(drawer) == OK)
 	assert(ResourceSaver.save(packed, "res://scenes/desk_drawer.tscn") == OK)

@@ -1,8 +1,11 @@
 extends OmniLight3D
-## Slow warm breathing, with a matched luminous bulb and a real power switch.
+## One breathing cycle drives the light, bulb and scene exposure together.
+signal scene_brightness_changed(brightness: float)
 @export var cycle_seconds: float = 3.8
 @export var dim_energy: float = 0.22
 @export var bright_energy: float = 1.15
+@export var dim_scene_brightness: float = 0.96
+@export var bright_scene_brightness: float = 1.08
 var phase: float = 0.0
 var powered: bool = true
 var bulb: MeshInstance3D
@@ -43,3 +46,4 @@ func _update_light() -> void:
 	if bulb_material != null:
 		bulb_material.albedo_color = Color("b68557").lerp(Color("fff0bc"), wave)
 		bulb_material.emission_energy_multiplier = lerpf(0.15, 0.65, wave) if powered else 0.0
+	scene_brightness_changed.emit(lerpf(dim_scene_brightness, bright_scene_brightness, wave) if powered else 1.0)

@@ -2168,7 +2168,7 @@ mesh = SubResource("BoxMesh_kuua7")
 [node name="WarmDeskFill" type="OmniLight3D" parent="." unique_id=270216633]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8, 3.2, 0.8)
 light_color = Color(1, 0.8156863, 0.6117647, 1)
-light_energy = 0.35
+light_energy = 0.12
 omni_range = 8.0
 
 [node name="SideRack" type="Node3D" parent="." unique_id=1467322174 instance=ExtResource("2_8k5iw")]

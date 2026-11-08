@@ -6,9 +6,14 @@ const CameraDirector: Script = preload("res://scripts/camera_director.gd")
 const FileReader: Script = preload("res://scripts/file_reader.gd")
 const ControlAudio: Script = preload("res://scripts/control_audio.gd")
 const VirtualWindow: Script = preload("res://scripts/window_controller.gd")
+const DeskMirror: Script = preload("res://scripts/desk_mirror.gd")
+var origami_inspector: Node
+var inspection_print_active: bool = false
+var preferred_print_preset: int = 1
 var file_reader: FileReader
 var control_audio: ControlAudio
 var virtual_window: VirtualWindow
+var desk_mirror: DeskMirror
 signal physical_key_changed(keycode: int, pressed: bool)
 var editing_screen: bool = false
 var held_keys: Dictionary = {}
@@ -67,10 +72,18 @@ func _ready() -> void:
 	prop_input.name = "PropInteractions"
 	prop_input.setup(self)
 	add_child(prop_input)
+	origami_inspector = preload("res://scripts/origami_inspector.gd").new()
+	add_child(origami_inspector)
+	origami_inspector.setup(self)
+	origami_inspector.inspecting_changed.connect(_set_inspecting)
 	virtual_window = VirtualWindow.new()
 	virtual_window.name = "VirtualWindow"
 	add_child(virtual_window)
 	virtual_window.setup(self, desk.get_node("CabinEnvironment") as Node3D)
+	desk_mirror = DeskMirror.new()
+	desk_mirror.name = "DeskMirror"
+	add_child(desk_mirror)
+	desk_mirror.setup(self)
 	if "--verify" in OS.get_cmdline_user_args():
 		capture_mode = true
 		_verify.call_deferred()
@@ -209,10 +222,14 @@ func _build_interface() -> void:
 	row.add_child(resolution)
 
 func set_print_preset(index: int) -> void:
+	preferred_print_preset = clampi(index, 0, 2)
+	_apply_print_strength()
+
+func _apply_print_strength() -> void:
 	var strengths: Array[float] = [0.0, 0.45, 1.65]
-	print_strength = strengths[index]
+	print_strength = strengths[2 if inspection_print_active else preferred_print_preset]
 	print_material.set_shader_parameter("strength", print_strength)
-	print_pass.visible = mode >= 2 and print_strength > 0.0
+	print_pass.visible = (mode >= 2 or inspection_print_active) and print_strength > 0.0
 
 func set_reference_style(enabled: bool) -> void:
 	reference_style = enabled
@@ -259,6 +276,8 @@ func _update_resolution() -> void:
 	print_material.set_shader_parameter("source_size", Vector2(scene_view.size))
 
 func _unhandled_input(event: InputEvent) -> void:
+	if origami_inspector != null and origami_inspector.active:
+		return
 	if file_reader != null and file_reader.visible:
 		return
 	if event is InputEventMouseButton:
@@ -337,6 +356,8 @@ func computer_view_at(at: Vector2) -> Vector2i:
 	return Vector2i(0, 0)
 
 func _input(event: InputEvent) -> void:
+	if origami_inspector != null and origami_inspector.active:
+		return
 	if file_reader != null and file_reader.visible:
 		return
 	if not editing_screen or not desk.powered:
@@ -383,6 +404,21 @@ func end_screen_editing() -> void:
 	screen_mouse_down = false
 	if desk != null and desk.terminal_ui != null:
 		desk.terminal_ui.end_editing()
+
+func open_origami() -> void:
+	end_screen_editing()
+	origami_inspector.open()
+
+func _set_inspecting(inspecting: bool) -> void:
+	inspection_print_active = inspecting
+	if not inspecting:
+		preferred_print_preset = 1
+		print_option.select(1)
+	_apply_print_strength()
+	overlay.visible = not inspecting
+	if inspecting:
+		end_screen_editing()
+		prop_input.cancel()
 
 func open_desk_file(index: int) -> void:
 	end_screen_editing()
@@ -442,6 +478,8 @@ func _notification(what: int) -> void:
 		end_screen_editing()
 
 func _process(_delta: float) -> void:
+	if origami_inspector != null and origami_inspector.active:
+		return
 	if editing_screen and desk != null and not desk.powered:
 		end_screen_editing()
 	if capture_mode or desk == null or status == null:
@@ -453,7 +491,7 @@ func _process(_delta: float) -> void:
 	if not hit.is_empty():
 		var collider: CollisionObject3D = hit["collider"]
 		hover_action = str(collider.get_meta("action", ""))
-	var names: Dictionary = {"power": "电源 · 点击切换", "knob": "旋钮 · 转动后复位", "tray": "托盘 · 推出后复位", "desk_drawer": "抽屉 · 点击开合", "desk_file_0": "文件 · 点击阅读", "desk_file_1": "文件 · 点击阅读"}
+	var names: Dictionary = {"power": "电源 · 点击切换", "knob": "旋钮 · 转动后复位", "tray": "托盘 · 推出后复位", "desk_drawer": "抽屉 · 点击开合", "desk_file_0": "文件 · 点击阅读", "desk_file_1": "文件 · 点击阅读", "drawer_origami": "折纸 · 点击拿起"}
 	status.text = "正在编辑" if editing_screen else str(names.get(hover_action, "点击屏幕输入"))
 	image.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND if not hover_action.is_empty() else Control.CURSOR_ARROW
 

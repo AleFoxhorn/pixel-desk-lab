@@ -58,6 +58,8 @@ transform = Transform3D(6.599455, 0, 0, 0, 6.599455, 0, 0, 0, 6.599455, -0.00013
 transform = Transform3D(0.90630776, 0, -0.42261827, 0, 1, 0, 0.42261827, 0, 0.90630776, 3.2, 0.34, 3.05)
 metadata/source_asset = "res://models/hi3d/origami_bird.glb"
 
+visible = false
+
 [node name="Model" type="Node3D" parent="OrigamiBird" unique_id=1890274657 instance=ExtResource("6_w6b70")]
 transform = Transform3D(1.5276532, 0, 0, 0, 1.5276532, 0, 0, 0, 1.5276532, -1.4750947e-05, 0.7604906, -1.0061603e-05)
 

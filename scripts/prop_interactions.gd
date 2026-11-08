@@ -50,6 +50,9 @@ func _process(delta: float) -> void:
 		lab.status.text = "%s · %d%%" % [controls[active]["label"], roundi(float(states[active]) * 100)]
 
 func _bind_props() -> void:
+	var poster: Node3D = lab.desk.get_node_or_null("CabinEnvironment/AtomicHeartPoster") as Node3D
+	if poster != null and poster.is_visible_in_tree():
+		_register_focus(poster)
 	var legacy_keyboard: Node3D = lab.desk.get_node_or_null("Computer/Keyboard") as Node3D
 	if legacy_keyboard != null:
 		_register_focus(legacy_keyboard)
@@ -95,6 +98,7 @@ func _bind_props() -> void:
 			lamp_light.light_color = Color("ffd6a0")
 			lamp_light.light_energy = 0.8
 			lamp_light.omni_range = 5.0
+			lamp_light.connect("scene_brightness_changed", func(brightness: float) -> void: lab.post.set_shader_parameter("scene_brightness", brightness))
 			holder.add_child(lamp_light)
 			lamp_light.call("attach_bulb", holder, bounds.position + bounds.size * Vector3(0.68, 0.70, 0.68), bounds.size.x * 0.09)
 			states["lamp.power"] = 1.0
@@ -120,7 +124,7 @@ func _register_focus(holder: Node3D, create_body: bool = true) -> void:
 	var bounds: AABB = _bounds(holder)
 	if bounds.size.length() < 0.001:
 		return
-	var labels: Dictionary = {"Keyboard": "键盘", "Radio": "收音机", "Lamp": "台灯", "Recorder": "录音机", "OrigamiBird": "折纸鸟", "CardHolder": "卡片架", "Rocket": "火箭摆件", "WallShelf": "搁板", "BinderPink": "粉色文件夹"}
+	var labels: Dictionary = {"Keyboard": "键盘", "Radio": "收音机", "Lamp": "台灯", "Recorder": "录音机", "OrigamiBird": "折纸鸟", "CardHolder": "卡片架", "Rocket": "火箭摆件", "WallShelf": "搁板", "BinderPink": "粉色文件夹", "AtomicHeartPoster": "海报"}
 	focus_targets[holder.get_instance_id()] = {"bounds": bounds, "label": labels.get(str(holder.name), str(holder.name))}
 	if not create_body:
 		return
@@ -142,6 +146,8 @@ func focus_item(holder: Node3D) -> void:
 	lab.end_screen_editing()
 	var bounds: AABB = holder.global_transform * (focus_targets[holder.get_instance_id()]["bounds"] as AABB)
 	var pitch: float = 55.0 if str(holder.name) == "Keyboard" else 10.0
+	if str(holder.name) == "AtomicHeartPoster":
+		pitch = 0.0
 	# Inspect the recorder from its left shoulder so the foreground rocket clears its dial.
 	lab.camera.focus_bounds(bounds, str(holder.name), 32.0 if str(holder.name) == "Recorder" else pitch, -18.0 if str(holder.name) == "Recorder" else 0.0)
 	for button: Button in lab.view_buttons:
@@ -272,7 +278,7 @@ func _bind_keyboard(holder: Node3D) -> void:
 		key.add_child(glyph)
 
 func _modal() -> bool:
-	return lab.file_reader != null and lab.file_reader.visible
+	return (lab.file_reader != null and lab.file_reader.visible) or (lab.origami_inspector != null and lab.origami_inspector.active)
 
 func _control_label(id: String) -> String:
 	if id.begins_with("keyboard.") and lab.camera.focused_item != "Keyboard":

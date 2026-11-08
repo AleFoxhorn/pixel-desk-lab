@@ -28,6 +28,11 @@ func setup(host: Control, cabin: Node3D) -> void:
 	effect.name = "WindowReveal"
 	cabin.add_child(effect)
 	effect.call("setup", cabin)
+	# Camera preset buttons change focus in their signal callback. Clear the reveal
+	# in that same callback instead of waiting for this node's next process tick.
+	for button: Button in lab.view_buttons:
+		if not button.pressed.is_connected(_clear):
+			button.pressed.connect(_clear)
 
 func pick_window(at: Vector2) -> bool:
 	if lab == null or glass == null or lab.camera.global_position.z <= -2.56:
